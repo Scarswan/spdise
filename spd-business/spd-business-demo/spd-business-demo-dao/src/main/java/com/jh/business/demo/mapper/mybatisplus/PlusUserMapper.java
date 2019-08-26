@@ -1,4 +1,4 @@
-package com.jh.mapper.mybatisplus;
+package com.jh.business.demo.mapper.mybatisplus;
 
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
