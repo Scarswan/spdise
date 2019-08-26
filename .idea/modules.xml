@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spd-api/spd-api.iml" filepath="$PROJECT_DIR$/spd-api/spd-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-api/spd-api-demo/spd-api-demo.iml" filepath="$PROJECT_DIR$/spd-api/spd-api-demo/spd-api-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business.iml" filepath="$PROJECT_DIR$/spd-business/spd-business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo.iml" filepath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/spd-business-demo-controller.iml" filepath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/spd-business-demo-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/spd-business-demo-controller (1).iml" filepath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/spd-business-demo-controller (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-dao/spd-business-demo-dao.iml" filepath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-dao/spd-business-demo-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-dao/spd-business-demo-dao (1).iml" filepath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-dao/spd-business-demo-dao (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-service/spd-business-demo-service.iml" filepath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-service/spd-business-demo-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-service/spd-business-demo-service (1).iml" filepath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-service/spd-business-demo-service (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common.iml" filepath="$PROJECT_DIR$/spd-common/spd-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-base/spd-common-base.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-base/spd-common-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-model/spd-common-model.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-model/spd-common-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-util/spd-common-util.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-util/spd-common-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-eureka/spd-eureka.iml" filepath="$PROJECT_DIR$/spd-eureka/spd-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-web-platform/spd-web-platform.iml" filepath="$PROJECT_DIR$/spd-web-platform/spd-web-platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-root/spd_root.iml" filepath="$PROJECT_DIR$/spd-root/spd_root.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/spdise.iml" filepath="$PROJECT_DIR$/.idea/spdise.iml" />
+    </modules>
+  </component>
+</project>

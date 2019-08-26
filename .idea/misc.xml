@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/spd_root/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-root/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-common/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-api/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-web-platform/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-business-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-business/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-demo/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/spd-business-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-business-demo/spd-business-demo-controller/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-business-demo/spd-business-demo-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-business-demo/spd-business-demo-service/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

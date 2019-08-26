@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spd-eureka" />
+        <module name="spd-business-demo-service (1)" />
+        <module name="spd-business-demo-controller" />
+        <module name="spd-common-model" />
+        <module name="spd-business-demo-dao" />
+        <module name="spd-business-demo-dao (1)" />
+        <module name="spd-api-demo" />
+        <module name="spd-business-demo-controller (1)" />
+        <module name="spd-business-demo-service" />
+        <module name="spd-web-platform" />
+        <module name="spd-common-util" />
+        <module name="spd-common-base" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spd-api" target="1.8" />
+      <module name="spd-api-demo" target="1.8" />
+      <module name="spd-business" target="1.8" />
+      <module name="spd-business-demo" target="1.8" />
+      <module name="spd-business-demo-controller" target="1.8" />
+      <module name="spd-business-demo-controller (1)" target="1.8" />
+      <module name="spd-business-demo-dao" target="1.8" />
+      <module name="spd-business-demo-dao (1)" target="1.8" />
+      <module name="spd-business-demo-service" target="1.8" />
+      <module name="spd-business-demo-service (1)" target="1.8" />
+      <module name="spd-common" target="1.8" />
+      <module name="spd-common-base" target="1.8" />
+      <module name="spd-common-model" target="1.8" />
+      <module name="spd-common-util" target="1.8" />
+      <module name="spd-eureka" target="1.8" />
+      <module name="spd-web-platform" target="1.8" />
+      <module name="spd_root" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spd-api" options="-parameters" />
+      <module name="spd-api-demo" options="-parameters" />
+      <module name="spd-business" options="-parameters" />
+      <module name="spd-business-demo" options="-parameters" />
+      <module name="spd-business-demo-controller" options="-parameters" />
+      <module name="spd-business-demo-controller (1)" options="-parameters" />
+      <module name="spd-business-demo-dao" options="-parameters" />
+      <module name="spd-business-demo-dao (1)" options="-parameters" />
+      <module name="spd-business-demo-service" options="-parameters" />
+      <module name="spd-business-demo-service (1)" options="-parameters" />
+      <module name="spd-common" options="-parameters" />
+      <module name="spd-common-base" options="-parameters" />
+      <module name="spd-common-model" options="-parameters" />
+      <module name="spd-common-util" options="-parameters" />
+      <module name="spd-eureka" options="-parameters" />
+      <module name="spd-web-platform" options="-parameters" />
+    </option>
+  </component>
+</project>

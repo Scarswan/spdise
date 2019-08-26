@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: spd-eureka
+server:
+  port: 8227
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8227/eureka/

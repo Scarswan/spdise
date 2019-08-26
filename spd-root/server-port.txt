@@ -1,0 +1,2 @@
+spd-eureka: 8227
+business-demo: 8250
