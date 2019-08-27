@@ -6,9 +6,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author jiangqk, runner1920@163.com
- * @version 0.0.1
- * @date 2018/11/13 11:19
+ * @author
+ * @date
  */
 @Configuration
 @Slf4j

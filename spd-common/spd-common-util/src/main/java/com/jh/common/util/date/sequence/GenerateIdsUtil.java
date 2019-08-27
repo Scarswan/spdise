@@ -7,8 +7,7 @@ import java.util.Date;
 /**
  * @Title: GenerateIdsUtil.java
  * @Description: 生成各类业务ID
- * @date 2015年9月1日 下午11:43:02
- * @version V1.0
+ * @date
  **/
 public class GenerateIdsUtil {
 
