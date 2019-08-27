@@ -1,4 +1,4 @@
-package com.jh.common.util.date;
+package com.jh.common.util;
 
 import org.springframework.util.DigestUtils;
 
