@@ -1,7 +1,6 @@
 package com.jh.business.demo.controller;
 
 import com.jh.business.demo.service.UserService;
-import com.jh.common.enums.RetCode;
 import com.jh.model.base.ResponseMsg;
 import com.jh.model.base.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +23,7 @@ public class UserController {
     public ResponseMsg UserRegister(@RequestBody User user) {
         userService.UserRegister(user);
 
-        return new ResponseMsg(RetCode.SUCC.getDesc(), "", null);
+        return ResponseMsg.success();
     }
 
 }

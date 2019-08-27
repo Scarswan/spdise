@@ -2,20 +2,20 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.jh.business.demo.mapper.UserMapper">
 
-    <resultMap id="BaseResultMap" type="com.jh.model.base.User">
-        <id column="user_id" property="userId" jdbcType="VARCHAR"/>
-        <result column="user_name" property="userName" jdbcType="VARCHAR"/>
-        <result column="user_password" property="userPassword" jdbcType="CHAR"/>
-        <result column="user_headportrait" property="userHeadPortrait" jdbcType="VARCHAR"/>
-        <result column="user_realname" property="userRealName" jdbcType="VARCHAR"/>
-        <result column="user_gender" property="userGender" jdbcType="INTEGER"/>
-        <result column="user_age" property="userAge" jdbcType="INTEGER"/>
-        <result column="user_phone" property="userPhone" jdbcType="VARCHAR"/>
-        <result column="user_email" property="userEmail" jdbcType="VARCHAR"/>
-        <result column="is_delete" property="isDelete" jdbcType="INTEGER"/>
-        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
-        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>
-    </resultMap>
+<!--    <resultMap id="BaseResultMap" type="com.jh.model.base.User">-->
+<!--        <id column="user_id" property="userId" jdbcType="VARCHAR"/>-->
+<!--        <result column="user_name" property="userName" jdbcType="VARCHAR"/>-->
+<!--        <result column="user_password" property="userPassword" jdbcType="CHAR"/>-->
+<!--        <result column="user_headportrait" property="userHeadPortrait" jdbcType="VARCHAR"/>-->
+<!--        <result column="user_realname" property="userRealName" jdbcType="VARCHAR"/>-->
+<!--        <result column="user_gender" property="userGender" jdbcType="INTEGER"/>-->
+<!--        <result column="user_age" property="userAge" jdbcType="INTEGER"/>-->
+<!--        <result column="user_phone" property="userPhone" jdbcType="VARCHAR"/>-->
+<!--        <result column="user_email" property="userEmail" jdbcType="VARCHAR"/>-->
+<!--        <result column="is_delete" property="isDelete" jdbcType="INTEGER"/>-->
+<!--        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>-->
+<!--        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>-->
+<!--    </resultMap>-->
 
     <insert id="insert" parameterType="com.jh.model.base.User">
         insert into spd_user

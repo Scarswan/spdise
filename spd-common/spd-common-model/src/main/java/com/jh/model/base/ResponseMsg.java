@@ -16,8 +16,6 @@ import java.io.Serializable;
  */
 @Data
 @ToString
-@NoArgsConstructor
-@AllArgsConstructor
 public class ResponseMsg<T> implements Serializable {
 
     /**
@@ -72,6 +70,78 @@ public class ResponseMsg<T> implements Serializable {
     public ResponseMsg(String code, String desc) {
         this.code = code;
         this.desc = desc;
+    }
+
+    /**
+     * 成功返回
+     * @return
+     */
+    public static ResponseMsg success() {
+        return success(null);
+    }
+
+    /**
+     * 成功返回
+     * @param obj 返回结果
+     * @return
+     */
+    public static ResponseMsg success(Object obj) {
+        return new ResponseMsg(obj);
+    }
+
+    /**
+     * 错误返回
+     * @return
+     */
+    public static ResponseMsg error() {
+        return new ResponseMsg(RetCode.FAIL, null);
+    }
+
+    public static ResponseMsg error(RetCode retCode) {
+        return new ResponseMsg(retCode, null);
+    }
+
+    public static ResponseMsg errorByParam(String desc) {
+        return new ResponseMsg(RetCode.PARAM_ERROR.getCode(), desc);
+    }
+
+    public static ResponseMsg error(RetCode retCode,String msg) {
+        return new ResponseMsg(retCode.getCode(), msg);
+    }
+
+    public static ResponseMsg error(RetCode retCode,String msg,Object data) {
+        return new ResponseMsg(retCode, null);
+    }
+
+    /**
+     * 错误返回
+     * @param retCode 返回代码
+     * @param data 返回数据
+     * @return
+     */
+    public static ResponseMsg error(RetCode retCode, Object data) {
+        return new ResponseMsg(retCode, data);
+    }
+
+    /**
+     * 错误返回
+     * @param code
+     * @param desc
+     * @return
+     */
+    public static ResponseMsg error(String code, String desc) {
+        return new ResponseMsg(code,desc,null);
+    }
+
+    /**
+     * 错误返回
+     * @param code
+     * @param desc
+     * @param data
+     * @return
+     */
+    public static ResponseMsg error(String code, String desc, Object data) {
+        return new ResponseMsg(code,desc,data);
     }
 
 }

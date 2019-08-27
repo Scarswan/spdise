@@ -1,9 +1,10 @@
 package com.jh.business.demo.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.jh.model.base.User;
 
-public interface UserMapper {
+public interface UserMapper extends BaseMapper<User> {
 
-    Integer insert(User user);
+    int insert(User user);
 
 }
