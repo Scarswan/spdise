@@ -3,25 +3,21 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>spd-business</artifactId>
+        <artifactId>spd-root</artifactId>
         <groupId>com.jh</groupId>
         <version>1.9.8</version>
+        <relativePath>../spd-root/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <packaging>pom</packaging>
-    <modules>
-        <module>spd-business-base-controller</module>
-        <module>spd-business-base-service</module>
-        <module>spd-business-base-dao</module>
-    </modules>
+    <packaging>jar</packaging>
 
-    <artifactId>spd-business-base</artifactId>
+    <artifactId>spd-zuul</artifactId>
     <version>1.9.8</version>
-    <name>spd-business-base</name>
-    <description>business 基础</description>
+    <name>spd-zuul</name>
+    <description>zuul 网关</description>
 
     <build>
-        <finalName>spd-business-base</finalName>
+        <finalName>spd-zuul</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

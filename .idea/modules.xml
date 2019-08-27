@@ -6,6 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/spd-api/spd-api-demo/spd-api-demo.iml" filepath="$PROJECT_DIR$/spd-api/spd-api-demo/spd-api-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business.iml" filepath="$PROJECT_DIR$/spd-business/spd-business.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base.iml" filepath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/spd-business-base-controller.iml" filepath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/spd-business-base-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/spd-business-base-dao.iml" filepath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/spd-business-base-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/spd-business-base-service.iml" filepath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/spd-business-base-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo.iml" filepath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/spd-business-demo-controller.iml" filepath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/spd-business-demo-controller.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/spd-business-demo-controller (1).iml" filepath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/spd-business-demo-controller (1).iml" />
@@ -17,9 +20,11 @@
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-base/spd-common-base.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-base/spd-common-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-generator/spd-common-generator.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-generator/spd-common-generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-model/spd-common-model.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-model/spd-common-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/spd-common-rocketmq.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/spd-common-rocketmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-util/spd-common-util.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-util/spd-common-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-eureka/spd-eureka.iml" filepath="$PROJECT_DIR$/spd-eureka/spd-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-web-platform/spd-web-platform.iml" filepath="$PROJECT_DIR$/spd-web-platform/spd-web-platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-zuul/spd-zuul.iml" filepath="$PROJECT_DIR$/spd-zuul/spd-zuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-root/spd_root.iml" filepath="$PROJECT_DIR$/spd-root/spd_root.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spdise.iml" filepath="$PROJECT_DIR$/.idea/spdise.iml" />
     </modules>

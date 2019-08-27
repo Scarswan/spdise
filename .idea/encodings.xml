@@ -5,6 +5,9 @@
     <file url="file://$PROJECT_DIR$/spd-api/spd-api-demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-business" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-business/spd-business-base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-business/spd-business-demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-dao" charset="UTF-8" />
@@ -13,9 +16,11 @@
     <file url="file://$PROJECT_DIR$/spd-common/spd-common-base" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-common/spd-common-generator" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-common/spd-common-model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-common/spd-common-util" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-root" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-web-platform" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spd-zuul" charset="UTF-8" />
   </component>
 </project>

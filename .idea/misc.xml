@@ -18,6 +18,7 @@
         <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-dao/pom.xml" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-service/pom.xml" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-zuul/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
