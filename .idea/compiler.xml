@@ -14,6 +14,7 @@
         <module name="spd-business-base-dao" />
         <module name="spd-business-demo-controller (1)" />
         <module name="spd-business-demo-controller" />
+        <module name="spd-api-base" />
         <module name="spd-zuul" />
         <module name="spd-business-base-service" />
         <module name="spd-business-demo-service" />
@@ -28,6 +29,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spd-api" target="1.8" />
+      <module name="spd-api-base" target="1.8" />
       <module name="spd-api-demo" target="1.8" />
       <module name="spd-business" target="1.8" />
       <module name="spd-business-base" target="1.8" />
@@ -56,6 +58,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spd-api" options="-parameters" />
+      <module name="spd-api-base" options="-parameters" />
       <module name="spd-api-demo" options="-parameters" />
       <module name="spd-business" options="-parameters" />
       <module name="spd-business-base" options="-parameters" />

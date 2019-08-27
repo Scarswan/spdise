@@ -12,6 +12,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>spd-api-demo</module>
+        <module>spd-api-base</module>
     </modules>
 
     <artifactId>spd-api</artifactId>

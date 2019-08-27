@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/spd-api/spd-api.iml" filepath="$PROJECT_DIR$/spd-api/spd-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-api/spd-api-base/spd-api-base.iml" filepath="$PROJECT_DIR$/spd-api/spd-api-base/spd-api-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-api/spd-api-demo/spd-api-demo.iml" filepath="$PROJECT_DIR$/spd-api/spd-api-demo/spd-api-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business.iml" filepath="$PROJECT_DIR$/spd-business/spd-business.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base.iml" filepath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base.iml" />
