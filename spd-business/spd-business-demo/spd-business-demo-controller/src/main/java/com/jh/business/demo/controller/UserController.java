@@ -29,7 +29,7 @@ public class UserController {
         return ResponseMsg.success();
     }
 
-    @RequestMapping("/list")
+    @RequestMapping("/query/list")
     public ResponseMsg<List<User>> list(){
         List<User> userList = userService.list();
 
