@@ -74,6 +74,7 @@ public class ResponseMsg<T> implements Serializable {
 
     /**
      * 成功返回
+     *
      * @return
      */
     public static ResponseMsg success() {
@@ -82,6 +83,7 @@ public class ResponseMsg<T> implements Serializable {
 
     /**
      * 成功返回
+     *
      * @param obj 返回结果
      * @return
      */
@@ -91,6 +93,7 @@ public class ResponseMsg<T> implements Serializable {
 
     /**
      * 错误返回
+     *
      * @return
      */
     public static ResponseMsg error() {
@@ -105,18 +108,19 @@ public class ResponseMsg<T> implements Serializable {
         return new ResponseMsg(RetCode.PARAM_ERROR.getCode(), desc);
     }
 
-    public static ResponseMsg error(RetCode retCode,String msg) {
+    public static ResponseMsg error(RetCode retCode, String msg) {
         return new ResponseMsg(retCode.getCode(), msg);
     }
 
-    public static ResponseMsg error(RetCode retCode,String msg,Object data) {
+    public static ResponseMsg error(RetCode retCode, String msg, Object data) {
         return new ResponseMsg(retCode, null);
     }
 
     /**
      * 错误返回
+     *
      * @param retCode 返回代码
-     * @param data 返回数据
+     * @param data    返回数据
      * @return
      */
     public static ResponseMsg error(RetCode retCode, Object data) {
@@ -125,23 +129,25 @@ public class ResponseMsg<T> implements Serializable {
 
     /**
      * 错误返回
+     *
      * @param code
      * @param desc
      * @return
      */
     public static ResponseMsg error(String code, String desc) {
-        return new ResponseMsg(code,desc,null);
+        return new ResponseMsg(code, desc, null);
     }
 
     /**
      * 错误返回
+     *
      * @param code
      * @param desc
      * @param data
      * @return
      */
     public static ResponseMsg error(String code, String desc, Object data) {
-        return new ResponseMsg(code,desc,data);
+        return new ResponseMsg(code, desc, data);
     }
 
 }

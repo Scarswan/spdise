@@ -6,7 +6,10 @@ import com.jh.model.base.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * @author YangFu
@@ -19,11 +22,18 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("/insert")
+    @RequestMapping(value = "/insert" ,method = RequestMethod.POST)
     public ResponseMsg UserRegister(@RequestBody User user) {
         userService.UserRegister(user);
 
         return ResponseMsg.success();
+    }
+
+    @RequestMapping("/list")
+    public ResponseMsg<List<User>> list(){
+        List<User> userList = userService.list();
+
+        return ResponseMsg.success(userList);
     }
 
 }

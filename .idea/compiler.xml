@@ -6,25 +6,27 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spd-eureka" />
-        <module name="spd-common-base" />
-        <module name="spd-business-demo-controller" />
         <module name="spd-common-model" />
-        <module name="spd-common-util" />
-        <module name="spd-business-demo-dao" />
-        <module name="spd-common-generator" />
-        <module name="spd-api-demo" />
-        <module name="spd-business-demo-service" />
-        <module name="spd-business-demo-controller (1)" />
-        <module name="spd-web-platform" />
         <module name="spd-business-demo-service (1)" />
+        <module name="spd-eureka" />
+        <module name="spd-web-platform" />
+        <module name="spd-common-util" />
+        <module name="spd-business-demo-controller (1)" />
+        <module name="spd-business-demo-controller" />
+        <module name="spd-business-base" />
+        <module name="spd-business-demo-service" />
+        <module name="spd-common-base" />
+        <module name="spd-api-demo" />
+        <module name="spd-common-generator" />
         <module name="spd-business-demo-dao (1)" />
+        <module name="spd-business-demo-dao" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spd-api" target="1.8" />
       <module name="spd-api-demo" target="1.8" />
       <module name="spd-business" target="1.8" />
+      <module name="spd-business-base" target="1.8" />
       <module name="spd-business-demo" target="1.8" />
       <module name="spd-business-demo-controller" target="1.8" />
       <module name="spd-business-demo-controller (1)" target="1.8" />
@@ -47,6 +49,7 @@
       <module name="spd-api" options="-parameters" />
       <module name="spd-api-demo" options="-parameters" />
       <module name="spd-business" options="-parameters" />
+      <module name="spd-business-base" options="-parameters" />
       <module name="spd-business-demo" options="-parameters" />
       <module name="spd-business-demo-controller" options="-parameters" />
       <module name="spd-business-demo-controller (1)" options="-parameters" />

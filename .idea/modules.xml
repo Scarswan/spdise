@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/spd-api/spd-api.iml" filepath="$PROJECT_DIR$/spd-api/spd-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-api/spd-api-demo/spd-api-demo.iml" filepath="$PROJECT_DIR$/spd-api/spd-api-demo/spd-api-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business.iml" filepath="$PROJECT_DIR$/spd-business/spd-business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base.iml" filepath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo.iml" filepath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/spd-business-demo-controller.iml" filepath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/spd-business-demo-controller.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/spd-business-demo-controller (1).iml" filepath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/spd-business-demo-controller (1).iml" />
