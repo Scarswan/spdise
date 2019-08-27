@@ -7,17 +7,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spd-eureka" />
-        <module name="spd-business-demo-service (1)" />
+        <module name="spd-common-base" />
         <module name="spd-business-demo-controller" />
         <module name="spd-common-model" />
-        <module name="spd-business-demo-dao" />
-        <module name="spd-business-demo-dao (1)" />
-        <module name="spd-api-demo" />
-        <module name="spd-business-demo-controller (1)" />
-        <module name="spd-business-demo-service" />
-        <module name="spd-web-platform" />
         <module name="spd-common-util" />
-        <module name="spd-common-base" />
+        <module name="spd-business-demo-dao" />
+        <module name="spd-common-generator" />
+        <module name="spd-api-demo" />
+        <module name="spd-business-demo-service" />
+        <module name="spd-business-demo-controller (1)" />
+        <module name="spd-web-platform" />
+        <module name="spd-business-demo-service (1)" />
+        <module name="spd-business-demo-dao (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -33,6 +34,7 @@
       <module name="spd-business-demo-service (1)" target="1.8" />
       <module name="spd-common" target="1.8" />
       <module name="spd-common-base" target="1.8" />
+      <module name="spd-common-generator" target="1.8" />
       <module name="spd-common-model" target="1.8" />
       <module name="spd-common-util" target="1.8" />
       <module name="spd-eureka" target="1.8" />
@@ -54,6 +56,7 @@
       <module name="spd-business-demo-service (1)" options="-parameters" />
       <module name="spd-common" options="-parameters" />
       <module name="spd-common-base" options="-parameters" />
+      <module name="spd-common-generator" options="-parameters" />
       <module name="spd-common-model" options="-parameters" />
       <module name="spd-common-util" options="-parameters" />
       <module name="spd-eureka" options="-parameters" />

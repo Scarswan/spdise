@@ -1,5 +1,6 @@
 package com.jh.model.base;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import com.jh.model.Base;
 import lombok.Data;
 
@@ -8,6 +9,7 @@ import lombok.Data;
  * @data 2019/08/23 17:37
  */
 @Data
+@TableName(value = "spd_user",autoResultMap = true)
 public class User extends Base {
 
     /**

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration [
+        <!ELEMENT generatorConfiguration (context)*>
+        <!ELEMENT context (property|jdbcConnection|javaTypeResolver|javaModelGenerator|sqlMapGenerator|javaClientGenerator|table)*>
+        <!ATTLIST context
+                id CDATA #REQUIRED
+                targetRuntime CDATA #REQUIRED>
+        <!ELEMENT property (#PCDATA)>
+        <!ATTLIST property
+                name CDATA #REQUIRED
+                value CDATA #REQUIRED>
+        <!ELEMENT jdbcConnection (#PCDATA)>
+        <!ATTLIST jdbcConnection
+                driverClass CDATA #REQUIRED
+                connectionURL CDATA #REQUIRED
+                userId CDATA #REQUIRED
+                password CDATA #REQUIRED>
+        <!ELEMENT javaTypeResolver (property)*>
+        <!ELEMENT javaModelGenerator (property)*>
+        <!ATTLIST javaModelGenerator
+                targetPackage CDATA #REQUIRED
+                targetProject CDATA #REQUIRED>
+        <!ELEMENT sqlMapGenerator (property)*>
+        <!ATTLIST sqlMapGenerator
+                targetPackage CDATA #REQUIRED
+                targetProject CDATA #REQUIRED>
+        <!ELEMENT javaClientGenerator (property)*>
+        <!ATTLIST javaClientGenerator
+                type CDATA #REQUIRED
+                targetPackage CDATA #REQUIRED
+                targetProject CDATA #REQUIRED>
+        <!ELEMENT table (#PCDATA)>
+        <!ATTLIST table
+                tableName CDATA #REQUIRED
+                domainObjectName CDATA #REQUIRED
+                enableCountByExample CDATA #REQUIRED
+                enableDeleteByExample CDATA #REQUIRED
+                enableUpdateByExample CDATA #REQUIRED
+                enableSelectByExample CDATA #REQUIRED>
+        ]>
+<generatorConfiguration>
+    <!--<classPathEntry location="/Program Files/IBM/SQLLIB/java/db2java.zip" />-->
+
+    <context id="Mybatis3Context" targetRuntime="MyBatis3">
+        <property name="javaFileEncoding" value="UTF-8"/>
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/MyBatisCodeHelper?useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;nullCatalogMeansCurrent=true"
+                        userId="root"
+                        password="">
+        </jdbcConnection>
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="model" targetProject="D:/PersonalProject/spdise/src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="mapperxml" targetProject="D:/PersonalProject/spdise/src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="mapper" targetProject="D:/PersonalProject/spdise/src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <table tableName="Customer" domainObjectName="Customer" enableCountByExample="false"
+               enableDeleteByExample="false" enableUpdateByExample="false" enableSelectByExample="false">
+        </table>
+
+    </context>
+</generatorConfiguration>

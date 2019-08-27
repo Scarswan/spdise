@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-service/spd-business-demo-service (1).iml" filepath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-service/spd-business-demo-service (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common.iml" filepath="$PROJECT_DIR$/spd-common/spd-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-base/spd-common-base.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-base/spd-common-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-generator/spd-common-generator.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-generator/spd-common-generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-model/spd-common-model.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-model/spd-common-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-util/spd-common-util.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-util/spd-common-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-eureka/spd-eureka.iml" filepath="$PROJECT_DIR$/spd-eureka/spd-eureka.iml" />

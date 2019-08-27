@@ -15,6 +15,7 @@
         <module>spd-common-model</module>
         <module>spd-common-util</module>
         <module>spd-common-base</module>
+        <module>spd-common-generator</module>
     </modules>
 
     <artifactId>spd-common</artifactId>
