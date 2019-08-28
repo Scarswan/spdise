@@ -2,8 +2,6 @@ package com.jh.common.model.demo;
 
 import lombok.Data;
 
-import java.util.Map;
-
 @Data
 public class JsonResult {
 

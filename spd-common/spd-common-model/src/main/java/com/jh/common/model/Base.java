@@ -14,11 +14,11 @@ public class Base {
     /**
      * 创建时间
      */
-    private Date createTime;
+    protected Date createTime;
 
     /**
      * 最后修改时间
      */
-    private Date updateTime;
+    protected Date updateTime;
 
 }

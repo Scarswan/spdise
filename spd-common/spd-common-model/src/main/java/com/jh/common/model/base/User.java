@@ -1,7 +1,7 @@
 package com.jh.common.model.base;
 
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.jh.model.Base;
+import com.jh.common.model.Base;
 import lombok.Data;
 
 /**
