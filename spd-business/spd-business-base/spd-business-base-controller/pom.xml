@@ -15,6 +15,13 @@
     <name>spd-business-base-controller</name>
     <description>base-控制器层</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+    </dependencies>
+
     <build>
         <finalName>spd-business-base-controller</finalName>
         <plugins>
