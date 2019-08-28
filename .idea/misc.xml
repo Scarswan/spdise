@@ -11,7 +11,6 @@
         <option value="$PROJECT_DIR$/spd-common/pom.xml" />
         <option value="$PROJECT_DIR$/spd-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/spd-api/pom.xml" />
-        <option value="$PROJECT_DIR$/spd-web-platform/pom.xml" />
         <option value="$PROJECT_DIR$/spd-business-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spd-business/pom.xml" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/pom.xml" />
@@ -19,6 +18,8 @@
         <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-service/pom.xml" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spd-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-web/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-web/spd-web-platform/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

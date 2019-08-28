@@ -11,24 +11,16 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>spd-business-base</module>
+        <module>spd-web-platform</module>
     </modules>
 
-    <artifactId>spd-business</artifactId>
+    <artifactId>spd-web</artifactId>
     <version>1.9.8</version>
-    <name>spd-business</name>
-    <description>business</description>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.2.0</version>
-        </dependency>
-    </dependencies>
+    <name>spd-web</name>
+    <description>web</description>
 
     <build>
-        <finalName>spd-business</finalName>
+        <finalName>spd-web</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

@@ -21,7 +21,9 @@
     <file url="file://$PROJECT_DIR$/spd-common/spd-common-util" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-root" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spd-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-web-platform" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spd-web/spd-web-platform" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-zuul" charset="UTF-8" />
   </component>
 </project>

@@ -24,7 +24,8 @@
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/spd-common-rocketmq.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/spd-common-rocketmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-util/spd-common-util.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-util/spd-common-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-eureka/spd-eureka.iml" filepath="$PROJECT_DIR$/spd-eureka/spd-eureka.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spd-web-platform/spd-web-platform.iml" filepath="$PROJECT_DIR$/spd-web-platform/spd-web-platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-web/spd-web.iml" filepath="$PROJECT_DIR$/spd-web/spd-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-web/spd-web-platform/spd-web-platform .iml" filepath="$PROJECT_DIR$/spd-web/spd-web-platform/spd-web-platform .iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-zuul/spd-zuul.iml" filepath="$PROJECT_DIR$/spd-zuul/spd-zuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-root/spd_root.iml" filepath="$PROJECT_DIR$/spd-root/spd_root.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spdise.iml" filepath="$PROJECT_DIR$/.idea/spdise.iml" />
