@@ -1,4 +1,4 @@
-package com.jh.model.demo;
+package com.jh.common.model.demo;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.jh.model.base;
+package com.jh.common.model.base;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.jh.model.Base;

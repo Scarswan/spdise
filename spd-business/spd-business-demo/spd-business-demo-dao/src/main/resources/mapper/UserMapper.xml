@@ -17,7 +17,7 @@
 <!--        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>-->
 <!--    </resultMap>-->
 
-    <insert id="insert" parameterType="com.jh.model.base.User">
+    <insert id="insert" parameterType="com.jh.common.model.base.User">
         insert into spd_user
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="userId != null">
