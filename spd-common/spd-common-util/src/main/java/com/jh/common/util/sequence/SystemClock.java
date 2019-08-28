@@ -1,4 +1,4 @@
-package com.jh.common.util.date.sequence;
+package com.jh.common.util.sequence;
 
 import java.sql.Timestamp;
 import java.util.concurrent.Executors;

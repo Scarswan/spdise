@@ -1,4 +1,4 @@
-package com.jh.common.util.date.sequence;
+package com.jh.common.util.sequence;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;

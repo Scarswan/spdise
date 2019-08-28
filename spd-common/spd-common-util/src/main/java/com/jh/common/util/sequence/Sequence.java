@@ -1,4 +1,4 @@
-package com.jh.common.util.date.sequence;
+package com.jh.common.util.sequence;
 
 
 import java.util.concurrent.ThreadLocalRandom;
