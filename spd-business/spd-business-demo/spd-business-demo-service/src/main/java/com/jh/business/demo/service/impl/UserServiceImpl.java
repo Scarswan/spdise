@@ -6,7 +6,7 @@ import com.jh.business.demo.service.UserService;
 import com.jh.common.enums.YesNoEnum;
 import com.jh.common.util.date.DateUtil;
 import com.jh.common.util.PasswordUtil;
-import com.jh.common.util.date.sequence.Sequence;
+import com.jh.common.util.sequence.Sequence;
 import com.jh.common.model.base.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

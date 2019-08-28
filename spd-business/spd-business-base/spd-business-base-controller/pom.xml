@@ -20,6 +20,11 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.jh</groupId>
+            <artifactId>spd-business-base-service</artifactId>
+            <version>1.9.8</version>
+        </dependency>
     </dependencies>
 
     <build>

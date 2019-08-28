@@ -15,6 +15,14 @@
     <name>spd-business-base-service</name>
     <description>base-业务层</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.jh</groupId>
+            <artifactId>spd-business-base-dao</artifactId>
+            <version>1.9.8</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <finalName>spd-business-base-service</finalName>
         <plugins>
