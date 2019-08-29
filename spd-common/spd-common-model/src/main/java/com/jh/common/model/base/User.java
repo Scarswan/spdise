@@ -1,65 +1,113 @@
 package com.jh.common.model.base;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.jh.common.model.Base;
+
+import java.util.Date;
+
 import lombok.Data;
 
 /**
- * @author YangFu
- * @data 2019/08/23 17:37
+ * @blame 杨赋
  */
 @Data
-@TableName(value = "spd_user",autoResultMap = true)
-public class User extends Base {
-
+@TableName(value = "spd_user", autoResultMap = true)
+public class User {
     /**
      * 用户id
      */
+    @TableId(value = "user_id", type = IdType.INPUT)
     private String userId;
 
     /**
      * 用户名
      */
+    @TableField(value = "user_name")
     private String userName;
 
     /**
      * 密码
      */
+    @TableField(value = "user_password")
     private String userPassword;
 
     /**
-     * 头像
+     * 用户头像
      */
+    @TableField(value = "user_head_portrait")
     private String userHeadPortrait;
 
     /**
      * 真实姓名
      */
+    @TableField(value = "user_real_name")
     private String userRealName;
 
     /**
-     * 性别
+     * 用户性别
      */
-    private int userGender;
+    @TableField(value = "user_gender")
+    private Integer userGender;
 
     /**
-     * 年龄
+     * 用户年龄
      */
-    private int userAge;
+    @TableField(value = "user_age")
+    private Integer userAge;
 
     /**
-     * 手机号
+     * 手机号码
      */
+    @TableField(value = "user_phone")
     private String userPhone;
 
     /**
      * 邮箱
      */
+    @TableField(value = "user_email")
     private String userEmail;
 
     /**
      * 是否删除
      */
-    private int isDelete;
+    @TableField(value = "is_delete")
+    private Integer isDelete;
 
+    /**
+     * 创建时间
+     */
+    @TableField(value = "create_time")
+    private Date createTime;
+
+    /**
+     * 最后修改时间
+     */
+    @TableField(value = "update_time")
+    private Date updateTime;
+
+    public static final String COL_USER_ID = "user_id";
+
+    public static final String COL_USER_NAME = "user_name";
+
+    public static final String COL_USER_PASSWORD = "user_password";
+
+    public static final String COL_USER_HEAD_PORTRAIT = "user_head_portrait";
+
+    public static final String COL_USER_REAL_NAME = "user_real_name";
+
+    public static final String COL_USER_GENDER = "user_gender";
+
+    public static final String COL_USER_AGE = "user_age";
+
+    public static final String COL_USER_PHONE = "user_phone";
+
+    public static final String COL_USER_EMAIL = "user_email";
+
+    public static final String COL_IS_DELETE = "is_delete";
+
+    public static final String COL_CREATE_TIME = "create_time";
+
+    public static final String COL_UPDATE_TIME = "update_time";
 }

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jh.business.base.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="com.jh.common.model.base.User">
+        <id column="user_id" jdbcType="VARCHAR" property="userId" />
+        <result column="user_name" jdbcType="VARCHAR" property="userName" />
+        <result column="user_password" jdbcType="CHAR" property="userPassword" />
+        <result column="user_head_portrait" jdbcType="VARCHAR" property="userHeadPortrait" />
+        <result column="user_real_name" jdbcType="VARCHAR" property="userRealName" />
+        <result column="user_gender" jdbcType="INTEGER" property="userGender" />
+        <result column="user_age" jdbcType="INTEGER" property="userAge" />
+        <result column="user_phone" jdbcType="VARCHAR" property="userPhone" />
+        <result column="user_email" jdbcType="VARCHAR" property="userEmail" />
+        <result column="is_delete" jdbcType="INTEGER" property="isDelete" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    </resultMap>
+    <sql id="Base_Column_List">
+        user_id, user_name, user_password, user_head_portrait, user_real_name, user_gender,
+        user_age, user_phone, user_email, is_delete, create_time, update_time
+    </sql>
+
+    <insert id="insertList">
+        INSERT INTO spd_user(
+        user_id,
+        user_name,
+        user_password,
+        user_head_portrait,
+        user_real_name,
+        user_gender,
+        user_age,
+        user_phone,
+        user_email,
+        is_delete,
+        create_time,
+        update_time
+        )VALUES
+        <foreach collection="list" item="element" index="index" separator=",">
+            (
+            #{element.userId,jdbcType=VARCHAR},
+            #{element.userName,jdbcType=VARCHAR},
+            #{element.userPassword,jdbcType=CHAR},
+            #{element.userHeadPortrait,jdbcType=VARCHAR},
+            #{element.userRealName,jdbcType=VARCHAR},
+            #{element.userGender,jdbcType=INTEGER},
+            #{element.userAge,jdbcType=INTEGER},
+            #{element.userPhone,jdbcType=VARCHAR},
+            #{element.userEmail,jdbcType=VARCHAR},
+            #{element.isDelete,jdbcType=INTEGER},
+            #{element.createTime,jdbcType=TIMESTAMP},
+            #{element.updateTime,jdbcType=TIMESTAMP}
+            )
+        </foreach>
+    </insert>
+</mapper>
