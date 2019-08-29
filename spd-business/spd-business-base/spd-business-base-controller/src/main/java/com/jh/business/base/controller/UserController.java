@@ -29,7 +29,9 @@ public class UserController {
     }
 
     /**
-     *
+     * 获取一条用户信息
+     * @param user
+     * @return
      */
     @GetMapping("/get")
     public ResponseMsg<User> get(User user){

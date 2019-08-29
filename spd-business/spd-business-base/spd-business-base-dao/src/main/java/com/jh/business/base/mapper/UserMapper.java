@@ -8,7 +8,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.jh.common.model.base.User;
 
 /**
- * @author YangFu
  * @blame 杨赋
  */
 public interface UserMapper extends BaseMapper<User> {
