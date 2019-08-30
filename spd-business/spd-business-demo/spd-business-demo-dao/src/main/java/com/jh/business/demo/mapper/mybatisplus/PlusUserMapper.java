@@ -4,5 +4,4 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.jh.common.model.demo.User;
 
 public interface PlusUserMapper extends BaseMapper<User> {
-    
 }

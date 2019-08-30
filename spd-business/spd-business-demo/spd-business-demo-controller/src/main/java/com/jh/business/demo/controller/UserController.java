@@ -17,6 +17,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/demo/user")
+@Deprecated
 public class UserController {
 
     @Autowired

@@ -1,6 +1,5 @@
 package com.jh.business.demo.controller;
 
-import com.alibaba.fastjson.JSON;
 import com.jh.api.base.UserClient;
 import com.jh.common.model.base.ResponseMsg;
 import com.jh.common.model.base.User;
@@ -15,14 +14,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ZipkinController {
 
-    private Logger log = LoggerFactory.getLogger(ZipkinController.class);
+    private Logger logger = LoggerFactory.getLogger(ZipkinController.class);
 
     @Autowired
     private UserClient userClient;
 
-    @RequestMapping(value = "/get", method = RequestMethod.POST)
-    public ResponseMsg<User> get(@RequestBody User user) {
-        log.info("调用 userClient 获取一条user信息 参数：" + JSON.toJSONString(user));
+    @RequestMapping(value = "/getUserInfo", method = RequestMethod.POST)
+    public ResponseMsg<User> getUserInfo(@RequestBody User user) {
+        logger.info("getUserInfo：调用 Api-Base 查询一条 user 信息，user = {}", user);
         return userClient.getUserInfo(user);
     }
 

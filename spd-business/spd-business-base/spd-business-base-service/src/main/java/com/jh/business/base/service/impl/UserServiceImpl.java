@@ -23,14 +23,14 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
 
-    private Logger log = LoggerFactory.getLogger(UserServiceImpl.class);
+    private Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 
     @Autowired
     UserMapper userMapper;
 
     @Override
     public int save(User user) {
-        log.info("loginOrRegister：用户登录或注册，user = {}", user);
+        logger.info("loginOrRegister：用户登录或注册，user = {}", user);
 
         user.setUserId(Sequence.createId());
         user.setIsDelete(YesNoEnum.NO_CODE.getCode());
@@ -44,7 +44,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public int batchSave(List<User> userList) {
-        log.info("batchSave：批量新增用户信息，userList = {}", userList);
+        logger.info("batchSave：批量新增用户信息，userList = {}", userList);
 
         int rows = 0;
         for (User user : userList) {
@@ -61,7 +61,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User getUserInfo(User user) {
-        log.info("getUserInfo：获取一条user信息，user = {}", user);
+        logger.info("getUserInfo：获取一条user信息，user = {}", user);
 
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
         if (StringUtils.isNotBlank(user.getUserId())) {
@@ -84,7 +84,7 @@ public class UserServiceImpl implements UserService {
     public List<User> listUser() {
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
         List<User> userList = userMapper.selectList(queryWrapper);
-        log.info("listUser：获取全部user信息");
+        logger.info("listUser：获取全部user信息");
 
         return userList;
     }
@@ -96,7 +96,7 @@ public class UserServiceImpl implements UserService {
         }
         user.setUpdateTime(DateUtil.getCurrentTime());
         int row = userMapper.updateByUserId(user, user.getUserId());
-        log.info("listUser：更新一条user信息，user = {}", user);
+        logger.info("listUser：更新一条user信息，user = {}", user);
 
         return row;
     }
