@@ -18,4 +18,13 @@ public interface UserMapper extends BaseMapper<User> {
      * @return
      */
     int insertList(@Param("list") List<User> list);
+
+    /**
+     * 根据 userId 修改用户信息
+     * @param updated
+     * @param userId
+     * @return
+     */
+    int updateByUserId(@Param("updated")User updated,@Param("userId")String userId);
+
 }

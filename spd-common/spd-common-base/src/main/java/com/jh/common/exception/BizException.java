@@ -1,8 +1,10 @@
 package com.jh.common.exception;
 
+import com.jh.common.enums.RetCode;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 /**
  * @Description: 自定义异常信息
@@ -13,7 +15,6 @@ import lombok.NoArgsConstructor;
  */
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
 public class BizException extends RuntimeException {
 
     private static final long serialVersionUID = 1L;
@@ -27,5 +28,60 @@ public class BizException extends RuntimeException {
      * 返回代码
      */
     private String code = "999998";
+
+    public BizException(String msg) {
+        super(msg);
+        this.msg = msg;
+    }
+
+    public BizException(String msg, Throwable e) {
+        super(msg, e);
+        this.msg = msg;
+    }
+
+    public BizException(String code, String msg) {
+        super(msg);
+        this.msg = msg;
+        this.code = code;
+    }
+
+    public BizException(RetCode retCode, Throwable e) {
+        super(e);
+        this.msg = retCode.getDesc();
+        this.code = retCode.getCode();
+    }
+
+    public BizException(RetCode retCode, String msg) {
+        this.msg = msg;
+        this.code = retCode.getCode();
+    }
+
+    public BizException(RetCode retCode, String msg, Throwable e) {
+        super(e);
+        this.msg = msg;
+        this.code = retCode.getCode();
+    }
+
+    public BizException(String msg, String code, Throwable e) {
+        super(msg, e);
+        this.msg = msg;
+        this.code = code;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
 
 }

@@ -23,7 +23,7 @@ public class ZipkinController {
     @RequestMapping(value = "/get", method = RequestMethod.POST)
     public ResponseMsg<User> get(@RequestBody User user) {
         log.info("调用 userClient 获取一条user信息 参数：" + JSON.toJSONString(user));
-        return userClient.get(user);
+        return userClient.getUserInfo(user);
     }
 
 }
