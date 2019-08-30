@@ -5,15 +5,22 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.ComponentScans;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @EnableEurekaClient
 @SpringBootApplication
+@EnableFeignClients(basePackages = {"com.jh.api"})
 @EnableTransactionManagement
+//@ComponentScan(value = "com.jh.*")
+@ComponentScans(value = {@ComponentScan(value = "com.jh.business.demo"),@ComponentScan(value = "com.jh.api.base")})
 @MapperScan("com.jh.business.demo.mapper")
+@Configuration
 public class BusinessDemoApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(BusinessDemoApplication.class, args);
     }
@@ -25,5 +32,4 @@ public class BusinessDemoApplication {
         paginationInterceptor.setLimit(10);
         return paginationInterceptor;
     }
-
 }

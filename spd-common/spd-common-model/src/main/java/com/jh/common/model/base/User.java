@@ -4,9 +4,6 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-
-import java.util.Date;
-
 import lombok.Data;
 
 /**
@@ -79,13 +76,13 @@ public class User {
      * 创建时间
      */
     @TableField(value = "create_time")
-    private Date createTime;
+    private String createTime;
 
     /**
      * 最后修改时间
      */
     @TableField(value = "update_time")
-    private Date updateTime;
+    private String updateTime;
 
     public static final String COL_USER_ID = "user_id";
 

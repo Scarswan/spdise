@@ -15,6 +15,7 @@
         <module>spd-business-demo-controller</module>
         <module>spd-business-demo-service</module>
         <module>spd-business-demo-dao</module>
+        <module>spd-business-demo-zipkin</module>
     </modules>
 
     <artifactId>spd-business-demo</artifactId>
@@ -31,6 +32,11 @@
         <dependency>
             <groupId>com.jh</groupId>
             <artifactId>spd-common-util</artifactId>
+            <version>1.9.8</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jh</groupId>
+            <artifactId>spd-api-base</artifactId>
             <version>1.9.8</version>
         </dependency>
         <dependency>
@@ -59,6 +65,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>

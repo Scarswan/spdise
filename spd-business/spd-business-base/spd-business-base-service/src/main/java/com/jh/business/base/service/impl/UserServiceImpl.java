@@ -5,10 +5,10 @@ import com.jh.business.base.mapper.UserMapper;
 import com.jh.business.base.service.UserService;
 import com.jh.common.enums.YesNoEnum;
 import com.jh.common.model.base.User;
-import com.jh.common.util.ObjectUtils;
 import com.jh.common.util.PasswordUtil;
 import com.jh.common.util.date.DateUtil;
 import com.jh.common.util.sequence.Sequence;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -42,10 +42,16 @@ public class UserServiceImpl implements UserService {
     @Override
     public User get(User user) {
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq("user_id", user.getUserId());
-        queryWrapper.like("user_name", user.getUserName());
-        queryWrapper.like("user_phone", user.getUserPhone());
-        queryWrapper.lt("create_time", user.getCreateTime());
+        if (StringUtils.isNotBlank(user.getUserId())) {
+            queryWrapper.eq(User.COL_USER_ID, user.getUserId());
+        }
+        queryWrapper.like(User.COL_USER_NAME, user.getUserName());
+        if (StringUtils.isNotBlank(user.getUserPhone())) {
+            queryWrapper.eq(User.COL_USER_PHONE, user.getUserPhone());
+        }
+        if (StringUtils.isNotBlank(user.getCreateTime())) {
+            queryWrapper.lt(User.COL_CREATE_TIME, user.getCreateTime());
+        }
 
         User queryUser = userMapper.selectOne(queryWrapper);
 
