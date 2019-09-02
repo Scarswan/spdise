@@ -550,7 +550,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpdEurekaApplication">
+  <component name="RunManager">
     <configuration name="BusinessBaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spd-business-base-controller" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jh.business.base.BusinessBaseApplication" />
