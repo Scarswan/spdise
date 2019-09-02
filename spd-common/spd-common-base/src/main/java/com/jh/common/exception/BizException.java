@@ -1,10 +1,7 @@
 package com.jh.common.exception;
 
 import com.jh.common.enums.RetCode;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 
 /**
  * @Description: 自定义异常信息

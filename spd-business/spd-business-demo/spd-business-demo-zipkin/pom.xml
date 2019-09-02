@@ -5,13 +5,13 @@
     <parent>
         <artifactId>spd-business-demo</artifactId>
         <groupId>com.jh</groupId>
-        <version>1.9.8</version>
+        <version>1.9.9</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <packaging>jar</packaging>
 
     <artifactId>spd-business-demo-zipkin</artifactId>
-    <version>1.9.8</version>
+    <version>1.9.9</version>
     <name>spd-business-demo-zipkin</name>
     <description>zipkin 分布式链式追踪</description>
 

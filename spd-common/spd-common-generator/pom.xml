@@ -5,13 +5,13 @@
     <parent>
         <artifactId>spd-common</artifactId>
         <groupId>com.jh</groupId>
-        <version>1.9.8</version>
+        <version>1.9.9</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <packaging>jar</packaging>
 
     <artifactId>spd-common-generator</artifactId>
-    <version>1.9.8</version>
+    <version>1.9.9</version>
     <name>spd-common-generator</name>
     <description>mybatis-plus 自动生成</description>
 

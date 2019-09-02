@@ -5,7 +5,7 @@
     <parent>
         <artifactId>spd-root</artifactId>
         <groupId>com.jh</groupId>
-        <version>1.9.8</version>
+        <version>1.9.9</version>
         <relativePath>../spd-root/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -20,7 +20,7 @@
     </modules>
 
     <artifactId>spd-common</artifactId>
-    <version>1.9.8</version>
+    <version>1.9.9</version>
     <name>spd-common</name>
     <description>基础类</description>
 
