@@ -1,15 +1,6 @@
 server:
   port: 8250
 
-com:
-  zipkin:
-    compressionEnabled: true
-    connectTimeout: 6000
-    flushInterval: 1
-    readTimeout: 6000
-    serviceName: business-demo
-    url: http://127.0.0.1:9411
-
 spring:
   application:
     name: business-demo
@@ -48,13 +39,6 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 10000
-
-logging:
-  level: info
-  level.com.jh: info
-  path: /jh/server/log/demo/
-  file: demo.log
-  #config: classpath:my-logback.xml
 
 info:
   app:

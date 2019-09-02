@@ -5,16 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08520e8e-da79-4ad3-986e-7901892b3392" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallbackfactory/UserClientFallbackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallbackfactory/UserClientFallbackFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spd-api/spd-api-demo/src/main/java/com/jh/api/demo/fallbackfactory/PlusUserClientFallBackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-api/spd-api-demo/src/main/java/com/jh/api/demo/fallbackfactory/PlusUserClientFallBackFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/controller/PlusUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/controller/PlusUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/controller/ZipkinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/controller/ZipkinController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-dao/src/main/java/com/jh/business/demo/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-dao/src/main/java/com/jh/business/demo/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-dao/src/main/java/com/jh/business/demo/mapper/mybatisplus/PlusUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-dao/src/main/java/com/jh/business/demo/mapper/mybatisplus/PlusUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-service/src/main/java/com/jh/business/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-service/src/main/java/com/jh/business/demo/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-service/src/main/java/com/jh/business/demo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-service/src/main/java/com/jh/business/demo/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_51.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_apache_http_interceptors_3_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_core_3_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_http_3_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_okhttp_3_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_spancollector_http_3_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_web_servlet_filter_3_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_java_zipkin_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_sleuth_2_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_zipkin_2_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-api/spd-api-base/spd-api-base.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-api/spd-api-base/spd-api-base.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-api/spd-api-demo/spd-api-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-api/spd-api-demo/spd-api-demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-api/spd-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-api/spd-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/spd-business-base-controller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/spd-business-base-controller.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/spd-business-base-dao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/spd-business-base-dao.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/spd-business-base-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/spd-business-base-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/spd-business-demo-controller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/spd-business-demo-controller.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/resources/my-logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-dao/spd-business-demo-dao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-dao/spd-business-demo-dao.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-service/spd-business-demo-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-service/spd-business-demo-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/spd-business-demo-zipkin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/spd-business-demo-zipkin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-base/spd-common-base.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-base/spd-common-base.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-generator/spd-common-generator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-generator/spd-common-generator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-model/spd-common-model.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-model/spd-common-model.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/spd-common-rocketmq.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/spd-common-rocketmq.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-util/spd-common-util.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-util/spd-common-util.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-eureka/spd-eureka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-eureka/spd-eureka.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-web/spd-web-platform/spd-web-platform .iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-web/spd-web-platform/spd-web-platform .iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-web/spd-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-web/spd-web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-zuul/spd-zuul.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-zuul/spd-zuul.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/spd_root/target/" />
     <ignored path="$PROJECT_DIR$/spd-root/target/" />
@@ -87,38 +122,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/controller/PlusUserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="61" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/controller/ZipkinController.java">
+        <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="432">
+              <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/impl/UserServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="79" column="25" lean-forward="true" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="444">
+              <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-54">
+              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -142,6 +177,7 @@
       <find>assertEquals</find>
       <find>nvl</find>
       <find>UserClientFallBack</find>
+      <find>FILE_LOG_PATTERN</find>
     </findStrings>
     <dirStrings>
       <dir>D:\PersonalProject\spdise\spd-common\spd-common-base\src\main\java\com\jh\common\enums</dir>
@@ -158,49 +194,34 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/base/SpdUser.java" />
-        <option value="$PROJECT_DIR$/spd-api/spd-api-base/src/main/resources/mapper/SpdUserMapper.xml" />
-        <option value="$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/business/base/mapper/SpdUserMapper.java" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/GenderEnum.java" />
         <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/RetCode.java" />
         <option value="$PROJECT_DIR$/spd-common/spd-common-util/pom.xml" />
         <option value="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/ObjectUtils.java" />
         <option value="$PROJECT_DIR$/spd-root/CodeStandard.txt" />
-        <option value="$PROJECT_DIR$/spd-business/pom.xml" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/spd-api/spd-api-demo/src/main/java/com/jh/api/demo/UserClient.java" />
         <option value="$PROJECT_DIR$/spd-api/spd-api-demo/src/main/java/com/jh/api/demo/fallback/UserClientFallBack.java" />
         <option value="$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/Client.java" />
         <option value="$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallback/ClientFallBack.java" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/src/main/java/com/jh/business/demo/zipkin/BusinessDemoZipkinApplication.java" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/pom.xml" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/pom.xml" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/pom.xml" />
         <option value="$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallback/UserFeignFactory.java" />
         <option value="$PROJECT_DIR$/spd-api/pom.xml" />
         <option value="$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallback/UserClientFallBack.java" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/BusinessDemoApplication.java" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/resources/my-logback.xml" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spd-root/pom.xml" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/date/DateUtil.java" />
         <option value="$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/base/User.java" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/config/ZipkinBean.java" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/java/com/jh/business/base/BusinessBaseApplication.java" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/src/main/resources/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/src/main/java/com/jh/business/base/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/UserService.java" />
         <option value="$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallback/UserClientFallbackFactory.java" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/java/com/jh/business/base/controller/UserController.java" />
         <option value="$PROJECT_DIR$/spd-api/spd-api-demo/src/main/java/com/jh/api/demo/fallback/PlusUserClientFallBack.java" />
         <option value="$PROJECT_DIR$/spd-api/spd-api-demo/src/main/java/com/jh/api/demo/fallback/factory/PlusUserClientFallBackFactory.java" />
         <option value="$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallback/factory/UserClientFallbackFactory.java" />
         <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/exception/BizException.java" />
-        <option value="$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/UserClient.java" />
         <option value="$PROJECT_DIR$/spd-api/spd-api-demo/src/main/java/com/jh/api/demo/PlusUserClient.java" />
         <option value="$PROJECT_DIR$/spd-api/spd-api-demo/src/main/java/com/jh/api/demo/fallbackfactory/PlusUserClientFallBackFactory.java" />
-        <option value="$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallbackfactory/UserClientFallbackFactory.java" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/controller/PlusUserController.java" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-service/src/main/java/com/jh/business/demo/service/impl/UserServiceImpl.java" />
@@ -208,7 +229,22 @@
         <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/controller/UserController.java" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-dao/src/main/java/com/jh/business/demo/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-dao/src/main/java/com/jh/business/demo/mapper/mybatisplus/PlusUserMapper.java" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/resources/my-logback.xml" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/src/main/java/com/jh/business/demo/zipkin/tracer/CustomHttpSpanExtractor.java" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/src/main/resources/my-logback.xml" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/src/main/java/com/jh/business/demo/zipkin/config/TracingConfiguration.java" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/java/com/jh/business/base/BusinessBaseApplication.java" />
+        <option value="$PROJECT_DIR$/spd-business/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallbackfactory/UserClientFallbackFactory.java" />
+        <option value="$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/UserClient.java" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/java/com/jh/business/base/controller/UserController.java" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/controller/ZipkinController.java" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/pom.xml" />
       </list>
     </option>
   </component>
@@ -227,17 +263,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="spd-root" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="spd-root" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -254,6 +280,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -264,6 +291,11 @@
             <path>
               <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
               <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -277,14 +309,14 @@
               <item name="spdise" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business-base" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-base-service" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-base-controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
               <item name="spdise" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business-base" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-base-service" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-base-controller" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -292,7 +324,7 @@
               <item name="spdise" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business-base" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-base-service" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-base-controller" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -301,7 +333,7 @@
               <item name="spdise" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business-base" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-base-service" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-base-controller" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -311,91 +343,89 @@
               <item name="spdise" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business-base" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-base-service" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-base-controller" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
               <item name="spdise" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business-base" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-base-service" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-base-controller" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo-controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo-controller" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo-controller" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo-controller" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo-controller" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo-controller" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
               <item name="spdise" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-base" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-base-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-demo-controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-demo-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-demo-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-demo-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-demo-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business-demo-controller" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -407,14 +437,14 @@
               <item name="spdise" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-demo-zipkin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
               <item name="spdise" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-demo-zipkin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -422,70 +452,25 @@
               <item name="spdise" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-demo-zipkin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
               <item name="spdise" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-demo-zipkin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -501,7 +486,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -519,8 +504,8 @@
       <recent name="com.jh.business" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\PersonalProject\spdise\spd-business\spd-business-demo\spd-business-demo-controller\src\main\resources" />
       <recent name="D:\PersonalProject\spdise\spd-business\spd-business-demo\spd-business-demo-zipkin\src\main\resources" />
+      <recent name="D:\PersonalProject\spdise\spd-business\spd-business-demo\spd-business-demo-controller\src\main\resources" />
       <recent name="D:\PersonalProject\spdise\spd-business\spd-business-base\spd-business-base-dao\src\main\resources\mapper" />
       <recent name="D:\PersonalProject\spdise\spd-web" />
       <recent name="D:\PersonalProject\spdise\spd-business\spd-business-base\spd-business-base-controller\src\main\resources" />
@@ -548,7 +533,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BusinessBaseApplication">
+  <component name="RunManager" selected="Spring Boot.SpdEurekaApplication">
     <configuration name="BusinessBaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spd-business-base-controller" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jh.business.base.BusinessBaseApplication" />
@@ -621,7 +606,9 @@
       <workItem from="1567047715688" duration="21900000" />
       <workItem from="1567074140398" duration="1176000" />
       <workItem from="1567126740752" duration="6917000" />
-      <workItem from="1567133710023" duration="26577000" />
+      <workItem from="1567133710023" duration="26956000" />
+      <workItem from="1567178661978" duration="90000" />
+      <workItem from="1567386720908" duration="14274000" />
     </task>
     <task id="LOCAL-00001" summary="项目搭建">
       <created>1566811243290</created>
@@ -798,7 +785,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567164027520</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="项目搭建">
+      <created>1567165517240</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1567165517240</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -828,7 +822,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142664000" />
+    <option name="totallyTimeSpent" value="157407000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -850,7 +844,7 @@
       <window_info id="Learn" order="4" />
       <window_info id="Web" order="5" side_tool="true" />
       <window_info id="Designer" order="6" />
-      <window_info active="true" content_ui="combo" x="581" y="58" width="373" height="717" id="Project" order="7" visible="true" weight="0.22922252" />
+      <window_info content_ui="combo" x="581" y="58" width="373" height="717" id="Project" order="7" visible="true" weight="0.23592493" />
       <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.32960895" />
       <window_info anchor="bottom" id="Database Console" order="1" weight="0.32960895" />
@@ -863,11 +857,11 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32960895" />
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info anchor="bottom" id="Find" order="10" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="11" sideWeight="0.49798927" weight="0.43575418" />
-      <window_info anchor="bottom" id="Debug" order="12" weight="0.4622905" />
-      <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="15" weight="0.32960895" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.4622905" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="14" weight="0.32960895" />
+      <window_info anchor="bottom" id="Run" order="15" sideWeight="0.49798927" weight="0.4162011" />
       <window_info anchor="bottom" id="Messages" order="16" weight="0.3282123" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -890,230 +884,26 @@
     <MESSAGE value="项目搭建" />
     <option name="LAST_COMMIT_MESSAGE" value="项目搭建" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/controller/PlusUserController.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-openfeign-core/2.1.2.RELEASE/spring-cloud-openfeign-core-2.1.2.RELEASE.jar!/org/springframework/cloud/openfeign/EnableFeignClients.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-openfeign-core/2.1.2.RELEASE/spring-cloud-openfeign-core-2.1.2.RELEASE.jar!/org/springframework/cloud/openfeign/FeignClientsConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-738">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/github/openfeign/feign-hystrix/10.2.3/feign-hystrix-10.2.3.jar!/feign/hystrix/FallbackFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-base/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-openfeign-core/2.1.2.RELEASE/spring-cloud-openfeign-core-2.1.2.RELEASE.jar!/org/springframework/cloud/openfeign/FeignClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/src/main/java/com/jh/business/demo/zipkin/BusinessDemoZipkinApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-log4j2/2.1.6.RELEASE/spring-boot-starter-log4j2-2.1.6.RELEASE.jar!/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE.jar!/org/springframework/boot/logging/logback/file-appender.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE.jar!/org/springframework/boot/logging/logback/defaults.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-logging/2.1.6.RELEASE/spring-boot-starter-logging-2.1.6.RELEASE.jar!/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.59/fastjson-1.2.59.jar!/com/alibaba/fastjson/JSON.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/lang/Throwable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="738" column="8" selection-start-line="738" selection-start-column="8" selection-end-line="738" selection-end-column="8" />
-          <folding>
-            <element signature="e#26222#26223#0" expanded="true" />
-            <element signature="e#26265#26266#0" expanded="true" />
-            <element signature="e#26470#26471#0" expanded="true" />
-            <element signature="e#26528#26529#0" expanded="true" />
-            <element signature="e#30191#30192#0" expanded="true" />
-            <element signature="e#30245#30246#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-root/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/date/DateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/config/ZipkinBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/resources/my-logback.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-start-column="38" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/BusinessDemoApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="47" lean-forward="true" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/exception/InfoException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.2.0/mybatis-plus-extension-3.2.0.jar!/com/baomidou/mybatisplus/extension/service/IService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1080">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/producer/impl/MqProducerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/producer/IMqProducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/java/com/jh/business/base/BusinessBaseApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallback/UserClientFallbackFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-demo/src/main/java/com/jh/api/demo/fallback/factory/PlusUserClientFallBackFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallback/factory/UserClientFallbackFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="39" column="55" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallback/UserClientFallbackFactory.java" />
+    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-demo/src/main/java/com/jh/api/demo/fallback/factory/PlusUserClientFallBackFactory.java" />
+    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallback/factory/UserClientFallbackFactory.java" />
     <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/src/main/resources/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1128,30 +918,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallback/UserClientFallBack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-demo/src/main/java/com/jh/api/demo/fallback/PlusUserClientFallBack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/UserClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallback/UserClientFallBack.java" />
+    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-demo/src/main/java/com/jh/api/demo/fallback/PlusUserClientFallBack.java" />
     <entry file="file://$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/exception/BizException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -1179,16 +947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/java/com/jh/business/base/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spd-api/spd-api-demo/src/main/java/com/jh/api/demo/PlusUserClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -1196,34 +954,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spd-api/spd-api-demo/src/main/java/com/jh/api/demo/fallbackfactory/PlusUserClientFallBackFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallbackfactory/UserClientFallbackFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="79" column="25" lean-forward="true" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1251,16 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-dao/src/main/java/com/jh/business/demo/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -1280,21 +1004,248 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/controller/PlusUserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="61" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="61" />
+        <state relative-caret-position="216">
+          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/controller/ZipkinController.java">
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+        <state relative-caret-position="1116">
+          <caret line="77" column="60" selection-start-line="77" selection-start-column="60" selection-end-line="77" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/zipkin/brave/brave/5.6.5/brave-5.6.5.jar!/brave/propagation/TraceContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26-sources.jar!/org/slf4j/MDC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="139" column="23" selection-start-line="139" selection-start-column="23" selection-end-line="139" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.log.2019-08-30.0.gz">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LOG_PATH_IS_UNDEFINEDLOG_FILE_IS_UNDEFINED">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-zipkin.log.2019-09-02_0">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/micrometer/micrometer-core/1.1.5/micrometer-core-1.1.5.jar!/io/micrometer/core/ipc/http/HttpSender.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1548">
+          <caret line="110" column="20" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/zipkin/reporter/zipkin-sender-okhttp3/1.1.2/zipkin-sender-okhttp3-1.1.2.jar!/zipkin/reporter/okhttp3/OkHttpSender.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+          <folding>
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/zipkin/reporter/zipkin-sender-okhttp3/1.0.0/zipkin-sender-okhttp3-1.0.0.jar!/zipkin/reporter/okhttp3/OkHttpSender.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+          <folding>
+            <element signature="e#951#952#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/src/main/java/com/jh/business/demo/zipkin/config/TracingConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/resources/my-logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/src/main/resources/my-logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/src/main/java/com/jh/business/demo/zipkin/tracer/CustomHttpSpanExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/BusinessDemoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/java/com/jh/business/base/BusinessBaseApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-base/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/controller/ZipkinController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/UserClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/java/com/jh/business/base/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="78" column="26" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallbackfactory/UserClientFallbackFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/src/main/java/com/jh/business/demo/zipkin/BusinessDemoZipkinApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
         </state>
       </provider>
     </entry>
