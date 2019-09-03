@@ -5,7 +5,7 @@ import com.jh.common.model.base.Novel;
 public interface NovelService {
 
     /**
-     * 发布一本小说
+     * 上架一本小说
      *
      * @param novel
      * @return

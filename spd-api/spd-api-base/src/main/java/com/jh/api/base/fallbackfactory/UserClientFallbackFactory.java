@@ -21,7 +21,7 @@ public class UserClientFallbackFactory implements FallbackFactory<UserClient> {
         return new UserClient() {
             @Override
             public ResponseMsg<User> getUserInfo(User user) {
-                logger.error("FeignAPI-base调用 business-base:getUserInfo 出错, user = {}, 异常信息：{}", user, throwable.getMessage());
+                logger.error("FeignAPI-base调用 business-base:/get/userinfo 出错, user = {}, 异常信息：{}", user, throwable.getMessage());
                 throwable.printStackTrace();
 
                 return ResponseMsg.error(RetCode.FAIL);
@@ -29,7 +29,7 @@ public class UserClientFallbackFactory implements FallbackFactory<UserClient> {
 
             @Override
             public ResponseMsg loginOrRegister(User user) {
-                logger.error("FeignAPI-base调用 business-base:loginOrRegister 出错, user = {}, 异常信息：{}", user, throwable.getMessage());
+                logger.error("FeignAPI-base调用 business-base:/login/register 出错, user = {}, 异常信息：{}", user, throwable.getMessage());
                 throwable.printStackTrace();
 
                 return ResponseMsg.error(RetCode.FAIL);
@@ -37,7 +37,7 @@ public class UserClientFallbackFactory implements FallbackFactory<UserClient> {
 
             @Override
             public ResponseMsg<List<User>> listUser() {
-                logger.error("FeignAPI-base调用 business-base:listUser 出错,异常信息：{}", throwable.getMessage());
+                logger.error("FeignAPI-base调用 business-base:/list/user 出错,异常信息：{}", throwable.getMessage());
                 throwable.printStackTrace();
 
                 return ResponseMsg.error(RetCode.FAIL);

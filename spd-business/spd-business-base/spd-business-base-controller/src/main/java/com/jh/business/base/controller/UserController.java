@@ -24,7 +24,7 @@ public class UserController {
      * @param user
      * @return 行数
      */
-    @PostMapping("/loginOrRegister")
+    @PostMapping("/login/register")
     public ResponseMsg loginOrRegister(@RequestBody User user) {
         int row = userService.save(user);
 
@@ -37,7 +37,7 @@ public class UserController {
      * @param userList
      * @return
      */
-    @PostMapping("/batchSave")
+    @PostMapping("/batch/save")
     public ResponseMsg batchSave(@RequestBody List<User> userList) {
         int rows = userService.batchSave(userList);
 
@@ -51,7 +51,7 @@ public class UserController {
      * @param user
      * @return
      */
-    @PostMapping("/getUserInfo")
+    @PostMapping("/get/userinfo")
     public ResponseMsg<User> getUserInfo(@RequestBody User user) {
         User result = userService.getUserInfo(user);
 
@@ -63,7 +63,7 @@ public class UserController {
      *
      * @return
      */
-    @GetMapping("/listUser")
+    @GetMapping("/list/user")
     public ResponseMsg<List<User>> listUser() {
         List<User> userList = userService.listUser();
 
@@ -76,7 +76,7 @@ public class UserController {
      * @param user
      * @return
      */
-    @PostMapping("/updateUser")
+    @PostMapping("/update/user")
     public ResponseMsg updateUser(@RequestBody User user) {
         int row = userService.updateUser(user);
 

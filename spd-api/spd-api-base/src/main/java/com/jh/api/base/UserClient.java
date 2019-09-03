@@ -17,7 +17,7 @@ public interface UserClient {
      * @param user
      * @return 行数
      */
-    @PostMapping("/loginOrRegister")
+    @PostMapping("/login/register")
     ResponseMsg loginOrRegister(@RequestBody User user);
 
     /**
@@ -26,7 +26,7 @@ public interface UserClient {
      * @param user
      * @return
      */
-    @PostMapping("/getUserInfo")
+    @PostMapping("/get/userinfo")
     ResponseMsg<User> getUserInfo(@RequestBody User user);
 
     /**
@@ -34,7 +34,7 @@ public interface UserClient {
      *
      * @return
      */
-    @GetMapping("/listUser")
+    @GetMapping("/list/user")
     ResponseMsg<List<User>> listUser();
 
 }

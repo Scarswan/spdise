@@ -16,8 +16,8 @@ public class NovelController {
     @Autowired
     private NovelService novelService;
 
-    @PostMapping("/releaseNovel")
-    public ResponseMsg releaseNovel(@RequestBody Novel novel) {
+    @PostMapping("/upperShelf")
+    public ResponseMsg upperShelfNovel(@RequestBody Novel novel) {
         int row = novelService.releaseNovel(novel);
 
         return ResponseMsg.success("row: " + row);

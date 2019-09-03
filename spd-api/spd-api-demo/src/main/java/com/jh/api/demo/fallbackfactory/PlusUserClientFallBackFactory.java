@@ -21,7 +21,7 @@ public class PlusUserClientFallBackFactory implements FallbackFactory<PlusUserCl
         return new PlusUserClient() {
             @Override
             public ResponseMsg<User> selectById(Integer id) {
-                logger.error("FeignAPI-demo调用 business-demo:selectById 出错, id = {}, 异常信息：{}", id, throwable.getMessage());
+                logger.error("FeignAPI-demo调用 business-demo:/selectById 出错, id = {}, 异常信息：{}", id, throwable.getMessage());
                 throwable.printStackTrace();
 
                 return ResponseMsg.error(RetCode.FAIL);
@@ -29,7 +29,7 @@ public class PlusUserClientFallBackFactory implements FallbackFactory<PlusUserCl
 
             @Override
             public ResponseMsg<List<User>> selectList() {
-                logger.error("FeignAPI-demo调用 business-demo:selectById 出错, 异常信息：{}", throwable.getMessage());
+                logger.error("FeignAPI-demo调用 business-demo:/selectList 出错, 异常信息：{}", throwable.getMessage());
                 throwable.printStackTrace();
 
                 return ResponseMsg.error(RetCode.FAIL);
@@ -37,7 +37,7 @@ public class PlusUserClientFallBackFactory implements FallbackFactory<PlusUserCl
 
             @Override
             public ResponseMsg insert(User user) {
-                logger.error("FeignAPI-demo调用 business-demo:insert 出错, user = {}, 异常信息：{}", user, throwable.getMessage());
+                logger.error("FeignAPI-demo调用 business-demo:/insert 出错, user = {}, 异常信息：{}", user, throwable.getMessage());
                 throwable.printStackTrace();
 
                 return ResponseMsg.error(RetCode.FAIL);
