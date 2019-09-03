@@ -11,6 +11,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 @Service
 public class NovelChapterServiceImpl implements NovelChapterService {
 
@@ -29,5 +33,16 @@ public class NovelChapterServiceImpl implements NovelChapterService {
         logger.info("saveChapters: 更新章节成功, 返参: row = {}", row);
 
         return row;
+    }
+
+    @Override
+    public Map<String, String> getCatalog(String novelId) {
+        Map<String, String> resultMap = new HashMap<>();
+        logger.info("getCatalog: 获取章节目录, 入参: novelId = {}", novelId);
+        List<NovelChapter> novelChapterList = novelChapterMapper.selectByNovelId(novelId);
+        novelChapterList.forEach(novelChapter -> resultMap.put(novelChapter.getChapterId(), novelChapter.getChapterName()));
+        logger.info("getCatalog: 获取章节目录成功, 出参: resultMap = {}", resultMap);
+
+        return resultMap;
     }
 }
