@@ -7,8 +7,8 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 @Data
-@TableName(value = "spd_chapter")
-public class Chapter {
+@TableName(value = "spd_novel_chapter")
+public class NovelChapter {
     /**
      * 章节主键id
      */
@@ -16,10 +16,10 @@ public class Chapter {
     private String cId;
 
     /**
-     * 书籍主键id
+     * 小说主键id
      */
-    @TableField(value = "b_id")
-    private String bId;
+    @TableField(value = "n_id")
+    private String nId;
 
     /**
      * 章节内容
@@ -47,7 +47,7 @@ public class Chapter {
 
     public static final String COL_C_ID = "c_id";
 
-    public static final String COL_B_ID = "b_id";
+    public static final String COL_N_ID = "n_id";
 
     public static final String COL_C_CONTENT = "c_content";
 

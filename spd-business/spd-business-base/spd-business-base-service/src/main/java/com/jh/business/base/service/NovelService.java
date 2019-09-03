@@ -1,6 +1,6 @@
 package com.jh.business.base.service;
 
-public interface BookService{
+public interface NovelService {
 
 
 }

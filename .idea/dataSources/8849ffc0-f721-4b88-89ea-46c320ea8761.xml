@@ -948,72 +948,72 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="241" parent="14" name="spd_book"/>
-    <table id="242" parent="14" name="spd_chapter"/>
+    <table id="241" parent="14" name="spd_novel"/>
+    <table id="242" parent="14" name="spd_novel_chapter"/>
     <table id="243" parent="14" name="spd_user"/>
     <table id="244" parent="14" name="user"/>
-    <column id="245" parent="241" name="b_id">
+    <column id="245" parent="241" name="n_id">
       <Position>1</Position>
-      <Comment>书籍主键id</Comment>
+      <Comment>小说主键id</Comment>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="246" parent="241" name="b_name">
+    <column id="246" parent="241" name="n_name">
       <Position>2</Position>
-      <Comment>书名</Comment>
+      <Comment>小说名</Comment>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="247" parent="241" name="b_author">
+    <column id="247" parent="241" name="n_author">
       <Position>3</Position>
       <Comment>作者</Comment>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="248" parent="241" name="b_introduction">
+    <column id="248" parent="241" name="n_introduction">
       <Position>4</Position>
-      <Comment>书籍简介</Comment>
+      <Comment>小说简介</Comment>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="249" parent="241" name="b_cover">
+    <column id="249" parent="241" name="n_cover">
       <Position>5</Position>
-      <Comment>书籍封面图片</Comment>
+      <Comment>小说封面图片</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="250" parent="241" name="b_type">
+    <column id="250" parent="241" name="n_type">
       <Position>6</Position>
-      <Comment>书籍类型</Comment>
+      <Comment>小说类型</Comment>
       <DataType>varchar(30)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="251" parent="241" name="b_fee_standard">
+    <column id="251" parent="241" name="n_fee_standard">
       <Position>7</Position>
       <Comment>收费标准</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="252" parent="241" name="b_statu">
+    <column id="252" parent="241" name="n_statu">
       <Position>8</Position>
-      <Comment>书籍状态</Comment>
+      <Comment>小说状态</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="253" parent="241" name="b_chapter_number">
+    <column id="253" parent="241" name="n_chapter_number">
       <Position>9</Position>
       <Comment>章节数</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="254" parent="241" name="b_end_time">
+    <column id="254" parent="241" name="n_end_time">
       <Position>10</Position>
       <Comment>完结时间</Comment>
       <DataType>datetime|0s</DataType>
@@ -1035,7 +1035,7 @@
     </column>
     <key id="257" parent="241" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>b_id</ColNames>
+      <ColNames>n_id</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="258" parent="242" name="c_id">
@@ -1045,9 +1045,9 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="259" parent="242" name="b_id">
+    <column id="259" parent="242" name="n_id">
       <Position>2</Position>
-      <Comment>书籍主键id</Comment>
+      <Comment>小说主键id</Comment>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>

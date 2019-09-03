@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jh.business.base.mapper.NovelMapper">
+  <resultMap id="BaseResultMap" type="com.jh.common.model.base.Novel">
+    <id column="n_id" jdbcType="VARCHAR" property="nId" />
+    <result column="n_name" jdbcType="VARCHAR" property="nName" />
+    <result column="n_author" jdbcType="VARCHAR" property="nAuthor" />
+    <result column="n_introduction" jdbcType="VARCHAR" property="nIntroduction" />
+    <result column="n_cover" jdbcType="VARCHAR" property="nCover" />
+    <result column="n_type" jdbcType="VARCHAR" property="nType" />
+    <result column="n_fee_standard" jdbcType="INTEGER" property="nFeeStandard" />
+    <result column="n_statu" jdbcType="INTEGER" property="nStatu" />
+    <result column="n_chapter_number" jdbcType="INTEGER" property="nChapterNumber" />
+    <result column="n_end_time" jdbcType="TIMESTAMP" property="nEndTime" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+
+  <sql id="Base_Column_List">
+    n_id, n_name, n_author, n_introduction, n_cover, n_type, n_fee_standard, n_statu, 
+    n_chapter_number, n_end_time, create_time, update_time
+  </sql>
+</mapper>

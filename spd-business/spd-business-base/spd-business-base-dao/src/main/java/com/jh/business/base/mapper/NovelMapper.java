@@ -1,7 +1,7 @@
 package com.jh.business.base.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.jh.common.model.base.Book;
+import com.jh.common.model.base.Novel;
 
-public interface BookMapper extends BaseMapper<Book> {
+public interface NovelMapper extends BaseMapper<Novel> {
 }
