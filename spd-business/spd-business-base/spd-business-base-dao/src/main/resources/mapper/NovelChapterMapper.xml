@@ -4,6 +4,7 @@
     <resultMap id="BaseResultMap" type="com.jh.common.model.base.NovelChapter">
         <id column="chapter_id" jdbcType="VARCHAR" property="chapterId"/>
         <result column="novel_id" jdbcType="VARCHAR" property="novelId"/>
+        <result column="chapter_name" jdbcType="VARCHAR" property="chapterName" />
         <result column="chapter_content" jdbcType="LONGVARCHAR" property="chapterContent"/>
         <result column="is_delete" jdbcType="INTEGER" property="isDelete"/>
         <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
