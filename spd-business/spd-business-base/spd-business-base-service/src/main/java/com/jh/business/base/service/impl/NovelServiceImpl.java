@@ -21,7 +21,7 @@ public class NovelServiceImpl implements NovelService {
     private NovelMapper novelMapper;
 
     @Override
-    public int releaseNovel(Novel novel) {
+    public int upperShelfNovel(Novel novel) {
         novel.setNovelId(Sequence.generateBaseId());
         if (StringUtils.isBlank(novel.getNovelIntroduction())) {
             novel.setNovelIntroduction("作者偷懒了，没有上传简介哦~");

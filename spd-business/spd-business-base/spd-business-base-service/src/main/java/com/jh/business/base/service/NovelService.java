@@ -10,6 +10,6 @@ public interface NovelService {
      * @param novel
      * @return
      */
-    int releaseNovel(Novel novel);
+    int upperShelfNovel(Novel novel);
 
 }

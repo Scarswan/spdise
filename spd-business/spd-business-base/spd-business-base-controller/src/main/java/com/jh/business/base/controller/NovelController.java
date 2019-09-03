@@ -18,7 +18,7 @@ public class NovelController {
 
     @PostMapping("/upperShelf")
     public ResponseMsg upperShelfNovel(@RequestBody Novel novel) {
-        int row = novelService.releaseNovel(novel);
+        int row = novelService.upperShelfNovel(novel);
 
         return ResponseMsg.success("row: " + row);
     }
