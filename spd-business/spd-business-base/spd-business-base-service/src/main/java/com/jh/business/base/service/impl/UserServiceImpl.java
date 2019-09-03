@@ -37,7 +37,7 @@ public class UserServiceImpl implements UserService {
         user.setUpdateTime(DateUtil.getCurrentTimeString());
         logger.info("save：保存一条用户信息，入参: user = {}", user);
         int row = userMapper.insert(user);
-        logger.info("save：保存一条用户信息成功，返参: row = {}", row);
+        logger.info("save：保存一条用户信息成功，出参: row = {}", row);
 
         return row;
     }
@@ -55,7 +55,7 @@ public class UserServiceImpl implements UserService {
             user.setUpdateTime(DateUtil.getCurrentTimeString());
         }
         rows = userMapper.insertList(userList);
-        logger.info("batchSave：批量新增用户信息成功，返参: rows = {}", rows);
+        logger.info("batchSave：批量新增用户信息成功，出参: rows = {}", rows);
 
         return rows;
     }
@@ -77,7 +77,7 @@ public class UserServiceImpl implements UserService {
         }
 
         User queryUser = userMapper.selectOne(queryWrapper);
-        logger.info("getUserInfo：获取一条user信息成功，返参: queryUser = {}", queryUser);
+        logger.info("getUserInfo：获取一条user信息成功，出参: queryUser = {}", queryUser);
 
         return queryUser;
     }
@@ -86,7 +86,7 @@ public class UserServiceImpl implements UserService {
     public List<User> listUser() {
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
         List<User> userList = userMapper.selectList(queryWrapper);
-        logger.info("listUser：获取全部user信息成功，返参: userList = {}", userList);
+        logger.info("listUser：获取全部user信息成功，出参: userList = {}", userList);
 
         return userList;
     }
@@ -99,7 +99,7 @@ public class UserServiceImpl implements UserService {
         user.setUpdateTime(DateUtil.getCurrentTimeString());
         logger.info("listUser：更新一条user信息，入参: user = {}", user);
         int row = userMapper.updateByUserId(user, user.getUserId());
-        logger.info("listUser：更新一条user信息成功，返参: row = {}", row);
+        logger.info("listUser：更新一条user信息成功，出参: row = {}", row);
 
         return row;
     }

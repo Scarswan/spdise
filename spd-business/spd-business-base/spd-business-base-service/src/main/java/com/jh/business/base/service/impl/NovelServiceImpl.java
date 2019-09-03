@@ -31,7 +31,7 @@ public class NovelServiceImpl implements NovelService {
         novel.setCreateTime(DateUtil.getCurrentTimeString());
         logger.info("upperShelfNovel: 发布一本小说，入参: novel = {}", novel);
         int row = novelMapper.insert(novel);
-        logger.info("upperShelfNovel: 发布一本小说成功，返参: row = {}", row);
+        logger.info("upperShelfNovel: 发布一本小说成功，出参: row = {}", row);
         return row;
     }
 }
