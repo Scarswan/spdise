@@ -12,6 +12,7 @@ public class BusinessDemoZipkinApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(BusinessDemoZipkinApplication.class,args);
+        System.out.println("Business-Demo-Zipkin 启动成功！");
     }
 
 }

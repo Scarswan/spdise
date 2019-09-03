@@ -14,6 +14,7 @@ public class BusinessBaseApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(BusinessBaseApplication.class, args);
+        System.out.println("Business-Base 启动成功！");
     }
 
 }
