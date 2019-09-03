@@ -30,13 +30,13 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public int save(User user) {
-        logger.info("loginOrRegister：用户登录或注册，user = {}", user);
+        logger.info("save：保存一条用户信息，user = {}", user);
 
-        user.setUserId(Sequence.createId());
+        user.setUserId(Sequence.generateBaseId());
         user.setIsDelete(YesNoEnum.NO_CODE.getCode());
         user.setUserPassword(PasswordUtil.getMD5Password(user.getUserPassword()));
-        user.setCreateTime(DateUtil.getCurrentTime());
-        user.setUpdateTime(DateUtil.getCurrentTime());
+        user.setCreateTime(DateUtil.getCurrentTimeString());
+        user.setUpdateTime(DateUtil.getCurrentTimeString());
         int row = userMapper.insert(user);
 
         return row;
@@ -48,11 +48,11 @@ public class UserServiceImpl implements UserService {
 
         int rows = 0;
         for (User user : userList) {
-            user.setUserId(Sequence.createId());
+            user.setUserId(Sequence.generateBaseId());
             user.setIsDelete(YesNoEnum.NO_CODE.getCode());
             user.setUserPassword(PasswordUtil.getMD5Password(user.getUserPassword()));
-            user.setCreateTime(DateUtil.getCurrentTime());
-            user.setUpdateTime(DateUtil.getCurrentTime());
+            user.setCreateTime(DateUtil.getCurrentTimeString());
+            user.setUpdateTime(DateUtil.getCurrentTimeString());
         }
         rows = userMapper.insertList(userList);
 
@@ -94,7 +94,7 @@ public class UserServiceImpl implements UserService {
         if (StringUtils.isBlank(user.getUserId())) {
             throw new BizException("updateUser:更新用户信息,userId不能为空");
         }
-        user.setUpdateTime(DateUtil.getCurrentTime());
+        user.setUpdateTime(DateUtil.getCurrentTimeString());
         int row = userMapper.updateByUserId(user, user.getUserId());
         logger.info("listUser：更新一条user信息，user = {}", user);
 

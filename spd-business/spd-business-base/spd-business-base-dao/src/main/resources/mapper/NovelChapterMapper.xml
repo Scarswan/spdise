@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.jh.business.base.mapper.NovelChapterMapper">
-  <resultMap id="BaseResultMap" type="com.jh.common.model.base.NovelChapter">
-    <id column="c_id" jdbcType="VARCHAR" property="cId" />
-    <result column="n_id" jdbcType="VARCHAR" property="nId" />
-    <result column="c_content" jdbcType="LONGVARCHAR" property="cContent" />
-    <result column="is_delete" jdbcType="INTEGER" property="isDelete" />
-    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
-    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
-  </resultMap>
+    <resultMap id="BaseResultMap" type="com.jh.common.model.base.NovelChapter">
+        <id column="chapter_id" jdbcType="VARCHAR" property="chapterId"/>
+        <result column="novel_id" jdbcType="VARCHAR" property="novelId"/>
+        <result column="chapter_content" jdbcType="LONGVARCHAR" property="chapterContent"/>
+        <result column="is_delete" jdbcType="INTEGER" property="isDelete"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+    </resultMap>
 
-  <sql id="Base_Column_List">
-    c_id, n_id, c_content, is_delete, create_time, update_time
+    <sql id="Base_Column_List">
+    chapter_id, novel_id, chapter_content, is_delete, create_time, update_time
   </sql>
 </mapper>

@@ -23,8 +23,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         user.setUserId(Sequence.createId());
         user.setUserPassword(PasswordUtil.getMD5Password(user.getUserPassword()));
         user.setIsDelete(YesNoEnum.NO_CODE.getCode());
-        user.setCreateTime(DateUtil.getCurrentTime());
-        user.setUpdateTime(DateUtil.getCurrentTime());
+        user.setCreateTime(DateUtil.getCurrentTimeString());
+        user.setUpdateTime(DateUtil.getCurrentTimeString());
 
         userMapper.insert(user);
     }
