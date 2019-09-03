@@ -32,8 +32,8 @@ public class ResponseMsg<T> implements Serializable {
     private T data;
 
     public ResponseMsg() {
-        this.code = RetCode.SUCC.getCode();
-        this.desc = RetCode.SUCC.getDesc();
+        this.code = RetCode.SUCCESS.getCode();
+        this.desc = RetCode.SUCCESS.getDesc();
     }
 
     public ResponseMsg(RetCode retCode) {
@@ -42,8 +42,8 @@ public class ResponseMsg<T> implements Serializable {
     }
 
     public ResponseMsg(T data) {
-        this.code = RetCode.SUCC.getCode();
-        this.desc = RetCode.SUCC.getDesc();
+        this.code = RetCode.SUCCESS.getCode();
+        this.desc = RetCode.SUCCESS.getDesc();
         this.data = data;
     }
 

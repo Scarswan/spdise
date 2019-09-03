@@ -12,20 +12,20 @@ public class NovelChapter {
     /**
      * 章节主键id
      */
-    @TableId(value = "c_id", type = IdType.INPUT)
-    private String cId;
+    @TableId(value = "chapter_id", type = IdType.INPUT)
+    private String chapterId;
 
     /**
      * 小说主键id
      */
-    @TableField(value = "n_id")
-    private String nId;
+    @TableField(value = "novel_id")
+    private String novelId;
 
     /**
      * 章节内容
      */
-    @TableField(value = "c_content")
-    private String cContent;
+    @TableField(value = "chapter_content")
+    private String chapterContent;
 
     /**
      * 是否删除
@@ -45,11 +45,11 @@ public class NovelChapter {
     @TableField(value = "update_time")
     private String updateTime;
 
-    public static final String COL_C_ID = "c_id";
+    public static final String COL_CHAPTER_ID = "chapter_id";
 
-    public static final String COL_N_ID = "n_id";
+    public static final String COL_NOVEL_ID = "novel_id";
 
-    public static final String COL_C_CONTENT = "c_content";
+    public static final String COL_CHAPTER_CONTENT = "chapter_content";
 
     public static final String COL_IS_DELETE = "is_delete";
 

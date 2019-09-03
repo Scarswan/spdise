@@ -6,9 +6,6 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
-/**
- * @blame 杨赋
- */
 @Data
 @TableName(value = "spd_user", autoResultMap = true)
 public class User {
