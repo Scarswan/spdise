@@ -23,15 +23,15 @@ public class NovelServiceImpl implements NovelService {
     @Override
     public int releaseNovel(Novel novel) {
         novel.setNovelId(Sequence.generateBaseId());
-        if (StringUtils.isBlank(novel.getNovelIntroduction())){
+        if (StringUtils.isBlank(novel.getNovelIntroduction())) {
             novel.setNovelIntroduction("作者偷懒了，没有上传简介哦~");
         }
         novel.setNovelStatus(NovelStatusEnum.UPPER_SHELF.getCode());
         novel.setNovelChapterNumber(0);
         novel.setCreateTime(DateUtil.getCurrentTimeString());
-        logger.info("releaseNovel: 发布一本小说，novel = {}", novel);
+        logger.info("releaseNovel: 发布一本小说，入参: novel = {}", novel);
         int row = novelMapper.insert(novel);
-
+        logger.info("releaseNovel: 发布一本小说成功，返参: row = {}", row);
         return row;
     }
 }

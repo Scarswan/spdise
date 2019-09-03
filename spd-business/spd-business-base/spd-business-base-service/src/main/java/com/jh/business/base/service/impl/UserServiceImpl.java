@@ -30,21 +30,21 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public int save(User user) {
-        logger.info("save：保存一条用户信息，user = {}", user);
-
         user.setUserId(Sequence.generateBaseId());
         user.setIsDelete(YesNoEnum.NO_CODE.getCode());
         user.setUserPassword(PasswordUtil.getMD5Password(user.getUserPassword()));
         user.setCreateTime(DateUtil.getCurrentTimeString());
         user.setUpdateTime(DateUtil.getCurrentTimeString());
+        logger.info("save：保存一条用户信息，入参: user = {}", user);
         int row = userMapper.insert(user);
+        logger.info("save：保存一条用户信息成功，返参: row = {}", row);
 
         return row;
     }
 
     @Override
     public int batchSave(List<User> userList) {
-        logger.info("batchSave：批量新增用户信息，userList = {}", userList);
+        logger.info("batchSave：批量新增用户信息，入参: userList = {}", userList);
 
         int rows = 0;
         for (User user : userList) {
@@ -55,13 +55,14 @@ public class UserServiceImpl implements UserService {
             user.setUpdateTime(DateUtil.getCurrentTimeString());
         }
         rows = userMapper.insertList(userList);
+        logger.info("batchSave：批量新增用户信息成功，返参: rows = {}", rows);
 
         return rows;
     }
 
     @Override
     public User getUserInfo(User user) {
-        logger.info("getUserInfo：获取一条user信息，user = {}", user);
+        logger.info("getUserInfo：获取一条user信息，入参: user = {}", user);
 
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
         if (StringUtils.isNotBlank(user.getUserId())) {
@@ -76,6 +77,7 @@ public class UserServiceImpl implements UserService {
         }
 
         User queryUser = userMapper.selectOne(queryWrapper);
+        logger.info("getUserInfo：获取一条user信息成功，返参: queryUser = {}", queryUser);
 
         return queryUser;
     }
@@ -84,7 +86,7 @@ public class UserServiceImpl implements UserService {
     public List<User> listUser() {
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
         List<User> userList = userMapper.selectList(queryWrapper);
-        logger.info("listUser：获取全部user信息");
+        logger.info("listUser：获取全部user信息成功，返参: userList = {}", userList);
 
         return userList;
     }
@@ -95,8 +97,9 @@ public class UserServiceImpl implements UserService {
             throw new BizException("updateUser:更新用户信息,userId不能为空");
         }
         user.setUpdateTime(DateUtil.getCurrentTimeString());
+        logger.info("listUser：更新一条user信息，入参: user = {}", user);
         int row = userMapper.updateByUserId(user, user.getUserId());
-        logger.info("listUser：更新一条user信息，user = {}", user);
+        logger.info("listUser：更新一条user信息成功，返参: row = {}", row);
 
         return row;
     }

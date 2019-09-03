@@ -10,7 +10,7 @@ import java.util.List;
 public interface UserService {
 
     /**
-     * 保存一条用户信息，若已存在，则返回0
+     * 保存一条用户信息
      *
      * @param user
      * @return
