@@ -5,30 +5,27 @@ import lombok.Getter;
 import java.util.Objects;
 
 @Getter
-public enum RetCode {
+public enum FeeStandardEnum {
 
-    // 系统返回码
-    SUCCESS("000000", "处理成功"),
-    FAIL("999998", "失败"),
-    PARAM_ERROR("100001", "请求参数错误"),
+    NUMBER("1", "按照章节数量收费"),
+    PERCENTAGE("2", "按照章节百分比收费"),
     ;
 
     private String code;
 
     private String desc;
 
-    RetCode(String code, String desc) {
+    FeeStandardEnum(String code, String desc) {
         this.code = code;
         this.desc = desc;
     }
 
     public static String findByCode(String roleNo) {
-        for (RetCode roleEnum : values()) {
+        for (FeeStandardEnum roleEnum : values()) {
             if (Objects.equals(roleEnum.code, roleNo)) {
                 return roleEnum.getDesc();
             }
         }
         return null;
     }
-
 }
