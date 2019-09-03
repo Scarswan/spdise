@@ -16,6 +16,12 @@ public class NovelController {
     @Autowired
     private NovelService novelService;
 
+    /**
+     * 上传一本小说
+     *
+     * @param novel
+     * @return
+     */
     @PostMapping("/upperShelf")
     public ResponseMsg upperShelfNovel(@RequestBody Novel novel) {
         int row = novelService.upperShelfNovel(novel);
