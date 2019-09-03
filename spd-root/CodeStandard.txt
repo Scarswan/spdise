@@ -1,3 +1,3 @@
-1. mapper 层继承 mybatis-plus 的 BaseMapper 接口，单表 CRUD 均调用已有的方法，查询方法可使用 QueryWrapper 增加查询条件
+1. mapper 层继承 mybatis-plus 的 BaseMapper 接口，单表 CRUD 可调用已有的方法，查询方法可使用 QueryWrapper 增加查询条件
 
 2. 可使用 MybatisCodeHelperPro 插件来生成代码

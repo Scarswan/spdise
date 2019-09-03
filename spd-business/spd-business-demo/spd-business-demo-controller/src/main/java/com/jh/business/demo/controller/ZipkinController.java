@@ -1,7 +1,7 @@
 package com.jh.business.demo.controller;
 
 import com.jh.api.base.UserClient;
-import com.jh.common.model.base.ResponseMsg;
+import com.jh.common.model.response.ResponseMsg;
 import com.jh.common.model.base.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.jh.business.demo.mapper.mybatisplus.PlusUserMapper;
 import com.jh.common.enums.RetCode;
-import com.jh.common.model.base.ResponseMsg;
+import com.jh.common.model.response.ResponseMsg;
 import com.jh.common.model.demo.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

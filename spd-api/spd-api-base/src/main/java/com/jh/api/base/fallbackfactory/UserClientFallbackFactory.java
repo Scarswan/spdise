@@ -2,7 +2,7 @@ package com.jh.api.base.fallbackfactory;
 
 import com.jh.api.base.UserClient;
 import com.jh.common.enums.RetCode;
-import com.jh.common.model.base.ResponseMsg;
+import com.jh.common.model.response.ResponseMsg;
 import com.jh.common.model.base.User;
 import feign.hystrix.FallbackFactory;
 import org.slf4j.Logger;

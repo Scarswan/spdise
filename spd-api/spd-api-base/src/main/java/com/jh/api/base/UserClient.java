@@ -1,7 +1,7 @@
 package com.jh.api.base;
 
 import com.jh.api.base.fallbackfactory.UserClientFallbackFactory;
-import com.jh.common.model.base.ResponseMsg;
+import com.jh.common.model.response.ResponseMsg;
 import com.jh.common.model.base.User;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;

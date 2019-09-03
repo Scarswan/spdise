@@ -1,9 +1,7 @@
-package com.jh.common.model.base;
+package com.jh.common.model.response;
 
 import com.jh.common.enums.RetCode;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import java.io.Serializable;
