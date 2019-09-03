@@ -19,8 +19,8 @@ public class NovelController {
     /**
      * 上传一本小说
      *
-     * @param novel
-     * @return
+     * @param novel Novel 对象
+     * @return 受影响的行数
      */
     @PostMapping("/upperShelf")
     public ResponseMsg upperShelfNovel(@RequestBody Novel novel) {
