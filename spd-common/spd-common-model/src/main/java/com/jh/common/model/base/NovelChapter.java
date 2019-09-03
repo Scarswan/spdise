@@ -22,6 +22,12 @@ public class NovelChapter {
     private String novelId;
 
     /**
+     * 章节下标
+     */
+    @TableField(value = "chapter_index")
+    private Integer chapterIndex;
+
+    /**
      * 章节名
      */
     @TableField(value = "chapter_name")
@@ -54,6 +60,8 @@ public class NovelChapter {
     public static final String COL_CHAPTER_ID = "chapter_id";
 
     public static final String COL_NOVEL_ID = "novel_id";
+
+    public static final String COL_CHAPTER_INDEX = "chapter_index";
 
     public static final String COL_CHAPTER_NAME = "chapter_name";
 
