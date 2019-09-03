@@ -29,9 +29,9 @@ public class NovelServiceImpl implements NovelService {
         novel.setNovelStatus(NovelStatusEnum.UPPER_SHELF.getCode());
         novel.setNovelChapterNumber(0);
         novel.setCreateTime(DateUtil.getCurrentTimeString());
-        logger.info("releaseNovel: 发布一本小说，入参: novel = {}", novel);
+        logger.info("upperShelfNovel: 发布一本小说，入参: novel = {}", novel);
         int row = novelMapper.insert(novel);
-        logger.info("releaseNovel: 发布一本小说成功，返参: row = {}", row);
+        logger.info("upperShelfNovel: 发布一本小说成功，返参: row = {}", row);
         return row;
     }
 }
