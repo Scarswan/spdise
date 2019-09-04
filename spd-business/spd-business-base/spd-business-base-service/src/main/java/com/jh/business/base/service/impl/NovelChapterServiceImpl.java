@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.jh.business.base.mapper.NovelChapterMapper;
 import com.jh.business.base.service.NovelChapterService;
+import com.jh.common.dto.base.NovelChapterDTO;
 import com.jh.common.enums.YesNoEnum;
 import com.jh.common.model.base.NovelChapter;
 import com.jh.common.util.StringUtil;
@@ -11,6 +12,7 @@ import com.jh.common.util.date.DateUtil;
 import com.jh.common.util.sequence.Sequence;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,11 +27,13 @@ public class NovelChapterServiceImpl implements NovelChapterService {
     private NovelChapterMapper novelChapterMapper;
 
     @Override
-    public int saveChapters(NovelChapter novelChapter) {
-        novelChapter.setChapterId(Sequence.generateBaseId());
-        novelChapter.setIsDelete(YesNoEnum.NO_CODE.getCode());
-        novelChapter.setCreateTime(DateUtil.getCurrentTimeString());
-        logger.info("saveChapters: 更新章节, 入参: novelChapter = {}", novelChapter);
+    public int saveChapters(NovelChapterDTO novelChapterDTO) {
+        novelChapterDTO.setChapterId(Sequence.generateBaseId());
+        novelChapterDTO.setIsDelete(YesNoEnum.NO_CODE.getCode());
+        novelChapterDTO.setCreateTime(DateUtil.getCurrentTimeString());
+        logger.info("saveChapters: 更新章节, 入参: novelChapterDTO = {}", novelChapterDTO);
+        NovelChapter novelChapter = new NovelChapter();
+        BeanUtils.copyProperties(novelChapterDTO, novelChapter);
         int row = novelChapterMapper.insert(novelChapter);
         logger.info("saveChapters: 更新章节成功, 返参: row = {}", row);
 
@@ -64,9 +68,11 @@ public class NovelChapterServiceImpl implements NovelChapterService {
     }
 
     @Override
-    public int updateChapterInfo(NovelChapter novelChapter) {
-        novelChapter.setUpdateTime(DateUtil.getCurrentTimeString());
-        logger.info("updateChapterInfo: 修改章节内容, 入参: novelChapter = {}", novelChapter);
+    public int updateChapterInfo(NovelChapterDTO novelChapterDTO) {
+        novelChapterDTO.setUpdateTime(DateUtil.getCurrentTimeString());
+        logger.info("updateChapterInfo: 修改章节内容, 入参: novelChapterDTO = {}", novelChapterDTO);
+        NovelChapter novelChapter = new NovelChapter();
+        BeanUtils.copyProperties(novelChapterDTO, novelChapter);
         int row = novelChapterMapper.updateByChapterId(novelChapter);
         logger.info("updateChapterInfo: 修改章节内容成功, 出参: row = {}", row);
 

@@ -7,13 +7,14 @@
         <result column="chapter_index" jdbcType="INTEGER" property="chapterIndex"/>
         <result column="chapter_name" jdbcType="VARCHAR" property="chapterName"/>
         <result column="chapter_content" jdbcType="LONGVARCHAR" property="chapterContent"/>
+        <result column="is_fee" jdbcType="INTEGER" property="isFee"/>
         <result column="is_delete" jdbcType="INTEGER" property="isDelete"/>
         <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
         <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
     </resultMap>
 
     <sql id="Base_Column_List">
-    chapter_id, novel_id, chapter_index, chapter_name, chapter_content, is_delete, create_time, update_time
+    chapter_id, novel_id, chapter_index, chapter_name, chapter_content, is_fee, is_delete, create_time, update_time
   </sql>
 
     <select id="selectByNovelId" resultMap="BaseResultMap">
@@ -39,6 +40,9 @@
             </if>
             <if test="updated.chapterContent != null">
                 chapter_content = #{updated.chapterContent,jdbcType=LONGVARCHAR},
+            </if>
+            <if test="updated.isFee != null">
+                is_fee = #{updated.isFee,jdbcType=INTEGER},
             </if>
             <if test="updated.isDelete != null">
                 is_delete = #{updated.isDelete,jdbcType=INTEGER},

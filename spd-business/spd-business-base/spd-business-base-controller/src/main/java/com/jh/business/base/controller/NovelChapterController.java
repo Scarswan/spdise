@@ -1,6 +1,7 @@
 package com.jh.business.base.controller;
 
 import com.jh.business.base.service.NovelChapterService;
+import com.jh.common.dto.base.NovelChapterDTO;
 import com.jh.common.model.base.NovelChapter;
 import com.jh.common.model.response.ResponseMsg;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,12 +19,12 @@ public class NovelChapterController {
     /**
      * 更新章节
      *
-     * @param novelChapter NovelChapter 对象
-     * @return 受影响的行数
+     * @param novelChapterDTO
+     * @return
      */
     @PostMapping("/saveChapters")
-    public ResponseMsg saveChapters(@RequestBody NovelChapter novelChapter) {
-        int row = novelChapterService.saveChapters(novelChapter);
+    public ResponseMsg saveChapters(@RequestBody NovelChapterDTO novelChapterDTO) {
+        int row = novelChapterService.saveChapters(novelChapterDTO);
 
         return ResponseMsg.success("row: " + row);
     }
@@ -31,10 +32,10 @@ public class NovelChapterController {
     /**
      * 获取章节目录
      *
-     * @param novelId 小说 id
-     * @return 章节目录
+     * @param novelId
+     * @return
      */
-    @PostMapping("/get/catalog")
+    @PostMapping("/getCatalog")
     public ResponseMsg<List<NovelChapter>> getCatalog(@RequestParam("novelId") String novelId) {
         List<NovelChapter> novelChapterList = novelChapterService.getCatalog(novelId);
 
@@ -44,10 +45,10 @@ public class NovelChapterController {
     /**
      * 获取章节信息
      *
-     * @param chapterId 章节 id
-     * @return 章节信息
+     * @param chapterId
+     * @return
      */
-    @PostMapping("/get/chapterinfo")
+    @PostMapping("/getChapterInfo")
     public ResponseMsg<NovelChapter> getChapterInfo(@RequestParam("chapterId") String chapterId) {
         NovelChapter novelChapter = novelChapterService.getChapterInfo(chapterId);
 
@@ -57,12 +58,12 @@ public class NovelChapterController {
     /**
      * 修改章节内容
      *
-     * @param novelChapter NovelChapter 对象
-     * @return 受影响的行数
+     * @param novelChapterDTO
+     * @return
      */
-    @PostMapping("/update/chapterinfo")
-    public ResponseMsg updateChapter(@RequestBody NovelChapter novelChapter) {
-        int row = novelChapterService.updateChapterInfo(novelChapter);
+    @PostMapping("/update/chapterInfo")
+    public ResponseMsg updateChapter(@RequestBody NovelChapterDTO novelChapterDTO) {
+        int row = novelChapterService.updateChapterInfo(novelChapterDTO);
 
         return ResponseMsg.success("row: " + row);
     }

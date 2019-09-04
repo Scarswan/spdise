@@ -1,11 +1,9 @@
-package com.jh.common.vo.base;
+package com.jh.common.po.base;
 
-import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 @Data
-@TableName(value = "spd_novel_chapter", autoResultMap = true)
-public class NovelChapterVO {
+public class NovelChapterPO {
     /**
      * 章节主键id
      */
@@ -30,4 +28,24 @@ public class NovelChapterVO {
      * 章节内容
      */
     private String chapterContent;
+
+    /**
+     * 是否收费
+     */
+    private String isFee;
+
+    /**
+     * 是否删除
+     */
+    private Integer isDelete;
+
+    /**
+     * 创建时间
+     */
+    private String createTime;
+
+    /**
+     * 最后修改时间
+     */
+    private String updateTime;
 }

@@ -40,6 +40,12 @@ public class NovelChapter {
     private String chapterContent;
 
     /**
+     * 是否收费
+     */
+    @TableField(value = "is_fee")
+    private String isFee;
+
+    /**
      * 是否删除
      */
     @TableField(value = "is_delete")
@@ -66,6 +72,8 @@ public class NovelChapter {
     public static final String COL_CHAPTER_NAME = "chapter_name";
 
     public static final String COL_CHAPTER_CONTENT = "chapter_content";
+
+    public static final String COL_IS_FEE = "is_fee";
 
     public static final String COL_IS_DELETE = "is_delete";
 
