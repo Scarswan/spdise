@@ -10,7 +10,7 @@ import java.util.Map;
 /**
  * @blame 杨赋
  */
-public class ObjectUtils {
+public class ObjectUtil {
 
     /**
      * 将对象转换为 map
