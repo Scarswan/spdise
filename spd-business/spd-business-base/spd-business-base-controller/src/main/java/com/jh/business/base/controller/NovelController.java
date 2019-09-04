@@ -2,13 +2,14 @@ package com.jh.business.base.controller;
 
 import com.github.pagehelper.PageInfo;
 import com.jh.business.base.service.NovelService;
+import com.jh.common.dto.base.NovelDTO;
 import com.jh.common.model.base.Novel;
 import com.jh.common.model.response.ResponseMsg;
+import com.jh.common.po.base.NovelPO;
 import com.jh.common.query.base.NovelQuery;
+import com.jh.common.vo.base.NovelVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/novel")
@@ -20,12 +21,12 @@ public class NovelController {
     /**
      * 上传一本小说
      *
-     * @param novel Novel 对象
-     * @return 受影响的行数
+     * @param novelDTO
+     * @return
      */
     @PostMapping("/upperShelf")
-    public ResponseMsg upperShelfNovel(@RequestBody Novel novel) {
-        int row = novelService.upperShelfNovel(novel);
+    public ResponseMsg upperShelfNovel(@RequestBody NovelDTO novelDTO) {
+        int row = novelService.upperShelfNovel(novelDTO);
 
         return ResponseMsg.success("row: " + row);
     }
@@ -46,11 +47,12 @@ public class NovelController {
     /**
      * 批量审核
      *
+     * @param novelPO
      * @return
      */
     @PostMapping("/toexamine")
-    public ResponseMsg toExamine(@RequestParam("novelIds") List<String> novelIds) {
-        int row = novelService.toExamine(novelIds);
+    public ResponseMsg toExamine(@RequestBody NovelPO novelPO) {
+        int row = novelService.toExamine(novelPO);
 
         return ResponseMsg.success("row: " + row);
     }
@@ -62,8 +64,8 @@ public class NovelController {
      * @return
      */
     @PostMapping("/querypage")
-    public ResponseMsg<PageInfo<Novel>> queryNovel(@RequestBody NovelQuery novelQuery) {
-        PageInfo<Novel> novelList = novelService.queryNovel(novelQuery);
+    public ResponseMsg<PageInfo<NovelVO>> queryNovel(@RequestBody NovelQuery novelQuery) {
+        PageInfo<NovelVO> novelList = novelService.queryNovel(novelQuery);
 
         return ResponseMsg.success(novelList);
     }

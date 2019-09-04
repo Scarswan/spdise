@@ -1,12 +1,13 @@
 package com.jh.common.query.base;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.util.List;
 
 @Data
+@TableName(value = "spd_novel")
 public class NovelQuery {
-
     /**
      * 页码
      */
@@ -21,6 +22,16 @@ public class NovelQuery {
      * 小说 id 集合
      */
     private List<String> novelIds;
+
+    /**
+     * 小说名
+     */
+    private String novelName;
+
+    /**
+     * 作者
+     */
+    private String novelAuthor;
 
     /**
      * 小说类型

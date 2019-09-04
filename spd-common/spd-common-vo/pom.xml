@@ -15,6 +15,14 @@
     <name>spd-common-vo</name>
     <description>VO</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <finalName>spd-common-vo</finalName>
         <plugins>
