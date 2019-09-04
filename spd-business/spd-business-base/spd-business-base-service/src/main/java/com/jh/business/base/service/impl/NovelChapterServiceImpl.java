@@ -1,6 +1,7 @@
 package com.jh.business.base.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.jh.business.base.mapper.NovelChapterMapper;
 import com.jh.business.base.service.NovelChapterService;
 import com.jh.common.enums.YesNoEnum;
@@ -53,5 +54,15 @@ public class NovelChapterServiceImpl implements NovelChapterService {
         logger.info("getCatalog: 获取章节信息成功, 出参: novelChapter = {}", novelChapter);
 
         return novelChapter;
+    }
+
+    @Override
+    public int updateChapterInfo(NovelChapter novelChapter) {
+        novelChapter.setUpdateTime(DateUtil.getCurrentTimeString());
+        logger.info("updateChapterInfo: 修改章节内容, 入参: novelChapter = {}", novelChapter);
+        int row = novelChapterMapper.updateByChapterId(novelChapter);
+        logger.info("updateChapterInfo: 修改章节内容成功, 出参: row = {}", row);
+
+        return row;
     }
 }

@@ -47,11 +47,24 @@ public class NovelChapterController {
      * @param chapterId 章节 id
      * @return 章节信息
      */
-    @PostMapping("/get/chapter")
+    @PostMapping("/get/chapterinfo")
     public ResponseMsg<NovelChapter> getChapterInfo(@RequestParam("chapterId") String chapterId) {
         NovelChapter novelChapter = novelChapterService.getChapterInfo(chapterId);
 
         return ResponseMsg.success(novelChapter);
+    }
+
+    /**
+     * 修改章节内容
+     *
+     * @param novelChapter NovelChapter 对象
+     * @return 受影响的行数
+     */
+    @PostMapping("/update/chapterinfo")
+    public ResponseMsg updateChapter(@RequestBody NovelChapter novelChapter) {
+        int row = novelChapterService.updateChapterInfo(novelChapter);
+
+        return ResponseMsg.success("row: " + row);
     }
 
 }

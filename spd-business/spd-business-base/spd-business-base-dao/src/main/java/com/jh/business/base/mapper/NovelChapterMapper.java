@@ -8,4 +8,8 @@ import com.jh.common.model.base.NovelChapter;
 public interface NovelChapterMapper extends BaseMapper<NovelChapter> {
 
     List<NovelChapter> selectByNovelId(@Param("novelId")String novelId);
+
+    int updateByChapterId(@Param("updated")NovelChapter updated);
+
+
 }
