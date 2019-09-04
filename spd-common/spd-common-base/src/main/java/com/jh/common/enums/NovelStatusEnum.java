@@ -13,6 +13,8 @@ public enum NovelStatusEnum {
     VIOLATION_LOWER_SHELF(3, "该小说涉嫌违规，已下架"),
     TO_UPDATE(4, "火热更新中"),
     END(5, "该小说已完结"),
+
+    UPLOAD(99,"该小说已上传，正在等待审核"),
     ;
 
     private Integer code;

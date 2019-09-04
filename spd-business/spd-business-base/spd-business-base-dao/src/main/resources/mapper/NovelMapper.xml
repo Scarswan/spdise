@@ -21,4 +21,47 @@
     novel_id, novel_name, novel_author, novel_introduction, novel_cover, novel_type, novel_fee_standard,
     novel_fee_specific, novel_statu, novel_chapter_number, novel_end_time, create_time, update_time
   </sql>
+
+    <update id="updateByNovelId">
+        update spd_novel
+        <set>
+            <if test="updated.novelName != null">
+                novel_name = #{updated.novelName,jdbcType=VARCHAR},
+            </if>
+            <if test="updated.novelAuthor != null">
+                novel_author = #{updated.novelAuthor,jdbcType=VARCHAR},
+            </if>
+            <if test="updated.novelIntroduction != null">
+                novel_introduction = #{updated.novelIntroduction,jdbcType=VARCHAR},
+            </if>
+            <if test="updated.novelCover != null">
+                novel_cover = #{updated.novelCover,jdbcType=VARCHAR},
+            </if>
+            <if test="updated.novelType != null">
+                novel_type = #{updated.novelType,jdbcType=VARCHAR},
+            </if>
+            <if test="updated.novelFeeStandard != null">
+                novel_fee_standard = #{updated.novelFeeStandard,jdbcType=INTEGER},
+            </if>
+            <if test="updated.novelFeeSpecific != null">
+                novel_fee_specific = #{updated.novelFeeSpecific,jdbcType=INTEGER},
+            </if>
+            <if test="updated.novelStatus != null">
+                novel_status = #{updated.novelStatus,jdbcType=INTEGER},
+            </if>
+            <if test="updated.novelChapterNumber != null">
+                novel_chapter_number = #{updated.novelChapterNumber,jdbcType=INTEGER},
+            </if>
+            <if test="updated.novelEndTime != null">
+                novel_end_time = #{updated.novelEndTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updated.createTime != null">
+                create_time = #{updated.createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updated.updateTime != null">
+                update_time = #{updated.updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where n_id=#{updated.novelId,jdbcType=VARCHAR}
+    </update>
 </mapper>
