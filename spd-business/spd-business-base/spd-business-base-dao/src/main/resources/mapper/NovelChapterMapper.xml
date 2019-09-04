@@ -4,6 +4,7 @@
     <resultMap id="BaseResultMap" type="com.jh.common.model.base.NovelChapter">
         <id column="chapter_id" jdbcType="VARCHAR" property="chapterId"/>
         <result column="novel_id" jdbcType="VARCHAR" property="novelId"/>
+        <result column="chapter_index" jdbcType="INTEGER" property="chapterIndex"/>
         <result column="chapter_name" jdbcType="VARCHAR" property="chapterName"/>
         <result column="chapter_content" jdbcType="LONGVARCHAR" property="chapterContent"/>
         <result column="is_delete" jdbcType="INTEGER" property="isDelete"/>
@@ -12,13 +13,15 @@
     </resultMap>
 
     <sql id="Base_Column_List">
-    chapter_id, novel_id, chapter_content, is_delete, create_time, update_time
+    chapter_id, novel_id, chapter_index, chapter_name, chapter_content, is_delete, create_time, update_time
   </sql>
 
     <select id="selectByNovelId" resultMap="BaseResultMap">
         select
-        chapter_id, chapter_name
+        chapter_id, chapter_index, chapter_name
         from spd_novel_chapter
         where novel_id = #{novelId,jdbcType=VARCHAR}
+        and is_delete = 2
+        order by chapter_index asc
     </select>
 </mapper>

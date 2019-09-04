@@ -6,7 +6,7 @@ import com.jh.common.model.response.ResponseMsg;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Map;
+import java.util.List;
 
 @RestController
 @RequestMapping("/novel/chapter")
@@ -32,13 +32,26 @@ public class NovelChapterController {
      * 获取章节目录
      *
      * @param novelId 小说 id
-     * @return Map<String, String> 第一个参数为章节 id，第二个参数为章节名
+     * @return 章节目录
      */
-    @PostMapping("/getCatalog")
-    public ResponseMsg<Map<String, String>> getCatalog(@RequestParam("novelId") String novelId) {
-        Map<String, String> resultMap = novelChapterService.getCatalog(novelId);
+    @PostMapping("/get/catalog")
+    public ResponseMsg<List<NovelChapter>> getCatalog(@RequestParam("novelId") String novelId) {
+        List<NovelChapter> novelChapterList = novelChapterService.getCatalog(novelId);
 
-        return ResponseMsg.success(resultMap);
+        return ResponseMsg.success(novelChapterList);
+    }
+
+    /**
+     * 获取章节信息
+     *
+     * @param chapterId 章节 id
+     * @return 章节信息
+     */
+    @PostMapping("/get/chapter")
+    public ResponseMsg<NovelChapter> getChapterInfo(@RequestParam("chapterId") String chapterId) {
+        NovelChapter novelChapter = novelChapterService.getChapterInfo(chapterId);
+
+        return ResponseMsg.success(novelChapter);
     }
 
 }

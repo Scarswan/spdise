@@ -1,5 +1,6 @@
 package com.jh.business.base.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.jh.business.base.mapper.NovelChapterMapper;
 import com.jh.business.base.service.NovelChapterService;
 import com.jh.common.enums.YesNoEnum;
@@ -11,9 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Service
 public class NovelChapterServiceImpl implements NovelChapterService {
@@ -36,13 +35,23 @@ public class NovelChapterServiceImpl implements NovelChapterService {
     }
 
     @Override
-    public Map<String, String> getCatalog(String novelId) {
-        Map<String, String> resultMap = new HashMap<>();
+    public List<NovelChapter> getCatalog(String novelId) {
         logger.info("getCatalog: 获取章节目录, 入参: novelId = {}", novelId);
         List<NovelChapter> novelChapterList = novelChapterMapper.selectByNovelId(novelId);
-        novelChapterList.forEach(novelChapter -> resultMap.put(novelChapter.getChapterId(), novelChapter.getChapterName()));
-        logger.info("getCatalog: 获取章节目录成功, 出参: resultMap = {}", resultMap);
+        logger.info("getCatalog: 获取章节目录成功, 出参: resultMap = {}", novelChapterList);
 
-        return resultMap;
+        return novelChapterList;
+    }
+
+    @Override
+    public NovelChapter getChapterInfo(String chapterId) {
+        logger.info("getChapterInfo: 获取章节信息, 入参: chapterId = {}", chapterId);
+        QueryWrapper<NovelChapter> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("chapter_id", chapterId);
+        queryWrapper.eq("is_delete", 2);
+        NovelChapter novelChapter = novelChapterMapper.selectOne(queryWrapper);
+        logger.info("getCatalog: 获取章节信息成功, 出参: novelChapter = {}", novelChapter);
+
+        return novelChapter;
     }
 }

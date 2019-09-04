@@ -2,7 +2,7 @@ package com.jh.business.base.service;
 
 import com.jh.common.model.base.NovelChapter;
 
-import java.util.Map;
+import java.util.List;
 
 public interface NovelChapterService {
 
@@ -20,6 +20,14 @@ public interface NovelChapterService {
      * @param novelId
      * @return
      */
-    Map<String, String> getCatalog(String novelId);
+    List<NovelChapter> getCatalog(String novelId);
+
+    /**
+     * 获取章节信息
+     *
+     * @param chapterId
+     * @return
+     */
+    NovelChapter getChapterInfo(String chapterId);
 
 }
