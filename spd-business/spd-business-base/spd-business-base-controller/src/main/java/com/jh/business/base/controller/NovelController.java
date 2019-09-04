@@ -50,7 +50,7 @@ public class NovelController {
      * @param novelPO
      * @return
      */
-    @PostMapping("/toexamine")
+    @PostMapping("/toExamine")
     public ResponseMsg toExamine(@RequestBody NovelPO novelPO) {
         int row = novelService.toExamine(novelPO);
 
@@ -63,9 +63,9 @@ public class NovelController {
      * @param novelQuery
      * @return
      */
-    @PostMapping("/querypage")
-    public ResponseMsg<PageInfo<NovelVO>> queryNovel(@RequestBody NovelQuery novelQuery) {
-        PageInfo<NovelVO> novelList = novelService.queryNovel(novelQuery);
+    @PostMapping("/queryPage")
+    public ResponseMsg<PageInfo<NovelVO>> queryNovelPage(@RequestBody NovelQuery novelQuery) {
+        PageInfo<NovelVO> novelList = novelService.queryNovelPage(novelQuery);
 
         return ResponseMsg.success(novelList);
     }

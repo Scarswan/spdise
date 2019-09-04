@@ -80,7 +80,7 @@ public class NovelServiceImpl implements NovelService {
     }
 
     @Override
-    public PageInfo<NovelVO> queryNovel(NovelQuery novelQuery) {
+    public PageInfo<NovelVO> queryNovelPage(NovelQuery novelQuery) {
         logger.info("queryNovel: 查询小说分页，入参: novelQuery = {}", novelQuery);
         Novel novel = new Novel();
         novel.setNovelStatus(novelQuery.getNovelStatus());

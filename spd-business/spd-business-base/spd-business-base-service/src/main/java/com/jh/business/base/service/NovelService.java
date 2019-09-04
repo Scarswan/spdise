@@ -39,5 +39,5 @@ public interface NovelService {
      * @param novelQuery
      * @return
      */
-    PageInfo<NovelVO> queryNovel(NovelQuery novelQuery);
+    PageInfo<NovelVO> queryNovelPage(NovelQuery novelQuery);
 }
