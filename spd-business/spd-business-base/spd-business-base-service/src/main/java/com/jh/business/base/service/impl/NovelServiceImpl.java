@@ -1,9 +1,13 @@
 package com.jh.business.base.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.jh.business.base.mapper.NovelMapper;
 import com.jh.business.base.service.NovelService;
 import com.jh.common.enums.NovelStatusEnum;
+import com.jh.common.enums.YesNoEnum;
 import com.jh.common.model.base.Novel;
+import com.jh.common.query.base.NovelQuery;
 import com.jh.common.util.date.DateUtil;
 import com.jh.common.util.sequence.Sequence;
 import org.apache.commons.lang3.StringUtils;
@@ -30,6 +34,7 @@ public class NovelServiceImpl implements NovelService {
         }
         novel.setNovelStatus(NovelStatusEnum.UPLOAD.getCode());
         novel.setNovelChapterNumber(0);
+        novel.setIsEnd(YesNoEnum.NO_CODE.getCode());
         novel.setCreateTime(DateUtil.getCurrentTimeString());
         logger.info("upperShelfNovel: 发布一本小说，入参: novel = {}", novel);
         int row = novelMapper.insert(novel);
@@ -58,11 +63,25 @@ public class NovelServiceImpl implements NovelService {
             Novel novel = new Novel();
             novel.setNovelId(novelId);
             novel.setUpdateTime(DateUtil.getCurrentTimeString());
-            novel.setNovelStatus(NovelStatusEnum.UPPER_SHELF.getCode());
+            novel.setNovelStatus(NovelStatusEnum.AUDIT_UPPER_SHELF.getCode());
             rows += novelMapper.updateByNovelId(novel);
         }
         logger.info("upperShelfNovel: 批量审核成功，出参: rows = {}", rows);
 
         return rows;
+    }
+
+    @Override
+    public PageInfo<Novel> queryNovel(NovelQuery novelQuery) {
+        logger.info("queryNovel: 查询小说分页，入参: novelQuery = {}", novelQuery);
+        Novel novel = new Novel();
+        novel.setNovelStatus(novelQuery.getNovelStatus());
+        novel.setIsEnd(novelQuery.getIsEnd());
+        novel.setNovelType(String.valueOf(novelQuery.getNovelType()));
+        List<Novel> novelList = novelMapper.selectByAll(novel);
+        PageHelper.startPage(novelQuery.getPageNum(), novelQuery.getPageSize());
+        logger.info("queryNovel: 查询小说分页，出参: novelList = {}", novelList);
+
+        return new PageInfo<>(novelList);
     }
 }

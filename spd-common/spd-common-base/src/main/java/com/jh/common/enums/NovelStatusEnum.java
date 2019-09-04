@@ -7,14 +7,11 @@ import java.util.Objects;
 @Getter
 public enum NovelStatusEnum {
 
-    UPPER_SHELF(1, "该小说已上架"),
+    UPLOAD(1,"该小说已上传，正在等待审核"),
+    AUDIT_UPPER_SHELF(2, "审核通过，已上架"),
     // 作者主动下架或解约
-    LOWER_SHELF(2, "该小说已下架"),
-    VIOLATION_LOWER_SHELF(3, "该小说涉嫌违规，已下架"),
-    TO_UPDATE(4, "火热更新中"),
-    END(5, "该小说已完结"),
-
-    UPLOAD(99,"该小说已上传，正在等待审核"),
+    LOWER_SHELF(21, "该小说已下架"),
+    VIOLATION_LOWER_SHELF(22, "该小说涉嫌违规，已下架"),
     ;
 
     private Integer code;

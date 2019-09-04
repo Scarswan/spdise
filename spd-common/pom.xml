@@ -17,6 +17,7 @@
         <module>spd-common-base</module>
         <module>spd-common-generator</module>
         <module>spd-common-rocketmq</module>
+        <module>spd-common-vo</module>
     </modules>
 
     <artifactId>spd-common</artifactId>

@@ -1,6 +1,8 @@
 package com.jh.business.base.service;
 
+import com.github.pagehelper.PageInfo;
 import com.jh.common.model.base.Novel;
+import com.jh.common.query.base.NovelQuery;
 
 import java.util.List;
 
@@ -30,4 +32,11 @@ public interface NovelService {
      */
     int toExamine(List<String> novelIds);
 
+    /**
+     * 查询小说分页
+     *
+     * @param novelQuery
+     * @return
+     */
+    PageInfo<Novel> queryNovel(NovelQuery novelQuery);
 }

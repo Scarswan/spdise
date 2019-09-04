@@ -1,8 +1,10 @@
 package com.jh.business.base.controller;
 
+import com.github.pagehelper.PageInfo;
 import com.jh.business.base.service.NovelService;
 import com.jh.common.model.base.Novel;
 import com.jh.common.model.response.ResponseMsg;
+import com.jh.common.query.base.NovelQuery;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -47,10 +49,23 @@ public class NovelController {
      * @return
      */
     @PostMapping("/toexamine")
-    public ResponseMsg toExamine(@RequestParam("novelId") List<String> novelIds){
+    public ResponseMsg toExamine(@RequestParam("novelIds") List<String> novelIds) {
         int row = novelService.toExamine(novelIds);
 
         return ResponseMsg.success("row: " + row);
+    }
+
+    /**
+     * 查询小说分页
+     *
+     * @param novelQuery
+     * @return
+     */
+    @PostMapping("/querypage")
+    public ResponseMsg<PageInfo<Novel>> queryNovel(@RequestBody NovelQuery novelQuery) {
+        PageInfo<Novel> novelList = novelService.queryNovel(novelQuery);
+
+        return ResponseMsg.success(novelList);
     }
 
 }

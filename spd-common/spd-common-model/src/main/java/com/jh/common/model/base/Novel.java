@@ -70,6 +70,12 @@ public class Novel {
     private Integer novelChapterNumber;
 
     /**
+     * 是否完结
+     */
+    @TableField(value = "is_end")
+    private Integer isEnd;
+
+    /**
      * 完结时间
      */
     @TableField(value = "novel_end_time")
@@ -106,6 +112,8 @@ public class Novel {
     public static final String COL_NOVEL_STATUS = "novel_status";
 
     public static final String COL_NOVEL_CHAPTER_NUMBER = "novel_chapter_number";
+
+    public static final String COL_IS_END = "is_end";
 
     public static final String COL_NOVEL_END_TIME = "novel_end_time";
 

@@ -6,15 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spd-common-util" />
         <module name="spd-common-model" />
         <module name="spd-business-demo-service (1)" />
+        <module name="spd-business-demo-dao" />
         <module name="spd-eureka" />
         <module name="spd-common-rocketmq" />
-        <module name="spd-business-base-service" />
+        <module name="spd-common-util" />
         <module name="spd-business-base-dao" />
         <module name="spd-business-demo-controller (1)" />
         <module name="spd-business-demo-controller" />
+        <module name="spd-common-vo" />
         <module name="spd-api-base" />
         <module name="spd-zuul" />
         <module name="spd-business-demo-service" />
@@ -25,7 +26,7 @@
         <module name="spd-business-demo-dao (1)" />
         <module name="spd-web-platform " />
         <module name="spd-business-demo-zipkin" />
-        <module name="spd-business-demo-dao" />
+        <module name="spd-business-base-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -51,6 +52,7 @@
       <module name="spd-common-model" target="1.8" />
       <module name="spd-common-rocketmq" target="1.8" />
       <module name="spd-common-util" target="1.8" />
+      <module name="spd-common-vo" target="1.8" />
       <module name="spd-eureka" target="1.8" />
       <module name="spd-web" target="1.8" />
       <module name="spd-web-platform" target="1.8" />
@@ -83,6 +85,7 @@
       <module name="spd-common-model" options="-parameters" />
       <module name="spd-common-rocketmq" options="-parameters" />
       <module name="spd-common-util" options="-parameters" />
+      <module name="spd-common-vo" options="-parameters" />
       <module name="spd-eureka" options="-parameters" />
       <module name="spd-web" options="-parameters" />
       <module name="spd-web-platform" options="-parameters" />

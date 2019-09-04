@@ -12,6 +12,7 @@
         <result column="novel_fee_specific" jdbcType="INTEGER" property="novelFeeSpecific"/>
         <result column="novel_status" jdbcType="INTEGER" property="novelStatus"/>
         <result column="novel_chapter_number" jdbcType="INTEGER" property="novelChapterNumber"/>
+        <result column="is_end" jdbcType="INTEGER" property="isEnd"/>
         <result column="novel_end_time" jdbcType="TIMESTAMP" property="novelEndTime"/>
         <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
         <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
@@ -19,7 +20,7 @@
 
     <sql id="Base_Column_List">
     novel_id, novel_name, novel_author, novel_introduction, novel_cover, novel_type, novel_fee_standard,
-    novel_fee_specific, novel_statu, novel_chapter_number, novel_end_time, create_time, update_time
+    novel_fee_specific, novel_status, novel_chapter_number, is_end, novel_end_time, create_time, update_time
   </sql>
 
     <update id="updateByNovelId">
@@ -52,6 +53,9 @@
             <if test="updated.novelChapterNumber != null">
                 novel_chapter_number = #{updated.novelChapterNumber,jdbcType=INTEGER},
             </if>
+            <if test="updated.isEnd != null ">
+                is_end = #{updated.isEnd,jdbcType=INTEGER},
+            </if>
             <if test="updated.novelEndTime != null">
                 novel_end_time = #{updated.novelEndTime,jdbcType=TIMESTAMP},
             </if>
@@ -62,6 +66,55 @@
                 update_time = #{updated.updateTime,jdbcType=TIMESTAMP},
             </if>
         </set>
-        where n_id=#{updated.novelId,jdbcType=VARCHAR}
+        where novel_id=#{updated.novelId,jdbcType=VARCHAR}
     </update>
+
+    <select id="selectByAll" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from spd_novel
+        where 1=1
+        <if test="novel.novelId != null">
+            and n_id=#{novel.novelId,jdbcType=VARCHAR}
+        </if>
+        <if test="novel.novelName != null">
+            and novel_name=#{novel.novelName,jdbcType=VARCHAR}
+        </if>
+        <if test="novel.novelAuthor != null">
+            and novel_author=#{novel.novelAuthor,jdbcType=VARCHAR}
+        </if>
+        <if test="novel.novelIntroduction != null">
+            and novel_introduction=#{novel.novelIntroduction,jdbcType=VARCHAR}
+        </if>
+        <if test="novel.novelCover != null">
+            and novel_cover=#{novel.novelCover,jdbcType=VARCHAR}
+        </if>
+        <if test="novel.novelType != null">
+            and novel_type like CONCAT('%',#{novel.novelType,jdbcType=VARCHAR},'%')
+        </if>
+        <if test="novel.novelFeeStandard != null">
+            and novel_fee_standard=#{novel.novelFeeStandard,jdbcType=INTEGER}
+        </if>
+        <if test="novel.novelFeeSpecific != null">
+            and novel_fee_specific=#{novel.novelFeeSpecific,jdbcType=INTEGER}
+        </if>
+        <if test="novel.novelStatus != null">
+            and novel_status=#{novel.novelStatus,jdbcType=INTEGER}
+        </if>
+        <if test="novel.novelChapterNumber != null">
+            and novel_chapter_number=#{novel.novelChapterNumber,jdbcType=INTEGER}
+        </if>
+        <if test="novel.isEnd != null">
+            and is_end=#{novel.isEnd,jdbcType=INTEGER}
+        </if>
+        <if test="novel.novelEndTime != null">
+            and novel_end_time=#{novel.novelEndTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="novel.createTime != null">
+            and create_time=#{novel.createTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="novel.updateTime != null">
+            and update_time=#{novel.updateTime,jdbcType=TIMESTAMP}
+        </if>
+    </select>
 </mapper>

@@ -24,6 +24,7 @@
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-model/spd-common-model.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-model/spd-common-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/spd-common-rocketmq.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/spd-common-rocketmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-util/spd-common-util.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-util/spd-common-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-vo/spd-common-vo.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-vo/spd-common-vo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-eureka/spd-eureka.iml" filepath="$PROJECT_DIR$/spd-eureka/spd-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-web/spd-web.iml" filepath="$PROJECT_DIR$/spd-web/spd-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-web/spd-web-platform/spd-web-platform .iml" filepath="$PROJECT_DIR$/spd-web/spd-web-platform/spd-web-platform .iml" />
