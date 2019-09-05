@@ -28,6 +28,7 @@
         <option value="$PROJECT_DIR$/spd-business-demo/spd-business-demo-controller/pom.xml" />
         <option value="$PROJECT_DIR$/spd-business-demo/spd-business-demo-dao/pom.xml" />
         <option value="$PROJECT_DIR$/spd-business-demo/spd-business-demo-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-timetask/pom.xml" />
         <option value="$PROJECT_DIR$/spd-common/spd-common-websocket/pom.xml" />
       </set>
     </option>

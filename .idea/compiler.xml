@@ -12,7 +12,6 @@
         <module name="spd-common-rocketmq" />
         <module name="spd-common-util" />
         <module name="spd-business-base-dao" />
-        <module name="spd-common-timetask" />
         <module name="spd-business-demo-controller (1)" />
         <module name="spd-business-demo-controller" />
         <module name="spd-common-vo" />
