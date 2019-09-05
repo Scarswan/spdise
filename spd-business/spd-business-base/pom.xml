@@ -21,41 +21,6 @@
     <description>business 基础</description>
 
     <dependencies>
-        <dependency>
-            <groupId>com.jh</groupId>
-            <artifactId>spd-common-model</artifactId>
-            <version>1.9.9</version>
-        </dependency>
-        <dependency>
-            <groupId>com.jh</groupId>
-            <artifactId>spd-common-util</artifactId>
-            <version>1.9.9</version>
-        </dependency>
-        <dependency>
-            <groupId>com.jh</groupId>
-            <artifactId>spd-common-vo</artifactId>
-            <version>1.9.9</version>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.38</version>
-        </dependency>
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.2.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.github.pagehelper</groupId>
-            <artifactId>pagehelper-spring-boot-starter</artifactId>
-            <version>1.2.5</version>
-        </dependency>
     </dependencies>
 
     <build>

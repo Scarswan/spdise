@@ -1,13 +1,15 @@
 package com.jh.common.enums;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 import java.util.Objects;
 
 @Getter
+@AllArgsConstructor
 public enum NovelStatusEnum {
 
-    UPLOAD(1,"该小说已上传，正在等待审核"),
+    UPLOAD(1, "该小说已上传，正在等待审核"),
     AUDIT_UPPER_SHELF(2, "审核通过，已上架"),
     // 作者主动下架
     LOWER_SHELF(21, "该小说已下架"),
@@ -18,11 +20,6 @@ public enum NovelStatusEnum {
     private Integer code;
 
     private String desc;
-
-    NovelStatusEnum(Integer code, String desc) {
-        this.code = code;
-        this.desc = desc;
-    }
 
     public static String findByCode(String roleNo) {
         for (NovelStatusEnum roleEnum : values()) {

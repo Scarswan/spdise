@@ -3,7 +3,7 @@ package com.jh.common.exception;
 
 import com.jh.common.enums.RetCode;
 
-public class ParamException extends RuntimeException{
+public class ParamException extends RuntimeException {
 
     private String msg = RetCode.PARAM_ERROR.getDesc();
 

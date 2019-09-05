@@ -5,17 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08520e8e-da79-4ad3-986e-7901892b3392" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/po/base/UserPO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-api/spd-api-base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-api/spd-api-base/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/UserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallbackfactory/UserClientFallbackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallbackfactory/UserClientFallbackFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-api/spd-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-api/spd-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-base/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/java/com/jh/business/base/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/java/com/jh/business/base/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/src/main/java/com/jh/business/base/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/src/main/java/com/jh/business/base/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/RetCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/RetCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/dto/base/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/dto/base/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/query/base/UserQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/query/base/UserQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/vo/base/UserVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/vo/base/UserVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/spd-business-demo-controller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/spd-business-demo-controller.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-dao/spd-business-demo-dao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-dao/spd-business-demo-dao.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-service/spd-business-demo-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-service/spd-business-demo-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/spd-business-demo-zipkin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/spd-business-demo-zipkin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/annotation/ForceMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/annotation/ForceMaster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/FeeStandardEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/FeeStandardEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/GenderEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/GenderEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/NovelStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/NovelStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/NovelTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/NovelTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/YesNoEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/YesNoEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/exception/BizException.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/exception/BizException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/exception/InfoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/exception/InfoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/exception/ParamException.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/exception/ParamException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-generator/src/main/resources/MybatisGenerator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-generator/src/main/resources/MybatisGenerator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/response/ResponseMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/response/ResponseMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/ObjectUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/ObjectUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/PasswordUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/PasswordUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/sequence/GenerateIdsUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/sequence/GenerateIdsUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/sequence/IdProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/sequence/IdProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/sequence/Sequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/sequence/Sequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/sequence/SnowFlakeForTransfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/sequence/SnowFlakeForTransfer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/sequence/SystemClock.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/sequence/SystemClock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-eureka/src/main/java/com/jh/eureka/SpdEurekaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-eureka/src/main/java/com/jh/eureka/SpdEurekaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-eureka/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-eureka/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-root/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-root/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/spd_root/target/" />
     <ignored path="$PROJECT_DIR$/spd-root/target/" />
@@ -90,10 +117,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/java/com/jh/business/base/controller/UserController.java">
+        <entry file="file://$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/UserClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+            <state>
+              <caret column="20" selection-start-column="20" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,19 +129,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/src/main/java/com/jh/business/base/mapper/UserMapper.java">
+        <entry file="file://$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallbackfactory/UserClientFallbackFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
-              <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+              <caret line="36" column="106" selection-start-line="36" selection-start-column="106" selection-end-line="36" selection-end-column="106" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/src/main/resources/mapper/UserMapper.xml">
+        <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/java/com/jh/business/base/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1422">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="972">
+              <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spd-api/spd-api-base/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -179,34 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/FeeStandardEnum.java" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/controller/PlusUserController.java" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/NovelStatuEnum.java" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/java/com/jh/business/base/BusinessBaseApplication.java" />
-        <option value="$PROJECT_DIR$/spd-eureka/src/main/java/com/jh/eureka/SpdEurekaApplication.java" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/BusinessDemoApplication.java" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/src/main/java/com/jh/business/demo/zipkin/BusinessDemoZipkinApplication.java" />
-        <option value="$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/UserClient.java" />
-        <option value="$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallbackfactory/UserClientFallbackFactory.java" />
-        <option value="$PROJECT_DIR$/spd-api/spd-api-demo/src/main/java/com/jh/api/demo/PlusUserClient.java" />
-        <option value="$PROJECT_DIR$/spd-api/spd-api-demo/src/main/java/com/jh/api/demo/fallbackfactory/PlusUserClientFallBackFactory.java" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/StringUtil.java" />
-        <option value="$PROJECT_DIR$/spd-root/README.txt" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/base/User.java" />
-        <option value="$PROJECT_DIR$/spd-root/CodeStandard.txt" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-base/pom.xml" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/base/Novel.java" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/YesNoEnum.java" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/src/main/resources/mapper/NovelMapper.xml" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/NovelStatusEnum.java" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-vo/pom.xml" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/src/main/java/com/jh/business/base/mapper/NovelMapper.java" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/vo/base/NovelVO.java" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/query/base/NovelQuery.java" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/dto/base/NovelDTO.java" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/po/base/NovelPO.java" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/BeanUtil.java" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/NovelService.java" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/impl/NovelServiceImpl.java" />
         <option value="$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/base/NovelChapter.java" />
@@ -218,7 +229,6 @@
         <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/impl/NovelChapterServiceImpl.java" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/src/main/java/com/jh/business/base/mapper/NovelChapterMapper.java" />
         <option value="$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/po/base/NovelChapterPO.java" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/response/ResponseMsg.java" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/java/com/jh/business/base/controller/NovelChapterController.java" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/java/com/jh/business/base/controller/NovelController.java" />
         <option value="$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/dto/base/UserDTO.java" />
@@ -227,9 +237,38 @@
         <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/UserService.java" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/vo/base/UserVO.java" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/java/com/jh/business/base/controller/UserController.java" />
         <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/RetCode.java" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/src/main/java/com/jh/business/base/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/FeeStandardEnum.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/GenderEnum.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/NovelTypeEnum.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/YesNoEnum.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/exception/BizException.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/exception/InfoException.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/annotation/ForceMaster.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/response/ResponseMsg.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/NovelStatusEnum.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/exception/ParamException.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-generator/src/main/resources/MybatisGenerator.xml" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/sequence/GenerateIdsUtil.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/sequence/IdProperties.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/sequence/SystemClock.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/sequence/SnowFlakeForTransfer.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/sequence/Sequence.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/ObjectUtil.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/PasswordUtil.java" />
+        <option value="$PROJECT_DIR$/spd-eureka/src/main/java/com/jh/eureka/SpdEurekaApplication.java" />
+        <option value="$PROJECT_DIR$/spd-eureka/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spd-root/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-base/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-business/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-api/spd-api-demo/src/main/java/com/jh/api/demo/PlusUserClient.java" />
+        <option value="$PROJECT_DIR$/spd-api/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-api/spd-api-base/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/java/com/jh/business/base/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/UserClient.java" />
+        <option value="$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallbackfactory/UserClientFallbackFactory.java" />
       </list>
     </option>
   </component>
@@ -248,7 +287,32 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spd-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spd-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spd-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="com.jh:spd-common-model:1.9.9" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spd-api-base" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spd-api-base" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -271,6 +335,102 @@
             <path>
               <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
               <item name="spdise" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api-base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="fallbackfactory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-api-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
@@ -473,285 +633,6 @@
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-vo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-vo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-vo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-vo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-vo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-vo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-vo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-vo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="po" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-vo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="po" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-vo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="query" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-vo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="query" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-vo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-common-vo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -904,14 +785,7 @@
       <workItem from="1567497002114" duration="7803000" />
       <workItem from="1567560388598" duration="1744000" />
       <workItem from="1567562187949" duration="25779000" />
-      <workItem from="1567645478375" duration="3959000" />
-    </task>
-    <task id="LOCAL-00017" summary="项目搭建">
-      <created>1566970837083</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1566970837083</updated>
+      <workItem from="1567645478375" duration="5675000" />
     </task>
     <task id="LOCAL-00018" summary="项目搭建">
       <created>1566972622364</created>
@@ -1249,7 +1123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567647209280</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="update">
+      <created>1567649463358</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1567649463358</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1279,7 +1160,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222727000" />
+    <option name="totallyTimeSpent" value="224443000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1382,296 +1263,118 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spd-root/CodeStandard.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="77" selection-start-column="77" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE-sources.jar!/org/springframework/boot/context/logging/LoggingApplicationListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="89" column="13" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-root/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="47" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.10/pagehelper-5.1.10.jar!/com/github/pagehelper/PageInfo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.4/pagehelper-5.1.4-sources.jar!/com/github/pagehelper/PageInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="25" column="34" selection-start-line="24" selection-start-column="4" selection-end-line="25" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/YesNoEnum.java">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/date/DateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/FeeStandardEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.2.0/mybatis-plus-core-3.2.0.jar!/com/baomidou/mybatisplus/core/mapper/BaseMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/src/main/resources/mapper/NovelMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/src/main/java/com/jh/business/base/mapper/NovelMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.8.RELEASE/spring-beans-5.1.8.RELEASE-sources.jar!/org/springframework/beans/BeanUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="600" column="66" selection-start-line="600" selection-start-column="60" selection-end-line="600" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/base/Novel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="59" column="3" selection-start-line="59" selection-start-column="3" selection-end-line="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/vo/base/NovelVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/po/base/NovelPO.java">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/sequence/GenerateIdsUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/query/base/NovelQuery.java">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/sequence/IdProperties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="54">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.59/fastjson-1.2.59.jar!/com/alibaba/fastjson/JSON.class">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/sequence/SystemClock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-648">
-          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+        <state relative-caret-position="234">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/NovelService.java">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/sequence/SnowFlakeForTransfer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="108">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/dto/base/NovelDTO.java">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/sequence/Sequence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="472">
+          <caret line="205" column="5" selection-start-line="205" selection-start-column="5" selection-end-line="205" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/src/main/java/com/jh/business/base/mapper/NovelChapterMapper.java">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/ObjectUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="54">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/src/main/resources/mapper/NovelChapterMapper.xml">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/PasswordUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="90">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/StringUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/dto/base/NovelChapterDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        <state relative-caret-position="198">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/query/base/NovelChapterQuery.java">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/dto/base/NovelDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/vo/base/NovelChapterVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        <state relative-caret-position="204">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/dto/base/UserDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/po/base/NovelChapterPO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="144">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/base/NovelChapter.java">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/po/base/NovelPO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="198">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/NovelChapterService.java">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/po/base/UserPO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="72">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/impl/NovelChapterServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/query/base/NovelChapterQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/response/ResponseMsg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="96" column="7" lean-forward="true" selection-start-line="96" selection-start-column="7" selection-end-line="96" selection-end-column="7" />
-          <folding>
-            <element signature="e#1686#1687#0" expanded="true" />
-            <element signature="e#1729#1730#0" expanded="true" />
-            <element signature="e#1873#1874#0" expanded="true" />
-            <element signature="e#1919#1920#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/java/com/jh/business/base/controller/NovelChapterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1206">
-          <caret line="67" column="38" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/java/com/jh/business/base/controller/NovelController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="52" column="43" lean-forward="true" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="330">
+          <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1682,113 +1385,208 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/impl/NovelServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/query/base/NovelQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/NovelStatusEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/java/com/jh/business/base/BusinessBaseApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/vo/base/UserVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+        <state relative-caret-position="396">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/query/base/UserQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="54" selection-end-column="29" />
+        <state relative-caret-position="396">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/dto/base/UserDTO.java">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/vo/base/NovelChapterVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="54" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/po/base/UserPO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/base/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        <state relative-caret-position="276">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/vo/base/NovelVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        <state relative-caret-position="108">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/RetCode.java">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/vo/base/UserVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-eureka/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-root/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-558">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-root/README.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-root/server-port.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-zuul/spd-zuul.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-zuul/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-web/spd-web-platform/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-util/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-base/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/impl/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/spd-eureka/src/main/java/com/jh/eureka/SpdEurekaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-dao/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1026" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-zipkin/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-594" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-demo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-demo/src/main/java/com/jh/api/demo/PlusUserClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="81" column="44" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="44" />
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/src/main/resources/mapper/UserMapper.xml">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-model/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1422">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="216">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-base/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="62" column="7" selection-start-line="62" selection-start-column="7" selection-end-line="66" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/java/com/jh/business/base/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+        <state relative-caret-position="972">
+          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/src/main/java/com/jh/business/base/mapper/UserMapper.java">
+    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/UserClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallbackfactory/UserClientFallbackFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
-          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+          <caret line="36" column="106" selection-start-line="36" selection-start-column="106" selection-end-line="36" selection-end-column="106" />
         </state>
       </provider>
     </entry>
@@ -1842,7 +1640,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>spd-business-demo-zipkin</last-edited>
+          <last-edited>spd-api-demo</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

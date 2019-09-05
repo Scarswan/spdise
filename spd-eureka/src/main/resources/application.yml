@@ -1,8 +1,10 @@
 spring:
   application:
     name: spd-eureka
+
 server:
   port: 8227
+
 eureka:
   instance:
     hostname: localhost

@@ -62,7 +62,8 @@
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
-        <javaClientGenerator type="XMLMAPPER" targetPackage="mapper" targetProject="D:/PersonalProject/spdise/src/main/java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="mapper"
+                             targetProject="D:/PersonalProject/spdise/src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 

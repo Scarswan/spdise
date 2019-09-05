@@ -1,10 +1,12 @@
 package com.jh.common.enums;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 import java.util.Objects;
 
 @Getter
+@AllArgsConstructor
 public enum NovelTypeEnum {
 
     FANTASY("1", "玄幻"),
@@ -16,11 +18,6 @@ public enum NovelTypeEnum {
     private String code;
 
     private String desc;
-
-    NovelTypeEnum(String code, String desc) {
-        this.code = code;
-        this.desc = desc;
-    }
 
     public static String findByCode(String roleNo) {
         for (NovelTypeEnum roleEnum : values()) {

@@ -7,7 +7,6 @@ import java.util.Date;
 /**
  * @Title: GenerateIdsUtil.java
  * @Description: 生成各类业务ID
- * @date
  **/
 public class GenerateIdsUtil {
 

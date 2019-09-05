@@ -52,7 +52,7 @@ public class UserController {
      * @param userQuery
      * @return
      */
-    @GetMapping("/queryUser")
+    @PostMapping("/queryUser")
     public ResponseMsg<PageInfo<UserVO>> queryUser(@RequestBody UserQuery userQuery) {
         PageInfo<UserVO> userVOPageInfo = userService.queryUser(userQuery);
 

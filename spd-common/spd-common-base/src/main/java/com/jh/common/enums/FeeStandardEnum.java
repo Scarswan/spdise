@@ -1,10 +1,12 @@
 package com.jh.common.enums;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 import java.util.Objects;
 
 @Getter
+@AllArgsConstructor
 public enum FeeStandardEnum {
 
     NUMBER("1", "按照章节数量收费"),
@@ -14,11 +16,6 @@ public enum FeeStandardEnum {
     private String code;
 
     private String desc;
-
-    FeeStandardEnum(String code, String desc) {
-        this.code = code;
-        this.desc = desc;
-    }
 
     public static String findByCode(String roleNo) {
         for (FeeStandardEnum roleEnum : values()) {

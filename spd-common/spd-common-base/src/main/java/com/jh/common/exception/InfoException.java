@@ -4,10 +4,6 @@ import com.jh.common.enums.RetCode;
 
 /**
  * @Description: 自定义异常信息
- * @author: jiangqk
- * @email: runner8013@gmail.com
- * @date: 2018/9/14 18:17
- * @Modified By:
  */
 public class InfoException extends RuntimeException {
 

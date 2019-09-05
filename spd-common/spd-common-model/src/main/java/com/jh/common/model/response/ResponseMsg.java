@@ -8,9 +8,6 @@ import java.io.Serializable;
 
 /**
  * 请求返回数据
- *
- * @author YangFu
- * @date 2019/08/23 18:07
  */
 @Data
 @ToString

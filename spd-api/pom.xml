@@ -26,11 +26,13 @@
             <artifactId>spring-cloud-starter-feign</artifactId>
             <version>1.4.7.RELEASE</version>
         </dependency>
+
         <dependency>
             <groupId>com.jh</groupId>
             <artifactId>spd-common-model</artifactId>
             <version>1.9.9</version>
         </dependency>
+
         <dependency>
             <groupId>com.jh</groupId>
             <artifactId>spd-common-util</artifactId>
