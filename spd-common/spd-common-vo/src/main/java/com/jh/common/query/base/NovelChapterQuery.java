@@ -48,4 +48,15 @@ public class NovelChapterQuery {
      * 最后修改时间
      */
     private String updateTime;
+
+    /**
+     * 页码
+     */
+    private Integer pageNum = 1;
+
+    /**
+     * 数量
+     */
+    private Integer pageSize = 100;
+
 }

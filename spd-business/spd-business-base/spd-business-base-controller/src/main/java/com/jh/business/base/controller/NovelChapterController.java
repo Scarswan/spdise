@@ -1,13 +1,13 @@
 package com.jh.business.base.controller;
 
+import com.github.pagehelper.PageInfo;
 import com.jh.business.base.service.NovelChapterService;
 import com.jh.common.dto.base.NovelChapterDTO;
-import com.jh.common.model.base.NovelChapter;
 import com.jh.common.model.response.ResponseMsg;
+import com.jh.common.query.base.NovelChapterQuery;
+import com.jh.common.vo.base.NovelChapterVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/novel/chapter")
@@ -26,20 +26,20 @@ public class NovelChapterController {
     public ResponseMsg saveChapters(@RequestBody NovelChapterDTO novelChapterDTO) {
         int row = novelChapterService.saveChapters(novelChapterDTO);
 
-        return ResponseMsg.success("row: " + row);
+        return ResponseMsg.successRow(row);
     }
 
     /**
      * 获取章节目录
      *
-     * @param novelId
+     * @param novelChapterQuery
      * @return
      */
     @PostMapping("/getCatalog")
-    public ResponseMsg<List<NovelChapter>> getCatalog(@RequestParam("novelId") String novelId) {
-        List<NovelChapter> novelChapterList = novelChapterService.getCatalog(novelId);
+    public ResponseMsg<PageInfo<NovelChapterVO>> getCatalog(@RequestBody NovelChapterQuery novelChapterQuery) {
+        PageInfo<NovelChapterVO> novelChapterVOPageInfo = novelChapterService.getCatalog(novelChapterQuery);
 
-        return ResponseMsg.success(novelChapterList);
+        return ResponseMsg.success(novelChapterVOPageInfo);
     }
 
     /**
@@ -49,10 +49,10 @@ public class NovelChapterController {
      * @return
      */
     @PostMapping("/getChapterInfo")
-    public ResponseMsg<NovelChapter> getChapterInfo(@RequestParam("chapterId") String chapterId) {
-        NovelChapter novelChapter = novelChapterService.getChapterInfo(chapterId);
+    public ResponseMsg<NovelChapterVO> getChapterInfo(@RequestParam("chapterId") String chapterId) {
+        NovelChapterVO novelChapterVO = novelChapterService.getChapterInfo(chapterId);
 
-        return ResponseMsg.success(novelChapter);
+        return ResponseMsg.success(novelChapterVO);
     }
 
     /**
@@ -65,7 +65,7 @@ public class NovelChapterController {
     public ResponseMsg updateChapter(@RequestBody NovelChapterDTO novelChapterDTO) {
         int row = novelChapterService.updateChapterInfo(novelChapterDTO);
 
-        return ResponseMsg.success("row: " + row);
+        return ResponseMsg.successRow(row);
     }
 
 }

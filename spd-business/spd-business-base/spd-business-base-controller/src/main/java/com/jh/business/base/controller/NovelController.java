@@ -3,7 +3,6 @@ package com.jh.business.base.controller;
 import com.github.pagehelper.PageInfo;
 import com.jh.business.base.service.NovelService;
 import com.jh.common.dto.base.NovelDTO;
-import com.jh.common.model.base.Novel;
 import com.jh.common.model.response.ResponseMsg;
 import com.jh.common.po.base.NovelPO;
 import com.jh.common.query.base.NovelQuery;
@@ -28,7 +27,7 @@ public class NovelController {
     public ResponseMsg upperShelfNovel(@RequestBody NovelDTO novelDTO) {
         int row = novelService.upperShelfNovel(novelDTO);
 
-        return ResponseMsg.success("row: " + row);
+        return ResponseMsg.successRow(row);
     }
 
     /**
@@ -41,7 +40,7 @@ public class NovelController {
     public ResponseMsg lowerShelfNovel(@RequestParam("novelId") String novelId) {
         int row = novelService.lowerShelfNovel(novelId);
 
-        return ResponseMsg.success("row: " + row);
+        return ResponseMsg.successRow(row);
     }
 
     /**
@@ -52,9 +51,9 @@ public class NovelController {
      */
     @PostMapping("/toExamine")
     public ResponseMsg toExamine(@RequestBody NovelPO novelPO) {
-        int row = novelService.toExamine(novelPO);
+        int rows = novelService.toExamine(novelPO);
 
-        return ResponseMsg.success("row: " + row);
+        return ResponseMsg.successRow(rows);
     }
 
     /**

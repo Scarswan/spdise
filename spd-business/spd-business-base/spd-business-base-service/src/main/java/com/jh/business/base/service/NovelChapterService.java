@@ -1,9 +1,10 @@
 package com.jh.business.base.service;
 
+import com.github.pagehelper.PageInfo;
 import com.jh.common.dto.base.NovelChapterDTO;
 import com.jh.common.model.base.NovelChapter;
-
-import java.util.List;
+import com.jh.common.query.base.NovelChapterQuery;
+import com.jh.common.vo.base.NovelChapterVO;
 
 public interface NovelChapterService {
 
@@ -18,10 +19,10 @@ public interface NovelChapterService {
     /**
      * 获取章节目录
      *
-     * @param novelId
+     * @param novelChapterQuery
      * @return
      */
-    List<NovelChapter> getCatalog(String novelId);
+    PageInfo<NovelChapterVO> getCatalog(NovelChapterQuery novelChapterQuery);
 
     /**
      * 获取章节信息
@@ -29,7 +30,7 @@ public interface NovelChapterService {
      * @param chapterId
      * @return
      */
-    NovelChapter getChapterInfo(String chapterId);
+    NovelChapterVO getChapterInfo(String chapterId);
 
     /**
      * 修改章节内容

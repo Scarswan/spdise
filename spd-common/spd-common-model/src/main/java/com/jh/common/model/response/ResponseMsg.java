@@ -90,6 +90,16 @@ public class ResponseMsg<T> implements Serializable {
     }
 
     /**
+     * 成功返回
+     *
+     * @param rows
+     * @return 新增、修改或删除操作受影响的行数
+     */
+    public static ResponseMsg successRow(Integer rows) {
+        return new ResponseMsg(String.format("rows = {}", rows));
+    }
+
+    /**
      * 错误返回
      *
      * @return

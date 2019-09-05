@@ -1,15 +1,19 @@
 package com.jh.business.base.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.jh.business.base.mapper.NovelChapterMapper;
 import com.jh.business.base.service.NovelChapterService;
 import com.jh.common.dto.base.NovelChapterDTO;
 import com.jh.common.enums.YesNoEnum;
 import com.jh.common.model.base.NovelChapter;
+import com.jh.common.query.base.NovelChapterQuery;
 import com.jh.common.util.StringUtil;
 import com.jh.common.util.date.DateUtil;
 import com.jh.common.util.sequence.Sequence;
+import com.jh.common.vo.base.NovelChapterVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
@@ -41,30 +45,34 @@ public class NovelChapterServiceImpl implements NovelChapterService {
     }
 
     @Override
-    public List<NovelChapter> getCatalog(String novelId) {
-        logger.info("getCatalog: 获取章节目录, 入参: novelId = {}", novelId);
-        List<NovelChapter> novelChapterList = novelChapterMapper.selectByNovelId(novelId);
+    public PageInfo<NovelChapterVO> getCatalog(NovelChapterQuery novelChapterQuery) {
+        logger.info("getCatalog: 获取章节目录, 入参: novelChapterQuery = {}", novelChapterQuery);
+        List<NovelChapter> novelChapterList = novelChapterMapper.selectByNovelId(novelChapterQuery.getNovelId());
         novelChapterList.forEach(
                 novelChapter -> novelChapter.setChapterName(
                         StringUtil.toChinese(String.valueOf(novelChapter.getChapterIndex()))
                 )
         );
+        PageHelper.startPage(novelChapterQuery.getPageNum(), novelChapterQuery.getPageSize());
+        List<NovelChapterVO> novelChapterVOList = JSON.parseArray(JSON.toJSONString(novelChapterList), NovelChapterVO.class);
         logger.info("getCatalog: 获取章节目录成功, 出参: resultMap = {}", novelChapterList);
 
-        return novelChapterList;
+        return new PageInfo<>(novelChapterVOList);
     }
 
     @Override
-    public NovelChapter getChapterInfo(String chapterId) {
+    public NovelChapterVO getChapterInfo(String chapterId) {
         logger.info("getChapterInfo: 获取章节信息, 入参: chapterId = {}", chapterId);
         QueryWrapper<NovelChapter> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("chapter_id", chapterId);
         queryWrapper.eq("is_delete", 2);
         NovelChapter novelChapter = novelChapterMapper.selectOne(queryWrapper);
         novelChapter.setChapterName(StringUtil.toChinese(String.valueOf(novelChapter.getChapterIndex())));
+        NovelChapterVO novelChapterVO = new NovelChapterVO();
+        BeanUtils.copyProperties(novelChapter, novelChapterVO);
         logger.info("getCatalog: 获取章节信息成功, 出参: novelChapter = {}", novelChapter);
 
-        return novelChapter;
+        return novelChapterVO;
     }
 
     @Override
