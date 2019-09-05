@@ -49,9 +49,9 @@ public class NovelController {
      * @param novelPO
      * @return
      */
-    @PostMapping("/toExamine")
-    public ResponseMsg toExamine(@RequestBody NovelPO novelPO) {
-        int rows = novelService.toExamine(novelPO);
+    @PostMapping("/toExamineBatch")
+    public ResponseMsg toExamineBatch(@RequestBody NovelPO novelPO) {
+        int rows = novelService.toExamineBatch(novelPO);
 
         return ResponseMsg.successRow(rows);
     }

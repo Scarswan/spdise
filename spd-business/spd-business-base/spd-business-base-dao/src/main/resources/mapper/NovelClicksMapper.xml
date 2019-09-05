@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jh.business.base.mapper.NovelClicksMapper">
+    <resultMap id="BaseResultMap" type="com.jh.common.model.base.NovelClicks">
+        <id column="cl_id" jdbcType="VARCHAR" property="clId"/>
+        <result column="novel_id" jdbcType="VARCHAR" property="novelId"/>
+        <result column="cl_day" jdbcType="INTEGER" property="clDay"/>
+        <result column="cl_week" jdbcType="INTEGER" property="clWeek"/>
+        <result column="cl_month" jdbcType="INTEGER" property="clMonth"/>
+        <result column="cl_quarter" jdbcType="INTEGER" property="clQuarter"/>
+        <result column="cl_year" jdbcType="INTEGER" property="clYear"/>
+        <result column="cl_total" jdbcType="INTEGER" property="clTotal"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+    cl_id, novel_id, cl_day, cl_week, cl_month, cl_quarter, cl_year, cl_total, create_time, 
+    update_time
+  </sql>
+
+    <update id="update">
+        update spd_novel_clicks
+        <set>
+            <if test="updated.clId != null">
+                cl_id = #{updated.clId,jdbcType=VARCHAR},
+            </if>
+            <if test="updated.novelId != null">
+                novel_id = #{updated.novelId,jdbcType=VARCHAR},
+            </if>
+            <if test="updated.clDay != null">
+                cl_day = #{updated.clDay,jdbcType=INTEGER},
+            </if>
+            <if test="updated.clWeek != null">
+                cl_week = #{updated.clWeek,jdbcType=INTEGER},
+            </if>
+            <if test="updated.clMonth != null">
+                cl_month = #{updated.clMonth,jdbcType=INTEGER},
+            </if>
+            <if test="updated.clQuarter != null">
+                cl_quarter = #{updated.clQuarter,jdbcType=INTEGER},
+            </if>
+            <if test="updated.clYear != null">
+                cl_year = #{updated.clYear,jdbcType=INTEGER},
+            </if>
+            <if test="updated.clTotal != null">
+                cl_total = #{updated.clTotal,jdbcType=INTEGER},
+            </if>
+            <if test="updated.createTime != null">
+                create_time = #{updated.createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updated.updateTime != null">
+                update_time = #{updated.updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+    </update>
+
+</mapper>

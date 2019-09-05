@@ -31,7 +31,7 @@ public interface NovelService {
      * @param novelPO
      * @return
      */
-    int toExamine(NovelPO novelPO);
+    int toExamineBatch(NovelPO novelPO);
 
     /**
      * 查询小说分页

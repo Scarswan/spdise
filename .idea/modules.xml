@@ -23,6 +23,7 @@
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-generator/spd-common-generator.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-generator/spd-common-generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-model/spd-common-model.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-model/spd-common-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/spd-common-rocketmq.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/spd-common-rocketmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-timetask/spd-common-timetask.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-timetask/spd-common-timetask.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-util/spd-common-util.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-util/spd-common-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-vo/spd-common-vo.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-vo/spd-common-vo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spd-eureka/spd-eureka.iml" filepath="$PROJECT_DIR$/spd-eureka/spd-eureka.iml" />

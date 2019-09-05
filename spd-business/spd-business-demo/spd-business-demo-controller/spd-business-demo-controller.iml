@@ -191,15 +191,6 @@
     <orderEntry type="module" module-name="spd-business-demo-service" />
     <orderEntry type="module" module-name="spd-business-demo-dao" />
     <orderEntry type="module" module-name="spd-common-base" />
-    <orderEntry type="module" module-name="spd-common-vo" />
-    <orderEntry type="library" name="Maven: com.github.pagehelper:pagehelper-spring-boot-starter:1.2.5" level="project" />
-    <orderEntry type="library" name="Maven: com.github.pagehelper:pagehelper-spring-boot-autoconfigure:1.2.5" level="project" />
-    <orderEntry type="library" name="Maven: com.github.pagehelper:pagehelper:5.1.4" level="project" />
-    <orderEntry type="library" name="Maven: com.github.jsqlparser:jsqlparser:1.0" level="project" />
-    <orderEntry type="module" module-name="spd-common-model" />
-    <orderEntry type="library" name="Maven: cn.hutool:hutool-core:4.6.1" level="project" />
-    <orderEntry type="module" module-name="spd-common-util" />
-    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.8.1" level="project" />
     <orderEntry type="module" module-name="spd-api-base" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-starter-feign:1.4.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-starter-openfeign:2.1.2.RELEASE" level="project" />
@@ -210,6 +201,15 @@
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-core:10.2.3" level="project" />
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-slf4j:10.2.3" level="project" />
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-hystrix:10.2.3" level="project" />
+    <orderEntry type="module" module-name="spd-common-model" />
+    <orderEntry type="library" name="Maven: cn.hutool:hutool-core:4.6.1" level="project" />
+    <orderEntry type="module" module-name="spd-common-util" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.8.1" level="project" />
+    <orderEntry type="module" module-name="spd-common-vo" />
+    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus:3.2.0" level="project" />
+    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-extension:3.2.0" level="project" />
+    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-core:3.2.0" level="project" />
+    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-annotation:3.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:2.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.zaxxer:HikariCP:3.2.0" level="project" />
@@ -219,11 +219,11 @@
     <orderEntry type="library" name="Maven: org.mybatis:mybatis:3.5.2" level="project" />
     <orderEntry type="library" name="Maven: org.mybatis:mybatis-spring:2.0.2" level="project" />
     <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-boot-starter:3.2.0" level="project" />
-    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus:3.2.0" level="project" />
-    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-extension:3.2.0" level="project" />
-    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-core:3.2.0" level="project" />
-    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-annotation:3.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.1.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.github.pagehelper:pagehelper-spring-boot-starter:1.2.5" level="project" />
+    <orderEntry type="library" name="Maven: com.github.pagehelper:pagehelper-spring-boot-autoconfigure:1.2.5" level="project" />
+    <orderEntry type="library" name="Maven: com.github.pagehelper:pagehelper:5.1.4" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jsqlparser:jsqlparser:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-starter:2.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-context:2.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-rsa:1.0.7.RELEASE" level="project" />

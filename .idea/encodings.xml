@@ -19,8 +19,10 @@
     <file url="file://$PROJECT_DIR$/spd-common/spd-common-generator" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-common/spd-common-model" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spd-common/spd-common-timetask" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-common/spd-common-util" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-common/spd-common-vo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spd-common/spd-common-websocket" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-root" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-web" charset="UTF-8" />

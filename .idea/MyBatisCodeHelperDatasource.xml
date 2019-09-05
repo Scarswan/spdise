@@ -36,11 +36,11 @@
                   <option name="javaModelPacakge" value="com.jh.common.model" />
                   <option name="javaModelPath" value="D:\PersonalProject\spdise\spd-common\spd-common-model\src\main\java" />
                   <option name="javaServiceInterfacePackage" value="com.jh.business.base.service.impl" />
-                  <option name="javaServiceInterfacePath" value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java" />
+                  <option name="javaServiceInterfacePath" value="D:\PersonalProject\spdise\spd-business\spd-business-base\spd-business-base-service\src\main\java" />
                   <option name="javaServicePackage" value="com.jh.business.base.service" />
-                  <option name="javaServicePath" value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java" />
+                  <option name="javaServicePath" value="D:\PersonalProject\spdise\spd-business\spd-business-base\spd-business-base-service\src\main\java" />
                   <option name="xmlPackage" value="mapper" />
-                  <option name="xmlPath" value="D:\PersonalProject\spdise\spd-common\spd-common-base\src\main\resources" />
+                  <option name="xmlPath" value="D:\PersonalProject\spdise\spd-business\spd-business-base\spd-business-base-dao\src\main\resources" />
                 </UserPackageAndPathInfoByModule>
               </value>
             </entry>
@@ -68,6 +68,24 @@
                 </TableGenerateConfig>
               </value>
             </entry>
+            <entry key="spdise:spd_novel_clicks">
+              <value>
+                <TableGenerateConfig>
+                  <option name="columnOverrideList">
+                    <list>
+                      <MyColumnOverride>
+                        <option name="columnName" value="create_time" />
+                        <option name="javaType" value="java.lang.String" />
+                      </MyColumnOverride>
+                    </list>
+                  </option>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="NovelClicks" />
+                  <option name="moduleName" value="spd-common-base" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
             <entry key="spdise:spd_user">
               <value>
                 <TableGenerateConfig>
@@ -83,7 +101,7 @@
         <option name="useLomBokOnModel" value="true" />
         <option name="userMybatisPlus" value="true" />
         <option name="xmlMapperPackage" value="mapper" />
-        <option name="xmlMapperPath" value="D:\PersonalProject\spdise\spd-common\spd-common-base\src\main\resources" />
+        <option name="xmlMapperPath" value="D:\PersonalProject\spdise\spd-business\spd-business-base\spd-business-base-dao\src\main\resources" />
       </ProjectProfile>
     </option>
   </component>

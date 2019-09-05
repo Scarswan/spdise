@@ -15,7 +15,7 @@ public enum YesNoEnum {
     private Integer code;
     private String desc;
 
-    public static String findByCode(String roleNo) {
+    public static String findByCode(Integer roleNo) {
         for (YesNoEnum roleEnum : values()) {
             if (Objects.equals(roleEnum.code, roleNo)) {
                 return roleEnum.getDesc();

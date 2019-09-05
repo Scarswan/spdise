@@ -9,6 +9,7 @@ import com.jh.common.dto.base.NovelDTO;
 import com.jh.common.enums.NovelStatusEnum;
 import com.jh.common.enums.YesNoEnum;
 import com.jh.common.model.base.Novel;
+import com.jh.common.model.base.NovelClicks;
 import com.jh.common.po.base.NovelPO;
 import com.jh.common.query.base.NovelQuery;
 import com.jh.common.util.date.DateUtil;
@@ -30,6 +31,9 @@ public class NovelServiceImpl implements NovelService {
 
     @Autowired
     private NovelMapper novelMapper;
+
+    @Autowired
+    private NovelClicksService novelClicksService;
 
     @Override
     public int upperShelfNovel(NovelDTO novelDTO) {
@@ -64,8 +68,8 @@ public class NovelServiceImpl implements NovelService {
     }
 
     @Override
-    public int toExamine(NovelPO novelPO) {
-        logger.info("lowerShelfNovel: 批量审核，入参: novelDTO = {}", novelPO);
+    public int toExamineBatch(NovelPO novelPO) {
+        logger.info("toExamineBatch: 批量审核，入参: novelDTO = {}", novelPO);
         int rows = 0;
         for (String novelId : novelPO.getNovelIds()) {
             Novel novel = new Novel();
@@ -73,15 +77,19 @@ public class NovelServiceImpl implements NovelService {
             novel.setUpdateTime(DateUtil.getCurrentTimeString());
             novel.setNovelStatus(NovelStatusEnum.AUDIT_UPPER_SHELF.getCode());
             rows += novelMapper.updateByNovelId(novel);
+
+            NovelClicks novelClicks = new NovelClicks();
+            novelClicks.setNovelId(novel.getNovelId());
+            novelClicksService.save(novelClicks);
         }
-        logger.info("upperShelfNovel: 批量审核成功，出参: rows = {}", rows);
+        logger.info("toExamineBatch: 批量审核成功，出参: rows = {}", rows);
 
         return rows;
     }
 
     @Override
     public PageInfo<NovelVO> queryNovelPage(NovelQuery novelQuery) {
-        logger.info("queryNovel: 查询小说分页，入参: novelQuery = {}", novelQuery);
+        logger.info("queryNovelPage: 查询小说分页，入参: novelQuery = {}", novelQuery);
         Novel novel = new Novel();
         novel.setNovelStatus(novelQuery.getNovelStatus());
         novel.setIsEnd(novelQuery.getIsEnd());
@@ -90,7 +98,7 @@ public class NovelServiceImpl implements NovelService {
         List<Novel> novelList = novelMapper.selectByAll(novel);
         PageHelper.startPage(novelQuery.getPageNum(), novelQuery.getPageSize());
         List<NovelVO> novelVOList = JSON.parseArray(JSON.toJSONString(novelList), NovelVO.class);
-        logger.info("queryNovel: 查询小说分页，出参: novelVOList = {}", novelVOList);
+        logger.info("queryNovelPage: 查询小说分页，出参: novelVOList = {}", novelVOList);
 
         return new PageInfo<>(novelVOList);
     }
