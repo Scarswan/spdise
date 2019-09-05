@@ -14,9 +14,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @EnableEurekaClient
 @SpringBootApplication
-@EnableFeignClients(basePackages = {"com.jh.api"})
+@EnableFeignClients(basePackages = {"com.jh.api.base"})
 @EnableTransactionManagement
-@ComponentScans({@ComponentScan("com.jh.business.demo"),@ComponentScan("com.jh.api")})
+@ComponentScans({@ComponentScan("com.jh.api.base")})
 @MapperScan("com.jh.business.demo.mapper")
 @Configuration
 public class BusinessDemoApplication {
