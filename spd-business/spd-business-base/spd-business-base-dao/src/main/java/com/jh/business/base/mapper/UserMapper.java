@@ -7,13 +7,11 @@ import java.util.List;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.jh.common.model.base.User;
 
-/**
- * @blame 杨赋
- */
 public interface UserMapper extends BaseMapper<User> {
 
     /**
      * 批量增加用户信息
+     *
      * @param list
      * @return
      */
@@ -21,10 +19,18 @@ public interface UserMapper extends BaseMapper<User> {
 
     /**
      * 根据 userId 修改用户信息
+     *
      * @param updated
-     * @param userId
      * @return
      */
-    int updateByUserId(@Param("updated")User updated,@Param("userId")String userId);
+    int updateByUserId(@Param("updated") User updated);
+
+    /**
+     * 查询用户信息
+     *
+     * @param user
+     * @return
+     */
+    List<User> selectByAll(User user);
 
 }

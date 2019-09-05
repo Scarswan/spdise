@@ -98,6 +98,52 @@
                 update_time = #{updated.updateTime,jdbcType=TIMESTAMP},
             </if>
         </set>
-        where user_id=#{userId,jdbcType=VARCHAR}
+        where user_id=#{updated.userId,jdbcType=VARCHAR}
     </update>
+
+    <select id="selectByAll" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from spd_user
+        where 1=1
+        <if test="userId != null">
+            and user_id=#{userId,jdbcType=VARCHAR}
+        </if>
+        <if test="userName != null">
+            and user_name=#{userName,jdbcType=VARCHAR}
+        </if>
+        <if test="userPassword != null">
+            and user_password=#{userPassword,jdbcType=CHAR}
+        </if>
+        <if test="userHeadPortrait != null">
+            and user_head_portrait=#{userHeadPortrait,jdbcType=VARCHAR}
+        </if>
+        <if test="userRealName != null">
+            and user_real_name=#{userRealName,jdbcType=VARCHAR}
+        </if>
+        <if test="userGender != null">
+            and user_gender=#{userGender,jdbcType=INTEGER}
+        </if>
+        <if test="userAge != null">
+            and user_age=#{userAge,jdbcType=INTEGER}
+        </if>
+        <if test="userPhone != null">
+            and user_phone=#{userPhone,jdbcType=VARCHAR}
+        </if>
+        <if test="idCard != null">
+            and id_card=#{idCard,jdbcType=CHAR}
+        </if>
+        <if test="userEmail != null">
+            and user_email=#{userEmail,jdbcType=VARCHAR}
+        </if>
+        <if test="isDelete != null">
+            and is_delete=#{isDelete,jdbcType=INTEGER}
+        </if>
+        <if test="createTime != null">
+            and create_time=#{createTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="updateTime != null">
+            and update_time=#{updateTime,jdbcType=TIMESTAMP}
+        </if>
+    </select>
 </mapper>
