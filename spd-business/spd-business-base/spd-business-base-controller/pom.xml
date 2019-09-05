@@ -16,6 +16,18 @@
     <description>base-控制器层</description>
 
     <dependencies>
+        <dependency>
+            <groupId>com.jh</groupId>
+            <artifactId>spd-api-demo</artifactId>
+            <version>1.9.9</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jh</groupId>
+            <artifactId>spd-business-base-service</artifactId>
+            <version>1.9.9</version>
+        </dependency>
+
         <!-- 需要与 business-demo 测试 zipkin 时使用次依赖 -->
         <!--        <dependency>-->
         <!--            <groupId>org.springframework.cloud</groupId>-->
@@ -26,12 +38,6 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.jh</groupId>
-            <artifactId>spd-business-base-service</artifactId>
-            <version>1.9.9</version>
         </dependency>
 
         <dependency>

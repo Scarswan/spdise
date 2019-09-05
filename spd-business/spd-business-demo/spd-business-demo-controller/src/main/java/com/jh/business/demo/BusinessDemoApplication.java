@@ -16,7 +16,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @SpringBootApplication
 @EnableFeignClients(basePackages = {"com.jh.api"})
 @EnableTransactionManagement
-@ComponentScans(value = {@ComponentScan(value = "com.jh.business.demo"),@ComponentScan(value = "com.jh.api.base")})
+@ComponentScans({@ComponentScan("com.jh.business.demo"),@ComponentScan("com.jh.api")})
 @MapperScan("com.jh.business.demo.mapper")
 @Configuration
 public class BusinessDemoApplication {

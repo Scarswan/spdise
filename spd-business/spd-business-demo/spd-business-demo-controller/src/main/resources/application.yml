@@ -50,3 +50,12 @@ app:
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
+
+# 显示 sql 语句
+logging:
+  level:
+    com:
+      jh:
+        business:
+          base:
+            mapper: debug
