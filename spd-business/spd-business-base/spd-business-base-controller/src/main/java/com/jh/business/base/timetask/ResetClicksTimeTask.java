@@ -14,9 +14,9 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @EnableScheduling
-public class ClicksTimeTask {
+public class ResetClicksTimeTask {
 
-    private static Logger logger = LoggerFactory.getLogger(ClicksTimeTask.class);
+    private static Logger logger = LoggerFactory.getLogger(ResetClicksTimeTask.class);
 
     @Autowired
     private NovelClicksService novelClicksService;
@@ -24,8 +24,8 @@ public class ClicksTimeTask {
     /**
      * 每天0点，重置当天点击量
      */
-    // 0 0 0 * * ?  测试用每一分钟执行一次
-    @Scheduled(cron = "0 * * * * ? ")
+    // 0 * * * * ?  测试用每一分钟执行一次
+    @Scheduled(cron = "0 0 0 * * ? ")
     public void everyDayReset() {
         String desc = "重置当天点击量";
         logger.info("*********   定时任务: " + desc + " 执行   **************");
