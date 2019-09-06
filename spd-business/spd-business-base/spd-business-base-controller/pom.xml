@@ -28,7 +28,7 @@
             <version>1.9.9</version>
         </dependency>
 
-        <!-- 需要与 business-demo 测试 zipkin 时使用次依赖 -->
+        <!-- 需要与 business-demo-zipkin 测试 zipkin 时使用此依赖 -->
         <!--        <dependency>-->
         <!--            <groupId>org.springframework.cloud</groupId>-->
         <!--            <artifactId>spring-cloud-sleuth-zipkin</artifactId>-->
