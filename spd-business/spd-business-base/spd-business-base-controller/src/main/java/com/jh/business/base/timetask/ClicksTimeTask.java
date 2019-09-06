@@ -26,7 +26,7 @@ public class ClicksTimeTask {
      */
     // 0 0 0 * * ?  测试用每一分钟执行一次
     @Scheduled(cron = "0 * * * * ? ")
-    public void dayExecution() {
+    public void everyDayReset() {
         String desc = "重置当天点击量";
         logger.info("*********   定时任务: " + desc + " 执行   **************");
         novelClicksService.resetClicks(TimeEnum.DAY);
@@ -37,7 +37,7 @@ public class ClicksTimeTask {
      * 每周一0点，重置当周点击量
      */
     @Scheduled(cron = "0 0 0 ? * 2 ")
-    public void weekExecution() {
+    public void everyWeekReset() {
         String desc = "重置当周点击量";
         logger.info("*********   定时任务: " + desc + " 执行   **************");
         novelClicksService.resetClicks(TimeEnum.WEEK);
@@ -48,7 +48,7 @@ public class ClicksTimeTask {
      * 每月1号0点，重置当月点击量
      */
     @Scheduled(cron = "0 0 0 1 * ? ")
-    public void monthExecution() {
+    public void everyMonthReset() {
         String desc = "重置当月点击量";
         logger.info("*********   定时任务: " + desc + " 执行   **************");
         novelClicksService.resetClicks(TimeEnum.MONTH);
@@ -63,7 +63,7 @@ public class ClicksTimeTask {
      * --10-01
      */
     @Scheduled(cron = "0 0 0 1 1/3 ? ")
-    public void quarterExecution() {
+    public void everyQuarterReset() {
         String desc = "重置当季度点击量";
         logger.info("*********   定时任务: " + desc + " 执行   **************");
         novelClicksService.resetClicks(TimeEnum.QUARTER);
@@ -74,7 +74,7 @@ public class ClicksTimeTask {
      * 每年1月1号0点，重置当年点击量
      */
     @Scheduled(cron = "59 59 23 31 12 ? ")
-    public void yearExecution() {
+    public void everyYearReset() {
         String desc = "重置当年点击量";
         logger.info("*********   定时任务: " + desc + " 执行   **************");
         novelClicksService.resetClicks(TimeEnum.YEAR);
