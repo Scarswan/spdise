@@ -63,6 +63,12 @@ public class Teacher {
     private String teacherDuration;
 
     /**
+     * 围棋段位
+     */
+    @TableField(value = "teacher_rank")
+    private Integer teacherRank;
+
+    /**
      * 创建时间
      */
     @TableField(value = "create_time")
@@ -89,6 +95,8 @@ public class Teacher {
     public static final String COL_WAGES_TYPE = "wages_type";
 
     public static final String COL_TEACHER_DURATION = "teacher_duration";
+
+    public static final String COL_TEACHER_RANK = "teacher_rank";
 
     public static final String COL_CREATE_TIME = "create_time";
 

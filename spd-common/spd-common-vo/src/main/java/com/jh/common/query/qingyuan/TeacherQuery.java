@@ -1,8 +1,5 @@
 package com.jh.common.query.qingyuan;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -48,6 +45,11 @@ public class TeacherQuery {
      * 教学时长
      */
     private String teacherDuration;
+
+    /**
+     * 围棋段位
+     */
+    private Integer teacherRank;
 
     /**
      * 创建时间

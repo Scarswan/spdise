@@ -10,13 +10,14 @@
         <result column="teacher_wages" jdbcType="DECIMAL" property="teacherWages"/>
         <result column="wages_type" jdbcType="INTEGER" property="wagesType"/>
         <result column="teacher_duration" jdbcType="TIMESTAMP" property="teacherDuration"/>
+        <result column="teacher_rank" jdbcType="INTEGER" property="teacherRank"/>
         <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
         <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
     </resultMap>
 
     <sql id="Base_Column_List">
     teacher_id, teacher_name, teacher_phone, teacher_gender, teacher_age, teacher_wages, 
-    wages_type, teacher_duration, create_time, update_time
+    wages_type, teacher_duration, teacher_rank, create_time, update_time
   </sql>
 
     <select id="selectByAll" resultMap="BaseResultMap">
@@ -47,6 +48,9 @@
         </if>
         <if test="teacherDuration != null">
             and teacher_duration=#{teacherDuration,jdbcType=TIMESTAMP}
+        </if>
+        <if test="teacherRank != null ">
+            and teacher_rank=#{teacherRank,jdbcType=INTEGER}
         </if>
         <if test="createTime != null">
             and create_time=#{createTime,jdbcType=TIMESTAMP}
