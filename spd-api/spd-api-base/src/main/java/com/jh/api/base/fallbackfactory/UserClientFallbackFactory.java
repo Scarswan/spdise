@@ -22,22 +22,18 @@ public class UserClientFallbackFactory implements FallbackFactory<UserClient> {
 
     @Override
     public UserClient create(Throwable throwable) {
+        logger.error("Base服务调用失败", throwable);
         return new UserClient() {
-
             @Override
             public ResponseMsg loginOrRegister(UserDTO userDTO) {
-                logger.error("FeignAPI-base调用 business-base:/login/register 出错, userDTO = {}, 异常信息：{}", userDTO, throwable.getMessage());
-                throwable.printStackTrace();
-
-                return ResponseMsg.error(RetCode.FAIL);
+                logger.error("/user/login/register 出错, userDTO = {}", userDTO);
+                return ResponseMsg.error(RetCode.CODE_999901, throwable.getMessage());
             }
 
             @Override
             public ResponseMsg<PageInfo<UserVO>> queryUser(@RequestBody UserDTO userDTO) {
-                logger.error("FeignAPI-base调用 business-base:/list/user 出错, userDTO = {} ,异常信息：{}", userDTO, throwable.getMessage());
-                throwable.printStackTrace();
-
-                return ResponseMsg.error(RetCode.FAIL);
+                logger.error("/user/list/user 出错, userDTO = {}", userDTO);
+                return ResponseMsg.error(RetCode.CODE_999901, throwable.getMessage());
             }
         };
     }
