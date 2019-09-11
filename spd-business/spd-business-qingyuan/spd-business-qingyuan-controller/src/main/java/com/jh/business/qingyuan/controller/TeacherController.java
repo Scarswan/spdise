@@ -66,5 +66,4 @@ public class TeacherController {
 
         return ResponseMsg.success(teacherPageInfo);
     }
-
 }
