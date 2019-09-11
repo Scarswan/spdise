@@ -1,6 +1,6 @@
 package com.jh.business.base.timetask;
 
-import com.jh.business.base.service.impl.NovelClicksService;
+import com.jh.business.base.service.NovelClicksService;
 import com.jh.common.enums.TimeEnum;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

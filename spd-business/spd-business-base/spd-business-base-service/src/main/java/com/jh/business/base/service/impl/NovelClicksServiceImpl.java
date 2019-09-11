@@ -1,6 +1,7 @@
-package com.jh.business.base.service;
+package com.jh.business.base.service.impl;
 
 import com.jh.business.base.mapper.NovelClicksMapper;
+import com.jh.business.base.service.NovelClicksService;
 import com.jh.common.enums.TimeEnum;
 import com.jh.common.model.base.NovelClicks;
 import com.jh.common.util.date.DateUtil;
@@ -9,7 +10,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.jh.business.base.service.impl.NovelClicksService;
 
 @Service
 public class NovelClicksServiceImpl implements NovelClicksService {

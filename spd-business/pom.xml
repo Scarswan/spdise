@@ -13,6 +13,7 @@
     <modules>
         <module>spd-business-base</module>
         <module>spd-business-demo</module>
+        <module>spd-business-qingyuan</module>
     </modules>
 
     <artifactId>spd-business</artifactId>

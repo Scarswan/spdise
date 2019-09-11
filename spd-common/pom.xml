@@ -18,7 +18,6 @@
         <module>spd-common-generator</module>
         <module>spd-common-rocketmq</module>
         <module>spd-common-vo</module>
-        <module>spd-common-timetask</module>
     </modules>
 
     <artifactId>spd-common</artifactId>

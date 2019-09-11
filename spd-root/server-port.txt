@@ -1,4 +1,5 @@
 spd-eureka: 8227
-business-base: 8260
 business-demo: 8250
+business-base: 8260
+business-qingyuan: 8271
 business-demo-zipkin: 8211

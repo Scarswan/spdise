@@ -19,10 +19,10 @@ public class ZipkinController {
     @Autowired
     private UserClient userClient;
 
-    @RequestMapping(value = "/getUserInfo", method = RequestMethod.POST)
-    public ResponseMsg<User> getUserInfo(@RequestBody User user) {
-        logger.info("getUserInfo：调用 Api-Base 查询一条 user 信息，user = {}", user);
-        return userClient.getUserInfo(user);
-    }
+//    @RequestMapping(value = "/getUserInfo", method = RequestMethod.POST)
+//    public ResponseMsg<User> getUserInfo(@RequestBody User user) {
+//        logger.info("getUserInfo：调用 Api-Base 查询一条 user 信息，user = {}", user);
+//        return userClient(user);
+//    }
 
 }

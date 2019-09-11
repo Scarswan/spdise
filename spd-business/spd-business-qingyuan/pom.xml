@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spd-business</artifactId>
+        <groupId>com.jh</groupId>
+        <version>1.9.9</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <modules>
+        <module>spd-business-qingyuan-controller</module>
+        <module>spd-business-qingyuan-service</module>
+        <module>spd-business-qingyuan-dao</module>
+    </modules>
+
+    <artifactId>spd-business-qingyuan</artifactId>
+    <version>1.9.9</version>
+    <name>spd-business-qingyuan</name>
+    <description>清源棋社</description>
+
+    <dependencies>
+    </dependencies>
+
+    <build>
+        <finalName>spd-business-qingyuan</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+    
+</project>

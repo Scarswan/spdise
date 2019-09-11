@@ -62,6 +62,7 @@ public class NovelController {
      * @param novelQuery
      * @return
      */
+
     @PostMapping("/queryPage")
     public ResponseMsg<PageInfo<NovelVO>> queryNovelPage(@RequestBody NovelQuery novelQuery) {
         PageInfo<NovelVO> novelList = novelService.queryNovelPage(novelQuery);

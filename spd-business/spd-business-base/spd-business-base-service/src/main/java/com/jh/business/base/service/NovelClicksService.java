@@ -1,4 +1,4 @@
-package com.jh.business.base.service.impl;
+package com.jh.business.base.service;
 
 import com.jh.common.enums.TimeEnum;
 import com.jh.common.model.base.NovelClicks;
