@@ -5,9 +5,9 @@
       <ProjectProfile>
         <option name="generateService" value="true" />
         <option name="generateServiceInterface" value="true" />
-        <option name="javaMapperPackage" value="com.jh.business.base.mapper" />
-        <option name="javaMapperPath" value="D:\PersonalProject\spdise\spd-business\spd-business-base\spd-business-base-dao\src\main\java" />
-        <option name="javaModelPackage" value="com.jh.common.model" />
+        <option name="javaMapperPackage" value="com.jh.business.qingyuan.mapper" />
+        <option name="javaMapperPath" value="D:\PersonalProject\spdise\spd-business\spd-business-qingyuan\spd-business-qingyuan-dao\src\main\java" />
+        <option name="javaModelPackage" value="com.jh.common.model.qingyuan" />
         <option name="javaModelPath" value="D:\PersonalProject\spdise\spd-common\spd-common-model\src\main\java" />
         <option name="lastDatabaseCrudChooseModuleName" value="spd-common-base" />
         <option name="moduleNameToPackageAndPathMap">
@@ -31,16 +31,16 @@
             <entry key="spd-common-base">
               <value>
                 <UserPackageAndPathInfoByModule>
-                  <option name="javaMapperPackage" value="com.jh.business.base.mapper" />
-                  <option name="javaMapperPath" value="D:\PersonalProject\spdise\spd-business\spd-business-base\spd-business-base-dao\src\main\java" />
-                  <option name="javaModelPacakge" value="com.jh.common.model" />
+                  <option name="javaMapperPackage" value="com.jh.business.qingyuan.mapper" />
+                  <option name="javaMapperPath" value="D:\PersonalProject\spdise\spd-business\spd-business-qingyuan\spd-business-qingyuan-dao\src\main\java" />
+                  <option name="javaModelPacakge" value="com.jh.common.model.qingyuan" />
                   <option name="javaModelPath" value="D:\PersonalProject\spdise\spd-common\spd-common-model\src\main\java" />
-                  <option name="javaServiceInterfacePackage" value="com.jh.business.base.service.impl" />
-                  <option name="javaServiceInterfacePath" value="D:\PersonalProject\spdise\spd-business\spd-business-base\spd-business-base-service\src\main\java" />
-                  <option name="javaServicePackage" value="com.jh.business.base.service" />
-                  <option name="javaServicePath" value="D:\PersonalProject\spdise\spd-business\spd-business-base\spd-business-base-service\src\main\java" />
+                  <option name="javaServiceInterfacePackage" value="com.jh.business.qingyuan.service" />
+                  <option name="javaServiceInterfacePath" value="D:\PersonalProject\spdise\spd-business\spd-business-qingyuan\spd-business-qingyuan-service\src\main\java" />
+                  <option name="javaServicePackage" value="com.jh.business.qingyuan.service.impl" />
+                  <option name="javaServicePath" value="D:\PersonalProject\spdise\spd-business\spd-business-qingyuan\spd-business-qingyuan-service\src\main\java" />
                   <option name="xmlPackage" value="mapper" />
-                  <option name="xmlPath" value="D:\PersonalProject\spdise\spd-business\spd-business-base\spd-business-base-dao\src\main\resources" />
+                  <option name="xmlPath" value="D:\PersonalProject\spdise\spd-business\spd-business-qingyuan\spd-business-qingyuan-dao\src\main\resources" />
                 </UserPackageAndPathInfoByModule>
               </value>
             </entry>
@@ -48,6 +48,16 @@
         </option>
         <option name="tableGenerateConfigs">
           <map>
+            <entry key="qingyuan:t_teacher">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="Teacher" />
+                  <option name="moduleName" value="spd-common-base" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
             <entry key="spdise:spd_book">
               <value>
                 <TableGenerateConfig>
@@ -101,7 +111,7 @@
         <option name="useLomBokOnModel" value="true" />
         <option name="userMybatisPlus" value="true" />
         <option name="xmlMapperPackage" value="mapper" />
-        <option name="xmlMapperPath" value="D:\PersonalProject\spdise\spd-business\spd-business-base\spd-business-base-dao\src\main\resources" />
+        <option name="xmlMapperPath" value="D:\PersonalProject\spdise\spd-business\spd-business-qingyuan\spd-business-qingyuan-dao\src\main\resources" />
       </ProjectProfile>
     </option>
   </component>

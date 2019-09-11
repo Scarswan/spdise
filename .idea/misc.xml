@@ -20,6 +20,7 @@
         <option value="$PROJECT_DIR$/spd-zuul/pom.xml" />
         <option value="$PROJECT_DIR$/spd-web/pom.xml" />
         <option value="$PROJECT_DIR$/spd-web/spd-web-platform/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-api/spd-api-qingyuan/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

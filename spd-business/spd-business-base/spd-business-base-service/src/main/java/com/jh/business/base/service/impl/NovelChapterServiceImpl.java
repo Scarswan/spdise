@@ -39,7 +39,7 @@ public class NovelChapterServiceImpl implements NovelChapterService {
         NovelChapter novelChapter = new NovelChapter();
         BeanUtils.copyProperties(novelChapterDTO, novelChapter);
         int row = novelChapterMapper.insert(novelChapter);
-        logger.info("saveChapters: 更新章节成功, 返参: row = {}", row);
+        logger.info("saveChapters: 更新章节成功, 出参: row = {}", row);
 
         return row;
     }

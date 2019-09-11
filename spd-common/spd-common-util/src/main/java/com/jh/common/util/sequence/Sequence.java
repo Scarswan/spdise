@@ -209,4 +209,8 @@ public class Sequence {
         return createId();
     }
 
+    public static String generateQingYuanId() {
+        return createId();
+    }
+
 }
