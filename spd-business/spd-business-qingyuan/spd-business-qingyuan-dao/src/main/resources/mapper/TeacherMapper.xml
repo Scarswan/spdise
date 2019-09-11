@@ -8,15 +8,13 @@
     <result column="teacher_gender" jdbcType="INTEGER" property="teacherGender" />
     <result column="teacher_age" jdbcType="INTEGER" property="teacherAge" />
     <result column="teacher_wages" jdbcType="DECIMAL" property="teacherWages" />
+    <result column="wages_type" jdbcType="INTEGER" property="wagesType" />
     <result column="teacher_duration" jdbcType="TIMESTAMP" property="teacherDuration" />
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
     <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
   </resultMap>
-
   <sql id="Base_Column_List">
     teacher_id, teacher_name, teacher_phone, teacher_gender, teacher_age, teacher_wages, 
-    teacher_duration, create_time, update_time
+    wages_type, teacher_duration, create_time, update_time
   </sql>
-
-
 </mapper>

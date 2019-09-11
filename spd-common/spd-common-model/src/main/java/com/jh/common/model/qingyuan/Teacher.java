@@ -47,6 +47,12 @@ public class Teacher {
     private BigDecimal teacherWages;
 
     /**
+     * 工资类型
+     */
+    @TableField(value = "wages_type")
+    private Integer wagesType;
+
+    /**
      * 教学时长
      */
     @TableField(value = "teacher_duration")
@@ -75,6 +81,8 @@ public class Teacher {
     public static final String COL_TEACHER_AGE = "teacher_age";
 
     public static final String COL_TEACHER_WAGES = "teacher_wages";
+
+    public static final String COL_WAGES_TYPE = "wages_type";
 
     public static final String COL_TEACHER_DURATION = "teacher_duration";
 

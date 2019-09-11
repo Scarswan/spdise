@@ -983,6 +983,7 @@
       <Position>3</Position>
       <Comment>联系电话</Comment>
       <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="249" parent="243" name="teacher_gender">
@@ -1003,25 +1004,32 @@
       <DataType>decimal(6,2 digit)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="252" parent="243" name="teacher_duration">
+    <column id="252" parent="243" name="wages_type">
       <Position>7</Position>
+      <Comment>工资类型</Comment>
+      <DataType>int(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="253" parent="243" name="teacher_duration">
+      <Position>8</Position>
       <Comment>教学时长</Comment>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="253" parent="243" name="create_time">
-      <Position>8</Position>
+    <column id="254" parent="243" name="create_time">
+      <Position>9</Position>
       <Comment>创建时间</Comment>
       <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="254" parent="243" name="update_time">
-      <Position>9</Position>
+    <column id="255" parent="243" name="update_time">
+      <Position>10</Position>
       <Comment>最后修改时间</Comment>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="255" parent="243" name="PRIMARY">
+    <key id="256" parent="243" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>teacher_id</ColNames>
       <Primary>1</Primary>
