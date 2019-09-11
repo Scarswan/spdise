@@ -93,7 +93,7 @@ public class ResponseMsg<T> implements Serializable {
      * @return 新增、修改或删除操作受影响的行数
      */
     public static ResponseMsg successRow(Integer rows) {
-        return new ResponseMsg("rows = " + rows);
+        return new ResponseMsg("受影响行数，rows = " + rows);
     }
 
     /**

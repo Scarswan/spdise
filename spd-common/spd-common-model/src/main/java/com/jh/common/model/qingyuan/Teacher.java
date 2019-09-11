@@ -4,7 +4,9 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+
 import java.math.BigDecimal;
+
 import lombok.Data;
 
 @Data
@@ -48,6 +50,8 @@ public class Teacher {
 
     /**
      * 工资类型
+     * 1 按课时
+     * 2 按天
      */
     @TableField(value = "wages_type")
     private Integer wagesType;

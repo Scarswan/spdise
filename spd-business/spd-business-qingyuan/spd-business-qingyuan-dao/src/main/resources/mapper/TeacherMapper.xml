@@ -1,20 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.jh.business.qingyuan.mapper.TeacherMapper">
-  <resultMap id="BaseResultMap" type="com.jh.common.model.qingyuan.Teacher">
-    <id column="teacher_id" jdbcType="VARCHAR" property="teacherId" />
-    <result column="teacher_name" jdbcType="VARCHAR" property="teacherName" />
-    <result column="teacher_phone" jdbcType="VARCHAR" property="teacherPhone" />
-    <result column="teacher_gender" jdbcType="INTEGER" property="teacherGender" />
-    <result column="teacher_age" jdbcType="INTEGER" property="teacherAge" />
-    <result column="teacher_wages" jdbcType="DECIMAL" property="teacherWages" />
-    <result column="wages_type" jdbcType="INTEGER" property="wagesType" />
-    <result column="teacher_duration" jdbcType="TIMESTAMP" property="teacherDuration" />
-    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
-    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
-  </resultMap>
-  <sql id="Base_Column_List">
+    <resultMap id="BaseResultMap" type="com.jh.common.model.qingyuan.Teacher">
+        <id column="teacher_id" jdbcType="VARCHAR" property="teacherId"/>
+        <result column="teacher_name" jdbcType="VARCHAR" property="teacherName"/>
+        <result column="teacher_phone" jdbcType="VARCHAR" property="teacherPhone"/>
+        <result column="teacher_gender" jdbcType="INTEGER" property="teacherGender"/>
+        <result column="teacher_age" jdbcType="INTEGER" property="teacherAge"/>
+        <result column="teacher_wages" jdbcType="DECIMAL" property="teacherWages"/>
+        <result column="wages_type" jdbcType="INTEGER" property="wagesType"/>
+        <result column="teacher_duration" jdbcType="TIMESTAMP" property="teacherDuration"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
     teacher_id, teacher_name, teacher_phone, teacher_gender, teacher_age, teacher_wages, 
     wages_type, teacher_duration, create_time, update_time
   </sql>
+
+    <select id="selectByAll" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from t_teacher
+        where 1=1
+        <if test="teacherId != null">
+            and teacher_id=#{teacherId,jdbcType=VARCHAR}
+        </if>
+        <if test="teacherName != null">
+            and teacher_name=#{teacherName,jdbcType=VARCHAR}
+        </if>
+        <if test="teacherPhone != null">
+            and teacher_phone=#{teacherPhone,jdbcType=VARCHAR}
+        </if>
+        <if test="teacherGender != null">
+            and teacher_gender=#{teacherGender,jdbcType=INTEGER}
+        </if>
+        <if test="teacherAge != null">
+            and teacher_age=#{teacherAge,jdbcType=INTEGER}
+        </if>
+        <if test="teacherWages != null">
+            and teacher_wages=#{teacherWages,jdbcType=DECIMAL}
+        </if>
+        <if test="wagesType != null">
+            and wages_type=#{wagesType,jdbcType=INTEGER}
+        </if>
+        <if test="teacherDuration != null">
+            and teacher_duration=#{teacherDuration,jdbcType=TIMESTAMP}
+        </if>
+        <if test="createTime != null">
+            and create_time=#{createTime,jdbcType=TIMESTAMP}
+        </if>
+    </select>
+
+    <update id="updateByTeacherId">
+        update t_teacher
+        <set>
+            <if test="updated.teacherId != null">
+                teacher_id = #{updated.teacherId,jdbcType=VARCHAR},
+            </if>
+            <if test="updated.teacherName != null">
+                teacher_name = #{updated.teacherName,jdbcType=VARCHAR},
+            </if>
+            <if test="updated.teacherPhone != null">
+                teacher_phone = #{updated.teacherPhone,jdbcType=VARCHAR},
+            </if>
+            <if test="updated.teacherGender != null">
+                teacher_gender = #{updated.teacherGender,jdbcType=INTEGER},
+            </if>
+            <if test="updated.teacherAge != null">
+                teacher_age = #{updated.teacherAge,jdbcType=INTEGER},
+            </if>
+            <if test="updated.teacherWages != null">
+                teacher_wages = #{updated.teacherWages,jdbcType=DECIMAL},
+            </if>
+            <if test="updated.wagesType != null">
+                wages_type = #{updated.wagesType,jdbcType=INTEGER},
+            </if>
+            <if test="updated.teacherDuration != null">
+                teacher_duration = #{updated.teacherDuration,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updated.createTime != null">
+                create_time = #{updated.createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updated.updateTime != null">
+                update_time = #{updated.updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where teacher_id=#{updated.teacherId,jdbcType=VARCHAR}
+    </update>
 </mapper>

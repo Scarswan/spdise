@@ -55,7 +55,7 @@ public class NovelChapterServiceImpl implements NovelChapterService {
         );
         PageHelper.startPage(novelChapterQuery.getPageNum(), novelChapterQuery.getPageSize());
         List<NovelChapterVO> novelChapterVOList = JSON.parseArray(JSON.toJSONString(novelChapterList), NovelChapterVO.class);
-        logger.info("getCatalog: 获取章节目录成功, 出参: resultMap = {}", novelChapterList);
+        logger.info("getCatalog: 获取章节目录成功, 出参: novelChapterVOList = {}", novelChapterVOList);
 
         return new PageInfo<>(novelChapterVOList);
     }
