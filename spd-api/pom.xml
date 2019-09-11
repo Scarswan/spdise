@@ -13,6 +13,7 @@
     <modules>
         <module>spd-api-demo</module>
         <module>spd-api-base</module>
+        <module>spd-api-qingyuan</module>
     </modules>
 
     <artifactId>spd-api</artifactId>
