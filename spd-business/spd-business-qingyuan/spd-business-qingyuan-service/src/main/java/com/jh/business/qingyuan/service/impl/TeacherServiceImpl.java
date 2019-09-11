@@ -45,6 +45,15 @@ public class TeacherServiceImpl implements TeacherService {
     }
 
     @Override
+    public Teacher getByTeacherId(String teacherId) {
+        logger.info("getByTeacherId: 根据主键id查询指定教师信息, 入参：teacherId = {}", teacherId);
+        Teacher teacher = teacherMapper.selectById(teacherId);
+        logger.info("getByTeacherId: 根据主键id查询指定教师信息成功, 入参：teacher = {}", teacher);
+
+        return teacher;
+    }
+
+    @Override
     public PageInfo<Teacher> queryList(TeacherQuery teacherQuery) {
         logger.info("queryList: 查询教师信息分页, 入参: teacherQuery = {}", teacherQuery);
         List<Teacher> teacherList = teacherMapper.selectByAll(teacherQuery);

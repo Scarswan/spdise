@@ -23,6 +23,14 @@ public interface TeacherService {
     int updateTeacher(Teacher teacher);
 
     /**
+     * 根据主键id查询指定教师信息
+     *
+     * @param teacherId
+     * @return
+     */
+    Teacher getByTeacherId(String teacherId);
+
+    /**
      * 查询教师列表分页
      *
      * @param teacherQuery

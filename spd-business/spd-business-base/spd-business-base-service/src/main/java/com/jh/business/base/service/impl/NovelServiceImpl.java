@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.jh.business.base.mapper.NovelMapper;
+import com.jh.business.base.service.NovelClicksService;
 import com.jh.business.base.service.NovelService;
 import com.jh.common.dto.base.NovelDTO;
 import com.jh.common.enums.NovelStatusEnum;

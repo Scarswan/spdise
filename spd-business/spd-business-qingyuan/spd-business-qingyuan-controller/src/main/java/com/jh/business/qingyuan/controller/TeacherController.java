@@ -42,6 +42,19 @@ public class TeacherController {
     }
 
     /**
+     * 根据主键id查询指定教师信息
+     *
+     * @param teacherId
+     * @return
+     */
+    @GetMapping("/get/byTeacherId")
+    public ResponseMsg<Teacher> getByTeacherId(String teacherId) {
+        Teacher teacher = teacherService.getByTeacherId(teacherId);
+
+        return ResponseMsg.success(teacher);
+    }
+
+    /**
      * 查询教师列表分页
      *
      * @param teacherQuery
