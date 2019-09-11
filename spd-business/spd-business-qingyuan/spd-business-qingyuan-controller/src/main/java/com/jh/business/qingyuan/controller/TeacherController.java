@@ -47,8 +47,8 @@ public class TeacherController {
      * @param teacherId
      * @return
      */
-    @GetMapping("/get/byTeacherId")
-    public ResponseMsg<Teacher> getByTeacherId(String teacherId) {
+    @GetMapping("/query/byTeacherId")
+    public ResponseMsg<Teacher> queryByTeacherId(String teacherId) {
         Teacher teacher = teacherService.getByTeacherId(teacherId);
 
         return ResponseMsg.success(teacher);
