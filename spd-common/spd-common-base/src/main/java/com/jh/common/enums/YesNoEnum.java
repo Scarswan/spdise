@@ -10,7 +10,7 @@ import java.util.Objects;
 public enum YesNoEnum {
 
     YES_CODE(1, "是"),
-    NO_CODE(2, "否");
+    NO_CODE(0, "否");
 
     private Integer code;
     private String desc;

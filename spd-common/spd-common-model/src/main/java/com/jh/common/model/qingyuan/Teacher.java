@@ -69,6 +69,18 @@ public class Teacher {
     private Integer teacherRank;
 
     /**
+     * 所教班级
+     */
+    @TableField(value = "teacher_class")
+    private String teacherClass;
+
+    /**
+     * 是否删除
+     */
+    @TableField(value = "del_flag")
+    private Integer delFlag;
+
+    /**
      * 创建时间
      */
     @TableField(value = "create_time")
@@ -97,6 +109,10 @@ public class Teacher {
     public static final String COL_TEACHER_DURATION = "teacher_duration";
 
     public static final String COL_TEACHER_RANK = "teacher_rank";
+
+    public static final String COL_TEACHER_CLASS = "teacher_class";
+
+    public static final String COL_DEL_FLAG = "del_flag";
 
     public static final String COL_CREATE_TIME = "create_time";
 

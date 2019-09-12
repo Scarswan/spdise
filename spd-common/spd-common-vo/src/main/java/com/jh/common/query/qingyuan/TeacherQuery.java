@@ -52,6 +52,16 @@ public class TeacherQuery {
     private Integer teacherRank;
 
     /**
+     * 所教班级
+     */
+    private String teacherClass;
+
+    /**
+     * 是否删除
+     */
+    private Integer delFlag;
+
+    /**
      * 创建时间
      */
     private String createTime;

@@ -11,13 +11,16 @@
         <result column="wages_type" jdbcType="INTEGER" property="wagesType"/>
         <result column="teacher_duration" jdbcType="TIMESTAMP" property="teacherDuration"/>
         <result column="teacher_rank" jdbcType="INTEGER" property="teacherRank"/>
+        <result column="teacher_class" jdbcType="VARCHAR" property="teacherClass"/>
+        <result column="del_flag" jdbcType="INTEGER" property="delFlag"/>
         <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
         <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
     </resultMap>
 
     <sql id="Base_Column_List">
     teacher_id, teacher_name, teacher_phone, teacher_gender, teacher_age, teacher_wages, 
-    wages_type, teacher_duration, teacher_rank, create_time, update_time
+    wages_type, teacher_duration, teacher_rank, teacher_class, del_flag, create_time,
+    update_time
   </sql>
 
     <select id="selectByAll" resultMap="BaseResultMap">
@@ -25,6 +28,7 @@
         <include refid="Base_Column_List"/>
         from t_teacher
         where 1=1
+        and del_flag=0
         <if test="teacherId != null">
             and teacher_id=#{teacherId,jdbcType=VARCHAR}
         </if>
@@ -51,6 +55,9 @@
         </if>
         <if test="teacherRank != null ">
             and teacher_rank=#{teacherRank,jdbcType=INTEGER}
+        </if>
+        <if test="teacherClass != null ">
+            and teacher_class=#{teacherClass,jdbcType=VARCHAR}
         </if>
         <if test="createTime != null">
             and create_time=#{createTime,jdbcType=TIMESTAMP}
@@ -86,6 +93,12 @@
             </if>
             <if test="updated.teacherRank != null ">
                 teacher_rank = #{updated.teacherRank,jdbcType=INTEGER},
+            </if>
+            <if test="updated.teacherClass != null ">
+                teacher_class = #{updated.teacherClass,jdbcType=VARCHAR},
+            </if>
+            <if test="updated.delFlag != null ">
+                del_flag = #{param1.delFlag,jdbcType=INTEGER},
             </if>
             <if test="updated.createTime != null">
                 create_time = #{updated.createTime,jdbcType=TIMESTAMP},
