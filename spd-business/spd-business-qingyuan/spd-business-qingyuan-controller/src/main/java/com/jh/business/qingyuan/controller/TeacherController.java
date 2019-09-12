@@ -21,7 +21,7 @@ public class TeacherController {
      * @param teacher
      * @return
      */
-    @PostMapping("/save")
+    @PostMapping("/save/info")
     public ResponseMsg saveTeacher(@RequestBody Teacher teacher) {
         int row = teacherService.saveTeacher(teacher);
 
@@ -34,7 +34,7 @@ public class TeacherController {
      * @param teacher
      * @return
      */
-    @PostMapping("/update")
+    @PostMapping("/update/info")
     public ResponseMsg updateTeacher(@RequestBody Teacher teacher) {
         int row = teacherService.updateTeacher(teacher);
 
@@ -73,7 +73,7 @@ public class TeacherController {
      * @param teacherQuery
      * @return
      */
-    @GetMapping("/query/list")
+    @GetMapping("/query/list/page")
     public ResponseMsg<PageInfo<Teacher>> queryList(TeacherQuery teacherQuery) {
         PageInfo<Teacher> teacherPageInfo = teacherService.queryList(teacherQuery);
 

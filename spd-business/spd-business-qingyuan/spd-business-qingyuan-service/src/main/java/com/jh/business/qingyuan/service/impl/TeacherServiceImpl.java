@@ -4,6 +4,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.jh.business.qingyuan.mapper.TeacherMapper;
 import com.jh.business.qingyuan.service.TeacherService;
+import com.jh.common.constants.PasswordConstants;
 import com.jh.common.enums.YesNoEnum;
 import com.jh.common.model.qingyuan.Teacher;
 import com.jh.common.query.qingyuan.TeacherQuery;
@@ -28,6 +29,7 @@ public class TeacherServiceImpl implements TeacherService {
     @Override
     public int saveTeacher(Teacher teacher) {
         teacher.setTeacherId(Sequence.generateQingYuanId());
+        teacher.setTeacherPassword(PasswordUtil.getMD5Password(PasswordConstants.DEFAULT_PWD));
         teacher.setDelFlag(YesNoEnum.NO_CODE.getCode());
         teacher.setCreateTime(DateUtil.getCurrentTimeString());
         logger.info("saveTeacher: 保存教师信息, 入参: teacher = {}", teacher);
