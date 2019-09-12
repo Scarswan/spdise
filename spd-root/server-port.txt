@@ -1,5 +1,5 @@
-spd-eureka: 8227
-business-demo: 8250
-business-base: 8260
-business-qingyuan: 8271
-business-demo-zipkin: 8211
+spd-eureka: 8227              Eureka注册中心
+business-demo: 8250           Demo服务
+business-base: 8260           基础服务
+business-qingyuan: 8271       清源棋社
+business-demo-zipkin: 8211    Zipkin分布式链式追踪
