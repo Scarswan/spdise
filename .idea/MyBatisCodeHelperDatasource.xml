@@ -3,8 +3,6 @@
   <component name="MyBatisCodeHelperDatasource">
     <option name="projectProfile">
       <ProjectProfile>
-        <option name="generateService" value="true" />
-        <option name="generateServiceInterface" value="true" />
         <option name="javaMapperPackage" value="com.jh.business.qingyuan.mapper" />
         <option name="javaMapperPath" value="D:\PersonalProject\spdise\spd-business\spd-business-qingyuan\spd-business-qingyuan-dao\src\main\java" />
         <option name="javaModelPackage" value="com.jh.common.model.qingyuan" />
@@ -35,10 +33,6 @@
                   <option name="javaMapperPath" value="D:\PersonalProject\spdise\spd-business\spd-business-qingyuan\spd-business-qingyuan-dao\src\main\java" />
                   <option name="javaModelPacakge" value="com.jh.common.model.qingyuan" />
                   <option name="javaModelPath" value="D:\PersonalProject\spdise\spd-common\spd-common-model\src\main\java" />
-                  <option name="javaServiceInterfacePackage" value="com.jh.business.qingyuan.service" />
-                  <option name="javaServiceInterfacePath" value="D:\PersonalProject\spdise\spd-business\spd-business-qingyuan\spd-business-qingyuan-service\src\main\java" />
-                  <option name="javaServicePackage" value="com.jh.business.qingyuan.service.impl" />
-                  <option name="javaServicePath" value="D:\PersonalProject\spdise\spd-business\spd-business-qingyuan\spd-business-qingyuan-service\src\main\java" />
                   <option name="xmlPackage" value="mapper" />
                   <option name="xmlPath" value="D:\PersonalProject\spdise\spd-business\spd-business-qingyuan\spd-business-qingyuan-dao\src\main\resources" />
                 </UserPackageAndPathInfoByModule>
@@ -48,6 +42,26 @@
         </option>
         <option name="tableGenerateConfigs">
           <map>
+            <entry key="qingyuan:t_class">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="Clazz" />
+                  <option name="moduleName" value="spd-common-base" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="qingyuan:t_student">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="Student" />
+                  <option name="moduleName" value="spd-common-base" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
             <entry key="qingyuan:t_teacher">
               <value>
                 <TableGenerateConfig>
