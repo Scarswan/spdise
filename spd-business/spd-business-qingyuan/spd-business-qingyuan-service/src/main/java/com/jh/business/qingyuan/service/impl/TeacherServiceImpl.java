@@ -70,12 +70,12 @@ public class TeacherServiceImpl implements TeacherService {
     }
 
     @Override
-    public PageInfo<Teacher> queryList(TeacherQuery teacherQuery) {
-        logger.info("queryList: 查询教师信息分页, 入参: teacherQuery = {}", teacherQuery);
+    public PageInfo<Teacher> queryListPage(TeacherQuery teacherQuery) {
+        logger.info("queryList: 查询教师列表分页, 入参: teacherQuery = {}", teacherQuery);
         List<Teacher> teacherList = teacherMapper.selectByAll(teacherQuery);
         PageHelper.startPage(teacherQuery.getPageNum(), teacherQuery.getPageSize());
         PageInfo<Teacher> teacherPageInfo = new PageInfo<>(teacherList);
-        logger.info("queryList: 查询教师信息分页成功, 出参: teacherPageInfo = {}", teacherPageInfo);
+        logger.info("queryList: 查询教师列表分页成功, 出参: teacherPageInfo = {}", teacherPageInfo);
 
         return teacherPageInfo;
     }

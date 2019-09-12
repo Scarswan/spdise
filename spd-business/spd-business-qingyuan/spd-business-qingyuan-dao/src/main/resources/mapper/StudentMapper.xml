@@ -2,7 +2,6 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.jh.business.qingyuan.mapper.StudentMapper">
   <resultMap id="BaseResultMap" type="com.jh.common.model.qingyuan.Student">
-    <!--@mbg.generated-->
     <id column="student_id" jdbcType="VARCHAR" property="studentId" />
     <result column="student_name" jdbcType="VARCHAR" property="studentName" />
     <result column="student_password" jdbcType="CHAR" property="studentPassword" />
@@ -19,10 +18,63 @@
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
     <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
   </resultMap>
+
   <sql id="Base_Column_List">
-    <!--@mbg.generated-->
     student_id, student_name, student_password, student_age, student_phone, student_guardian_name, 
     student_guardian_phone, student_guardian_relationship, student_curriculum, class_id, 
     student_first_entrance, student_already_curriculum, student_rank, create_time, update_time
   </sql>
+
+  <select id="selectByAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from t_student
+    where 1=1
+    <if test="studentId != null">
+      and student_id=#{studentId,jdbcType=VARCHAR}
+    </if>
+    <if test="studentName != null">
+      and student_name=#{studentName,jdbcType=VARCHAR}
+    </if>
+    <if test="studentPassword != null">
+      and student_password=#{studentPassword,jdbcType=CHAR}
+    </if>
+    <if test="studentAge != null">
+      and student_age=#{studentAge,jdbcType=INTEGER}
+    </if>
+    <if test="studentPhone != null">
+      and student_phone=#{studentPhone,jdbcType=VARCHAR}
+    </if>
+    <if test="studentGuardianName != null">
+      and student_guardian_name=#{studentGuardianName,jdbcType=VARCHAR}
+    </if>
+    <if test="studentGuardianPhone != null">
+      and student_guardian_phone=#{studentGuardianPhone,jdbcType=VARCHAR}
+    </if>
+    <if test="studentGuardianRelationship != null">
+      and student_guardian_relationship=#{studentGuardianRelationship,jdbcType=INTEGER}
+    </if>
+    <if test="studentCurriculum != null">
+      and student_curriculum=#{studentCurriculum,jdbcType=INTEGER}
+    </if>
+    <if test="classId != null">
+      and class_id=#{classId,jdbcType=VARCHAR}
+    </if>
+    <if test="studentFirstEntrance != null">
+      and student_first_entrance=#{studentFirstEntrance,jdbcType=VARCHAR}
+    </if>
+    <if test="studentAlreadyCurriculum != null">
+      and student_already_curriculum=#{studentAlreadyCurriculum,jdbcType=VARCHAR}
+    </if>
+    <if test="studentRank != null">
+      and student_rank=#{studentRank,jdbcType=INTEGER}
+    </if>
+    <if test="createTime != null">
+      and create_time=#{createTime,jdbcType=TIMESTAMP}
+    </if>
+    <if test="updateTime != null">
+      and update_time=#{updateTime,jdbcType=TIMESTAMP}
+    </if>
+  </select>
+
 </mapper>

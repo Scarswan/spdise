@@ -19,7 +19,7 @@ public interface TeacherMapper extends BaseMapper<Teacher> {
     int updateByTeacherId(@Param("updated") Teacher updated);
 
     /**
-     * 查询教师信息
+     * 查询教师信息列表
      *
      * @param teacher
      * @return

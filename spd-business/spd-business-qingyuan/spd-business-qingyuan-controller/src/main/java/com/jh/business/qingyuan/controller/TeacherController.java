@@ -74,8 +74,8 @@ public class TeacherController {
      * @return
      */
     @GetMapping("/query/list/page")
-    public ResponseMsg<PageInfo<Teacher>> queryList(TeacherQuery teacherQuery) {
-        PageInfo<Teacher> teacherPageInfo = teacherService.queryList(teacherQuery);
+    public ResponseMsg<PageInfo<Teacher>> queryListPage(TeacherQuery teacherQuery) {
+        PageInfo<Teacher> teacherPageInfo = teacherService.queryListPage(teacherQuery);
 
         return ResponseMsg.success(teacherPageInfo);
     }

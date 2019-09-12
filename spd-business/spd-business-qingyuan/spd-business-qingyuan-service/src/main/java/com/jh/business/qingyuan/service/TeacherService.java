@@ -44,7 +44,7 @@ public interface TeacherService {
      * @param teacherQuery
      * @return
      */
-    PageInfo<Teacher> queryList(TeacherQuery teacherQuery);
+    PageInfo<Teacher> queryListPage(TeacherQuery teacherQuery);
 
 }
 
