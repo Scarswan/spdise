@@ -23,6 +23,14 @@ public interface TeacherService {
     int updateTeacher(Teacher teacher);
 
     /**
+     * 修改登录密码
+     *
+     * @param teacher
+     * @return
+     */
+    int updatePassword(Teacher teacher);
+
+    /**
      * 根据主键id查询教师信息
      *
      * @param teacherId

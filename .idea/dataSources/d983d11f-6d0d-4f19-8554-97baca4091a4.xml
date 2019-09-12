@@ -967,161 +967,179 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="246" parent="242" name="student_age">
+    <column id="246" parent="242" name="student_password">
       <Position>3</Position>
+      <Comment>登录密码</Comment>
+      <DataType>char(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="247" parent="242" name="student_age">
+      <Position>4</Position>
       <Comment>年龄</Comment>
       <DataType>int(2)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="247" parent="242" name="student_phone">
-      <Position>4</Position>
+    <column id="248" parent="242" name="student_phone">
+      <Position>5</Position>
       <Comment>学员本人联系电话</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="248" parent="242" name="student_guardian_name">
-      <Position>5</Position>
+    <column id="249" parent="242" name="student_guardian_name">
+      <Position>6</Position>
       <Comment>监护人姓名</Comment>
       <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="249" parent="242" name="student_guardian_phone">
-      <Position>6</Position>
+    <column id="250" parent="242" name="student_guardian_phone">
+      <Position>7</Position>
       <Comment>监护人联系电话</Comment>
       <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="250" parent="242" name="student_guardian_relationship">
-      <Position>7</Position>
+    <column id="251" parent="242" name="student_guardian_relationship">
+      <Position>8</Position>
       <Comment>监护人与学员关系</Comment>
       <DataType>int(2)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="251" parent="242" name="student_curriculum">
-      <Position>8</Position>
+    <column id="252" parent="242" name="student_curriculum">
+      <Position>9</Position>
       <Comment>所选课程</Comment>
       <DataType>int(2)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="252" parent="242" name="student_first_entrance">
-      <Position>9</Position>
+    <column id="253" parent="242" name="student_first_entrance">
+      <Position>10</Position>
       <Comment>首次入学时间</Comment>
       <DataType>varchar(0)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="253" parent="242" name="student_already_curriculum">
-      <Position>10</Position>
+    <column id="254" parent="242" name="student_already_curriculum">
+      <Position>11</Position>
       <Comment>已学课程</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="254" parent="242" name="student_rank">
-      <Position>11</Position>
+    <column id="255" parent="242" name="student_rank">
+      <Position>12</Position>
       <Comment>围棋段位</Comment>
       <DataType>int(2)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="255" parent="242" name="create_time">
-      <Position>12</Position>
+    <column id="256" parent="242" name="create_time">
+      <Position>13</Position>
       <Comment>创建时间</Comment>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="256" parent="242" name="update_time">
-      <Position>13</Position>
+    <column id="257" parent="242" name="update_time">
+      <Position>14</Position>
       <Comment>最后修改时间</Comment>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="257" parent="242" name="PRIMARY">
+    <key id="258" parent="242" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>student_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="258" parent="243" name="teacher_id">
+    <column id="259" parent="243" name="teacher_id">
       <Position>1</Position>
       <Comment>教师主键id</Comment>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="259" parent="243" name="teacher_name">
+    <column id="260" parent="243" name="teacher_name">
       <Position>2</Position>
       <Comment>姓名</Comment>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="260" parent="243" name="teacher_phone">
+    <column id="261" parent="243" name="teacher_password">
       <Position>3</Position>
+      <Comment>登录密码</Comment>
+      <DataType>char(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="262" parent="243" name="teacher_phone">
+      <Position>4</Position>
       <Comment>联系电话</Comment>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="261" parent="243" name="teacher_gender">
-      <Position>4</Position>
+    <column id="263" parent="243" name="teacher_gender">
+      <Position>5</Position>
       <Comment>性别</Comment>
       <DataType>int(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="262" parent="243" name="teacher_age">
-      <Position>5</Position>
+    <column id="264" parent="243" name="teacher_age">
+      <Position>6</Position>
       <Comment>年龄</Comment>
       <DataType>int(2)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="263" parent="243" name="teacher_wages">
-      <Position>6</Position>
+    <column id="265" parent="243" name="teacher_wages">
+      <Position>7</Position>
       <Comment>工资</Comment>
       <DataType>decimal(6,2 digit)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="264" parent="243" name="wages_type">
-      <Position>7</Position>
+    <column id="266" parent="243" name="wages_type">
+      <Position>8</Position>
       <Comment>工资类型</Comment>
       <DataType>int(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="265" parent="243" name="teacher_duration">
-      <Position>8</Position>
+    <column id="267" parent="243" name="teacher_duration">
+      <Position>9</Position>
       <Comment>教学时长</Comment>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="266" parent="243" name="teacher_rank">
-      <Position>9</Position>
+    <column id="268" parent="243" name="teacher_rank">
+      <Position>10</Position>
       <Comment>围棋段位</Comment>
       <DataType>int(2)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="267" parent="243" name="teacher_class">
-      <Position>10</Position>
+    <column id="269" parent="243" name="teacher_class">
+      <Position>11</Position>
       <Comment>所教班级</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="268" parent="243" name="del_flag">
-      <Position>11</Position>
+    <column id="270" parent="243" name="del_flag">
+      <Position>12</Position>
       <Comment>是否删除</Comment>
       <DataType>int(1)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="269" parent="243" name="create_time">
-      <Position>12</Position>
+    <column id="271" parent="243" name="create_time">
+      <Position>13</Position>
       <Comment>创建时间</Comment>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="270" parent="243" name="update_time">
-      <Position>13</Position>
+    <column id="272" parent="243" name="update_time">
+      <Position>14</Position>
       <Comment>最后修改时间</Comment>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="271" parent="243" name="PRIMARY">
+    <key id="273" parent="243" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>teacher_id</ColNames>
       <Primary>1</Primary>

@@ -42,6 +42,19 @@ public class TeacherController {
     }
 
     /**
+     * 修改登录密码
+     *
+     * @param teacher
+     * @return
+     */
+    @PostMapping("/update/password")
+    public ResponseMsg updatePassword(@RequestBody Teacher teacher){
+        int row = teacherService.updateTeacher(teacher);
+
+        return ResponseMsg.successRow(row);
+    }
+
+    /**
      * 根据主键id查询教师信息
      *
      * @param teacherId

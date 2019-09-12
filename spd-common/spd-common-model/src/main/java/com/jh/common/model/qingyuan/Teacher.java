@@ -25,6 +25,12 @@ public class Teacher {
     private String teacherName;
 
     /**
+     * 登录密码
+     */
+    @TableField(value = "teacher_password")
+    private String teacherPassword;
+
+    /**
      * 联系电话
      */
     @TableField(value = "teacher_phone")
@@ -95,6 +101,8 @@ public class Teacher {
     public static final String COL_TEACHER_ID = "teacher_id";
 
     public static final String COL_TEACHER_NAME = "teacher_name";
+
+    public static final String COL_TEACHER_PASSWORD = "teacher_password";
 
     public static final String COL_TEACHER_PHONE = "teacher_phone";
 

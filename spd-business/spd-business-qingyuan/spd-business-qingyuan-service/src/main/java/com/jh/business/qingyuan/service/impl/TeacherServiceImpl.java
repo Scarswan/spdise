@@ -7,6 +7,7 @@ import com.jh.business.qingyuan.service.TeacherService;
 import com.jh.common.enums.YesNoEnum;
 import com.jh.common.model.qingyuan.Teacher;
 import com.jh.common.query.qingyuan.TeacherQuery;
+import com.jh.common.util.PasswordUtil;
 import com.jh.common.util.date.DateUtil;
 import com.jh.common.util.sequence.Sequence;
 import org.slf4j.Logger;
@@ -42,6 +43,17 @@ public class TeacherServiceImpl implements TeacherService {
         logger.info("updateTeacher: 更新教师信息, 入参：teacher = {}", teacher);
         int row = teacherMapper.updateByTeacherId(teacher);
         logger.info("updateTeacher: 更新教师信息成功, 出参: row = {}", row);
+
+        return row;
+    }
+
+    @Override
+    public int updatePassword(Teacher teacher) {
+        teacher.setUpdateTime(DateUtil.getCurrentTimeString());
+        teacher.setTeacherPassword(PasswordUtil.getMD5Password(teacher.getTeacherPassword()));
+        logger.info("updatePassword: 修改登录密码, 入参：teacher = {}", teacher);
+        int row = teacherMapper.updateByTeacherId(teacher);
+        logger.info("updatePassword: 修改登录密码成功, 出参: row = {}", row);
 
         return row;
     }

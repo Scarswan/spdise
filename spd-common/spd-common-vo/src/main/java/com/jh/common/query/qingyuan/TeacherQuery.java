@@ -17,6 +17,11 @@ public class TeacherQuery {
     private String teacherName;
 
     /**
+     * 登录密码
+     */
+    private String teacherPassword;
+
+    /**
      * 联系电话
      */
     private String teacherPhone;

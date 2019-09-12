@@ -4,6 +4,7 @@
     <resultMap id="BaseResultMap" type="com.jh.common.model.qingyuan.Teacher">
         <id column="teacher_id" jdbcType="VARCHAR" property="teacherId"/>
         <result column="teacher_name" jdbcType="VARCHAR" property="teacherName"/>
+        <result column="teacher_password" jdbcType="VARCHAR" property="teacherPassword"/>
         <result column="teacher_phone" jdbcType="VARCHAR" property="teacherPhone"/>
         <result column="teacher_gender" jdbcType="INTEGER" property="teacherGender"/>
         <result column="teacher_age" jdbcType="INTEGER" property="teacherAge"/>
@@ -18,9 +19,9 @@
     </resultMap>
 
     <sql id="Base_Column_List">
-    teacher_id, teacher_name, teacher_phone, teacher_gender, teacher_age, teacher_wages, 
-    wages_type, teacher_duration, teacher_rank, teacher_class, del_flag, create_time,
-    update_time
+     teacher_id, teacher_name, teacher_password, teacher_phone, teacher_gender, teacher_age,
+     teacher_wages, wages_type, teacher_duration, teacher_rank, teacher_class, del_flag,
+     create_time, update_time
   </sql>
 
     <select id="selectByAll" resultMap="BaseResultMap">
@@ -34,6 +35,9 @@
         </if>
         <if test="teacherName != null">
             and teacher_name=#{teacherName,jdbcType=VARCHAR}
+        </if>
+        <if test="teacherPassword != null">
+            and teacher_password=#{teacherPassword,jdbcType=VARCHAR}
         </if>
         <if test="teacherPhone != null">
             and teacher_phone=#{teacherPhone,jdbcType=VARCHAR}
@@ -72,6 +76,9 @@
             </if>
             <if test="updated.teacherName != null">
                 teacher_name = #{updated.teacherName,jdbcType=VARCHAR},
+            </if>
+            <if test="updated.teacherPassword != null">
+                teacher_password = #{updated.teacherPassword,jdbcType=VARCHAR},
             </if>
             <if test="updated.teacherPhone != null">
                 teacher_phone = #{updated.teacherPhone,jdbcType=VARCHAR},
