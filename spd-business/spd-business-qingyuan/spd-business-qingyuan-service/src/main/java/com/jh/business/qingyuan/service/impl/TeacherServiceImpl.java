@@ -24,7 +24,7 @@ public class TeacherServiceImpl implements TeacherService {
     private static Logger logger = LoggerFactory.getLogger(TeacherServiceImpl.class);
 
     @Autowired
-    TeacherMapper teacherMapper;
+    private TeacherMapper teacherMapper;
 
     @Override
     public int saveTeacher(Teacher teacher) {
@@ -61,10 +61,10 @@ public class TeacherServiceImpl implements TeacherService {
     }
 
     @Override
-    public Teacher getByTeacherId(String teacherId) {
-        logger.info("getByTeacherId: 根据主键id查询指定教师信息, 入参：teacherId = {}", teacherId);
+    public Teacher queryByTeacherId(String teacherId) {
+        logger.info("queryByTeacherId: 根据主键id查询指定教师信息, 入参：teacherId = {}", teacherId);
         Teacher teacher = teacherMapper.selectById(teacherId);
-        logger.info("getByTeacherId: 根据主键id查询指定教师信息成功, 入参：teacher = {}", teacher);
+        logger.info("queryByTeacherId: 根据主键id查询指定教师信息成功, 入参：teacher = {}", teacher);
 
         return teacher;
     }

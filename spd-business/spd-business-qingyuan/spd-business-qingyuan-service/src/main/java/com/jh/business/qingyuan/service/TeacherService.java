@@ -36,7 +36,7 @@ public interface TeacherService {
      * @param teacherId
      * @return
      */
-    Teacher getByTeacherId(String teacherId);
+    Teacher queryByTeacherId(String teacherId);
 
     /**
      * 查询教师列表分页

@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 public class TeacherController {
 
     @Autowired
-    TeacherService teacherService;
+    private TeacherService teacherService;
 
     /**
      * 保存教师信息
@@ -49,7 +49,7 @@ public class TeacherController {
      */
     @PostMapping("/update/password")
     public ResponseMsg updatePassword(@RequestBody Teacher teacher){
-        int row = teacherService.updateTeacher(teacher);
+        int row = teacherService.updatePassword(teacher);
 
         return ResponseMsg.successRow(row);
     }
@@ -62,7 +62,7 @@ public class TeacherController {
      */
     @GetMapping("/query/byTeacherId")
     public ResponseMsg<Teacher> queryByTeacherId(String teacherId) {
-        Teacher teacher = teacherService.getByTeacherId(teacherId);
+        Teacher teacher = teacherService.queryByTeacherId(teacherId);
 
         return ResponseMsg.success(teacher);
     }

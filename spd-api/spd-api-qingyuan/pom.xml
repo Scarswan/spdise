@@ -15,6 +15,20 @@
     <name>spd-api-qingyuan</name>
     <description>qingyuan-feign接口</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.jh</groupId>
+            <artifactId>spd-common-vo</artifactId>
+            <version>1.9.9</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <finalName>spd-api-qingyuan</finalName>
         <plugins>
