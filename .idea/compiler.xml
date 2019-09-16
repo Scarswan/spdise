@@ -42,11 +42,8 @@
       <module name="spd-business-base-service" target="1.8" />
       <module name="spd-business-demo" target="1.8" />
       <module name="spd-business-demo-controller" target="1.8" />
-      <module name="spd-business-demo-controller (1)" target="1.8" />
       <module name="spd-business-demo-dao" target="1.8" />
-      <module name="spd-business-demo-dao (1)" target="1.8" />
       <module name="spd-business-demo-service" target="1.8" />
-      <module name="spd-business-demo-service (1)" target="1.8" />
       <module name="spd-business-demo-zipkin" target="1.8" />
       <module name="spd-business-qingyuan" target="1.8" />
       <module name="spd-business-qingyuan-controller" target="1.8" />
