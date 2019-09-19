@@ -30,7 +30,7 @@ eureka:
       defaultZone: http://localhost:8227/eureka/
 
 mybatis:
-  mapper-locations: classpath:mapper/*.xml
+  mapper-locations: classpath*:mapper/*.xml
 
 # 显示 sql 语句
 logging:

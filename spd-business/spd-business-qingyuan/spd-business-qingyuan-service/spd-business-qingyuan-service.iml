@@ -26,6 +26,13 @@
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="spd-business-qingyuan-dao" />
+    <orderEntry type="module" module-name="spd-common-rocketmq" />
+    <orderEntry type="library" name="Maven: org.apache.rocketmq:rocketmq-client:4.4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.rocketmq:rocketmq-common:4.4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.rocketmq:rocketmq-remoting:4.4.0" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-all:4.1.36.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.rocketmq:rocketmq-logging:4.4.0" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-tcnative-boringssl-static:2.0.25.Final" level="project" />
     <orderEntry type="module" module-name="spd-common-model" />
     <orderEntry type="module" module-name="spd-common-base" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-elasticsearch:3.1.9.RELEASE" level="project" />

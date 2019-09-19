@@ -1,5 +1,6 @@
-package com.jh.common.rocketmq.producer;
+package com.jh.common.rocketmq;
 
+import com.jh.common.enums.rocketmq.MqDelayTimeLevelEnum;
 import org.apache.rocketmq.client.exception.MQClientException;
 import org.apache.rocketmq.client.producer.SendResult;
 
@@ -19,6 +20,14 @@ public interface IMqProducer {
      * @return
      */
     SendResult sendMsg(String topic, String msg);
+
+    /**
+     * 发送延时消息  统一为String类型
+     *
+     * @param msg
+     * @return
+     */
+    SendResult sendDelayedMsg(String topic, String msg, MqDelayTimeLevelEnum mqDelayTimeLevelEnum);
 
     /**
      * 关闭生产者

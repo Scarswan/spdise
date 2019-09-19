@@ -4,8 +4,46 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08520e8e-da79-4ad3-986e-7901892b3392" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="08520e8e-da79-4ad3-986e-7901892b3392" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/java/com/jh/business/qingyuan/mq/TestConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/java/com/jh/business/qingyuan/mq/producer/TestProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/rocketmq/ConsumeStatusAppend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/rocketmq/MqChannel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/rocketmq/MqDelayTimeLevelEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/rocketmq/RocketMqConsume.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/rocketmq/RocketMqMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/data/rocketmq使用文档.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/data/t_rocketmq_consume.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/data/t_rocketmq_message.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/constants/MqConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/IMqConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/annotation/EnableRocketMqConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/annotation/EnableRocketMqProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/annotation/RocketMqConsumerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/annotation/RocketMqProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/impl/MqConsumerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/impl/MqProducerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/mapper/RocketMqConsumeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/mapper/RocketMqMessageMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/resources/mapper/RocketMqConsumeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/resources/mapper/RocketMqMessageMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8849ffc0-f721-4b88-89ea-46c320ea8761.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8849ffc0-f721-4b88-89ea-46c320ea8761.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-qingyuan/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-qingyuan/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/spd-business-qingyuan-controller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/spd-business-qingyuan-controller.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/java/com/jh/business/qingyuan/BusinessQingYuanApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/java/com/jh/business/qingyuan/BusinessQingYuanApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-service/spd-business-qingyuan-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-service/spd-business-qingyuan-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-service/src/main/java/com/jh/business/qingyuan/service/impl/TeacherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-service/src/main/java/com/jh/business/qingyuan/service/impl/TeacherServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/spd-common-rocketmq.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/spd-common-rocketmq.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/consumer/IMqConsumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/consumer/impl/MqConsumerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/consumer/listener/IConsumerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/IConsumerListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/producer/IMqProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/IMqProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/producer/impl/MqProducerImpl.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/spd_root/target/" />
     <ignored path="$PROJECT_DIR$/spd-root/target/" />
@@ -65,18 +103,18 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="qingyuan" type="feb32156:DbDataSourceImpl" />
+        <item name="spdise" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="qingyuan" type="feb32156:DbDataSourceImpl" />
+        <item name="spdise" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="qingyuan" type="feb32156:DbDataSourceImpl" />
+        <item name="spdise" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="qingyuan: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="spdise: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -85,61 +123,38 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spd-business/pom.xml">
+        <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/java/com/jh/business/qingyuan/mq/TestConsumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1044">
-              <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+            <state relative-caret-position="54">
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/spd-business-demo-controller.iml">
+        <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/impl/MqProducerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4065" />
+            <state relative-caret-position="143">
+              <caret line="56" column="70" selection-start-line="56" selection-start-column="70" selection-end-line="56" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+        <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-service/src/main/java/com/jh/business/qingyuan/service/impl/TeacherServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="323">
+              <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo.iml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spd-root/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-144">
-              <caret line="57" column="21" lean-forward="true" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spd-business/spd-business.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan.iml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -149,9 +164,9 @@
       <list>
         <option value="mybatis-config" />
         <option value="mybatis-generator-config" />
-        <option value="AnnotationType" />
         <option value="Enum" />
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -164,6 +179,7 @@
       <find>FILE_LOG_PATTERN</find>
       <find>b_</find>
       <find>spd-business-demo-controller (1).iml</find>
+      <find>(1)</find>
     </findStrings>
     <replaceStrings>
       <replace>n_</replace>
@@ -203,40 +219,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-dao/src/main/java/com/jh/business/base/mapper/NovelChapterMapper.java" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/pom.xml" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-dao/pom.xml" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/pom.xml" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/java/com/jh/business/qingyuan/BusinessQingYuanApplication.java" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-service/pom.xml" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-dao/src/main/resources/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/NovelClicksService.java" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/impl/NovelClicksServiceImpl.java" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-controller/src/main/java/com/jh/business/base/timetask/ResetClicksTimeTask.java" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/RetCode.java" />
-        <option value="$PROJECT_DIR$/spd-api/spd-api-base/src/main/java/com/jh/api/base/fallbackfactory/UserClientFallbackFactory.java" />
-        <option value="$PROJECT_DIR$/spd-api/spd-api-demo/src/main/java/com/jh/api/demo/fallbackfactory/PlusUserClientFallBackFactory.java" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/sequence/Sequence.java" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/impl/NovelChapterServiceImpl.java" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/response/ResponseMsg.java" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/date/DateUtil.java" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-base/spd-business-base-service/src/main/java/com/jh/business/base/service/impl/NovelServiceImpl.java" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/YesNoEnum.java" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/constants/PasswordConstants.java" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/qingyuan/Teacher.java" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/query/qingyuan/TeacherQuery.java" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-dao/src/main/resources/mapper/TeacherMapper.xml" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/qingyuan/Student.java" />
-        <option value="$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/qingyuan/Clazz.java" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-service/src/main/java/com/jh/business/qingyuan/service/impl/ClazzServiceImpl.java" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/java/com/jh/business/qingyuan/controller/ClassController.java" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/java/com/jh/business/qingyuan/controller/ClazzController.java" />
-        <option value="$PROJECT_DIR$/spd-api/spd-api-qingyuan/src/main/java/com/jh/api/qingyuan/ClazzClient.java" />
-        <option value="$PROJECT_DIR$/spd-api/pom.xml" />
-        <option value="$PROJECT_DIR$/spd-api/spd-api-qingyuan/pom.xml" />
-        <option value="$PROJECT_DIR$/spd-api/spd-api-qingyuan/src/main/java/com/jh/api/qingyuan/TeacherClient.java" />
         <option value="$PROJECT_DIR$/spd-api/spd-api-qingyuan/src/main/java/com/jh/api/qingyuan/fallbackfactory/TeacherClientFallbackFactory.java" />
         <option value="$PROJECT_DIR$/spd-api/spd-api-qingyuan/src/main/java/com/jh/api/qingyuan/StudentClient.java" />
         <option value="$PROJECT_DIR$/spd-api/spd-api-qingyuan/src/main/java/com/jh/api/qingyuan/fallbackfactory/StudentClientFallbackFactory.java" />
@@ -245,7 +227,6 @@
         <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-dao/src/main/resources/mapper/StudentMapper.xml" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/java/com/jh/business/qingyuan/controller/TeacherController.java" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-service/src/main/java/com/jh/business/qingyuan/service/TeacherService.java" />
-        <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-service/src/main/java/com/jh/business/qingyuan/service/impl/TeacherServiceImpl.java" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-service/src/main/java/com/jh/business/qingyuan/service/StudentService.java" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-service/src/main/java/com/jh/business/qingyuan/service/impl/StudentServiceImpl.java" />
         <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/java/com/jh/business/qingyuan/controller/StudentController.java" />
@@ -254,6 +235,41 @@
         <option value="$PROJECT_DIR$/spd-business/pom.xml" />
         <option value="$PROJECT_DIR$/spd-root/server-port.txt" />
         <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/constants/MqConstants.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/producer/IMqProducer.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/MqDelayTimeLevelEnum.java" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-dao/src/main/java/com/jh/common/rocketmq/mapper/RocketmqMessageMapper.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-rocketmq/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/resources/mapper/RocketmqMessageMapper.xml" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/producer/impl/MqProducerImpl.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/annotation/EnableRocketMqProducer.java" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/mapper/RocketMqMessageMapper.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/consumer/IMqConsumer.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/rocketmq/RocketMqConsume.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/ConsumeStatusAppend.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/resources/mapper/RocketMqConsumeMapper.xml" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/consumer/impl/MqConsumerImpl.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/mapper/RocketMqConsumeMapper.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/annotation/EnableRocketMqConsumer.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/MqChannel.java" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/java/com/jh/business/qingyuan/BusinessQingYuanApplication.java" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/pom.xml" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/IConsumerListener.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/IMqConsumer.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/annotation/RocketMqConsumerConfig.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/annotation/RocketMqProducerConfig.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/rocketmq/MqChannel.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/rocketmq/ConsumeStatusAppend.java" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/java/com/jh/business/qingyuan/mq/producer/TestProducer.java" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/java/com/jh/business/qingyuan/mq/TestConsumer.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/impl/MqConsumerImpl.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/impl/MqProducerImpl.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/rocketmq/MqDelayTimeLevelEnum.java" />
+        <option value="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/IMqProducer.java" />
+        <option value="$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-service/src/main/java/com/jh/business/qingyuan/service/impl/TeacherServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -291,9 +307,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
-    <option name="width" value="975" />
-    <option name="height" value="1050" />
+    <option name="x" value="-10" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -313,30 +329,257 @@
             <path>
               <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
               <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spdise" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
               <item name="spdise" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-qingyuan" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
               <item name="spdise" type="462c0819:PsiDirectoryNode" />
               <item name="spd-business" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-business-demo-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-qingyuan" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-qingyuan-controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
               <item name="spdise" type="462c0819:PsiDirectoryNode" />
-              <item name="spd-root" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-qingyuan" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-qingyuan-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-qingyuan" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-qingyuan-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-qingyuan" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-qingyuan-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-qingyuan" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-qingyuan-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="qingyuan" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-qingyuan" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-qingyuan-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="qingyuan" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-qingyuan" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-qingyuan-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="qingyuan" type="462c0819:PsiDirectoryNode" />
+              <item name="mq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-qingyuan" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-business-qingyuan-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="qingyuan" type="462c0819:PsiDirectoryNode" />
+              <item name="mq" type="462c0819:PsiDirectoryNode" />
+              <item name="producer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common-base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+              <item name="rocketmq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common-rocketmq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="rocketmq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spdise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spdise" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common" type="462c0819:PsiDirectoryNode" />
+              <item name="spd-common-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -359,7 +602,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -370,25 +613,29 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jh.common.enums.rocketmq" />
+      <recent name="com.jh.common.rocketmq.impl" />
+      <recent name="com.jh.common.rocketmq" />
+      <recent name="com.jh.common.enums" />
       <recent name="com.jh.api.qingyuan.fallbackfactory" />
-      <recent name="com.jh.api.qingyuan" />
-      <recent name="com.jh.business.base.service.impl" />
-      <recent name="com.jh.business.base.service" />
-      <recent name="com.jh.business.base.timetask" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PersonalProject\spdise\spd-common\spd-common-rocketmq" />
       <recent name="D:\PersonalProject\spdise\spd-business\spd-business-qingyuan\spd-business-qingyuan-dao\src\main\resources" />
       <recent name="D:\PersonalProject\spdise\spd-business\spd-business-qingyuan\spd-business-qingyuan-controller\src\main\resources" />
       <recent name="D:\PersonalProject\spdise\spd-business\spd-business-base\spd-business-base-dao\src\main\resources\mapper" />
       <recent name="D:\PersonalProject\spdise\spd-business\spd-business-demo\spd-business-demo-zipkin\src\main\resources" />
-      <recent name="D:\PersonalProject\spdise\spd-business\spd-business-demo\spd-business-demo-controller\src\main\resources" />
     </key>
   </component>
   <component name="RestServicesNavigator">
     <treeState>
       <expand>
         <path>
-          <item name="Found 33 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="Found 37 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+        </path>
+        <path>
+          <item name="Found 37 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="spd-business-qingyuan-controller" type="c588b436:RestServiceStructure$ProjectNode" />
         </path>
       </expand>
       <select />
@@ -513,20 +760,11 @@
       <workItem from="1568165980748" duration="59000" />
       <workItem from="1568186274617" duration="9863000" />
       <workItem from="1568250518617" duration="17784000" />
-    </task>
-    <task id="LOCAL-00045" summary="新增章节名 chapter_name 字段">
-      <created>1567500345222</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1567500345222</updated>
-    </task>
-    <task id="LOCAL-00046" summary="新增更新章节方法">
-      <created>1567500383450</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1567500383450</updated>
+      <workItem from="1568621467192" duration="762000" />
+      <workItem from="1568682447454" duration="1698000" />
+      <workItem from="1568691998030" duration="768000" />
+      <workItem from="1568855901289" duration="3754000" />
+      <workItem from="1568886106437" duration="6616000" />
     </task>
     <task id="LOCAL-00047" summary="方法描述优化">
       <created>1567500768542</created>
@@ -857,7 +1095,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568620148692</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="update">
+      <created>1568621374657</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1568621374657</updated>
+    </task>
+    <task id="LOCAL-00095" summary="update">
+      <created>1568621444327</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1568621444327</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -887,7 +1139,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="315601000" />
+    <option name="totallyTimeSpent" value="329310000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -909,7 +1161,7 @@
       <window_info id="Learn" order="4" />
       <window_info id="Web" order="5" side_tool="true" />
       <window_info id="Designer" order="6" />
-      <window_info active="true" content_ui="combo" x="581" y="58" width="373" height="717" id="Project" order="7" visible="true" weight="0.2533512" />
+      <window_info content_ui="combo" x="581" y="58" width="373" height="717" id="Project" order="7" visible="true" weight="0.26407507" />
       <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.32960895" />
       <window_info anchor="bottom" id="Database Console" order="1" weight="0.32960895" />
@@ -927,7 +1179,7 @@
       <window_info anchor="bottom" id="TODO" order="13" weight="0.32960895" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.32960895" />
       <window_info anchor="bottom" id="Run" order="15" sideWeight="0.49731904" weight="0.46927375" />
-      <window_info anchor="bottom" id="Messages" order="16" weight="0.3282123" />
+      <window_info active="true" anchor="bottom" id="Messages" order="16" visible="true" weight="0.3282123" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Database" order="2" weight="0.3297587" />
@@ -940,10 +1192,21 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
       <window_info anchor="right" id="Mybatis datasource" order="10" side_tool="true" />
       <window_info anchor="right" id="RestServices" order="11" weight="0.3297587" />
+      <window_info anchor="right" id="Word Book" order="12" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="删除 Base 类" />
@@ -990,211 +1253,356 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/qingyuan/Teacher.java">
+    <entry file="file://$PROJECT_DIR$/spd-root/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1026">
+          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/bind/annotation/Mapping.java">
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        <state relative-caret-position="-900">
+          <caret line="199" column="31" selection-start-line="199" selection-start-column="31" selection-end-line="199" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/bind/annotation/PostMapping.java">
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-295">
-          <caret line="44" column="10" lean-forward="true" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
+        <state relative-caret-position="342">
+          <caret line="43" column="65" selection-start-line="43" selection-start-column="65" selection-end-line="43" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RequestMethod.java">
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+        <state relative-caret-position="184">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RequestMapping.java">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-util/src/main/java/com/jh/common/util/sequence/SnowFlakeForTransfer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="123" column="13" lean-forward="true" selection-start-line="123" selection-start-column="13" selection-end-line="123" selection-end-column="13" />
+        <state relative-caret-position="110">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-service/src/main/java/com/jh/business/qingyuan/service/ClazzService.java">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/constants/MqConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        <state relative-caret-position="144">
+          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/qingyuan/Clazz.java">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/NovelStatusEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="54" column="8" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="58" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-dao/src/main/java/com/jh/common/rocketmq/mapper/RocketmqMessageMapper.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.2.0/mybatis-plus-core-3.2.0-sources.jar!/com/baomidou/mybatisplus/core/mapper/BaseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="124" column="8" selection-start-line="124" selection-start-column="8" selection-end-line="124" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/rocketmq/RocketMqMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="87" column="19" selection-start-line="87" selection-start-column="19" selection-end-line="87" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/rocketmq/rocketmq-client/4.4.0/rocketmq-client-4.4.0-sources.jar!/org/apache/rocketmq/client/producer/DefaultMQProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="280" column="22" selection-start-line="280" selection-start-column="22" selection-end-line="280" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/mapper/RocketMqMessageMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-dao/src/main/java/com/jh/business/qingyuan/mapper/ClazzMapper.java">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/producer/impl/MqProducerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="49" lean-forward="true" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+        <state relative-caret-position="924">
+          <caret line="73" column="31" lean-forward="true" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-service/src/main/java/com/jh/business/qingyuan/service/impl/ClazzServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-demo/pom.xml">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/data/t_rocketmq_message.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-base/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/RetCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-qingyuan/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-qingyuan/src/main/java/com/jh/api/qingyuan/TeacherClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="39" column="72" selection-start-line="39" selection-start-column="72" selection-end-line="39" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-qingyuan/src/main/java/com/jh/api/qingyuan/fallbackfactory/StudentClientFallbackFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-qingyuan/src/main/java/com/jh/api/qingyuan/fallbackfactory/TeacherClientFallbackFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-qingyuan/src/main/java/com/jh/api/qingyuan/StudentClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/time/LocalDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="148" column="34" selection-start-line="148" selection-start-column="34" selection-end-line="148" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/time/LocalTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8248">
-          <caret line="124" column="19" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/time/LocalDateTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="164" column="22" selection-start-line="164" selection-start-column="22" selection-end-line="164" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-qingyuan/src/main/java/com/jh/api/qingyuan/ClazzClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-api/spd-api-qingyuan/src/main/java/com/jh/api/qingyuan/fallbackfactory/ClazzClientFallbackFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/java/com/jh/business/qingyuan/controller/ClazzController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/qingyuan/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="99" column="30" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="99" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/query/qingyuan/StudentQuery.java">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/resources/mapper/RocketMqMessageMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-vo/src/main/java/com/jh/common/query/qingyuan/TeacherQuery.java">
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/data/t_rocketmq_consume.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="71" column="23" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
+        <state relative-caret-position="252">
+          <caret line="23" selection-start-line="23" selection-end-line="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-model/src/main/java/com/jh/common/model/rocketmq/RocketMqConsume.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432">
+          <caret column="31" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/MqDelayTimeLevelEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/ConsumeStatusAppend.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/consumer/listener/IConsumerListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/NovelTypeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/MqChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/java/com/jh/business/qingyuan/BusinessQingYuanApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-service/src/main/java/com/jh/business/qingyuan/service/TeacherService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/mapper/RocketMqConsumeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/resources/mapper/RocketMqConsumeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/consumer/impl/MqConsumerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/producer/IMqProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/consumer/IMqConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/annotation/RocketMqConsumerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/annotation/RocketMqProducerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/rocketmq/MqChannel.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/rocketmq/ConsumeStatusAppend.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/java/com/jh/business/qingyuan/mq/producer/TestProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/annotation/EnableRocketMqConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/annotation/EnableRocketMqProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/impl/MqConsumerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/java/com/jh/business/qingyuan/mq/TestConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-base/src/main/java/com/jh/common/enums/rocketmq/MqDelayTimeLevelEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/IMqProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/IConsumerListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/IMqConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/src/main/java/com/jh/common/rocketmq/impl/MqProducerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="56" column="70" selection-start-line="56" selection-start-column="70" selection-end-line="56" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1203,166 +1611,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-service/src/main/java/com/jh/business/qingyuan/service/impl/TeacherServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="72" column="42" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
+        <state relative-caret-position="323">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-service/src/main/java/com/jh/business/qingyuan/service/TeacherService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/java/com/jh/business/qingyuan/controller/TeacherController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-dao/src/main/java/com/jh/business/qingyuan/mapper/TeacherMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-dao/src/main/java/com/jh/business/qingyuan/mapper/StudentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-service/src/main/java/com/jh/business/qingyuan/service/impl/StudentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-service/src/main/java/com/jh/business/qingyuan/service/StudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-dao/src/main/resources/mapper/StudentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/src/main/java/com/jh/business/demo/BusinessDemoApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-controller/src/main/java/com/jh/business/qingyuan/controller/StudentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="45" column="6" lean-forward="true" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#saveStudent#0;class#StudentController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-root/server-port.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-root/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144">
-          <caret line="57" column="21" lean-forward="true" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-331" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-root/spd_root.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2551">
-          <caret line="199" column="119" lean-forward="true" selection-start-line="199" selection-start-column="119" selection-end-line="199" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/spdise.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spd-business/spd-business-demo/spd-business-demo-controller/spd-business-demo-controller.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4065" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -1416,7 +1669,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>spd-api|spd-api and modules</last-edited>
+          <last-edited>Spring|spd-common-util|spd-common and modules</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

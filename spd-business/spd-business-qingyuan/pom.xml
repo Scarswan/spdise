@@ -21,6 +21,11 @@
     <description>清源棋社</description>
 
     <dependencies>
+        <dependency>
+            <groupId>com.jh</groupId>
+            <artifactId>spd-common-rocketmq</artifactId>
+            <version>1.9.9</version>
+        </dependency>
     </dependencies>
 
     <build>

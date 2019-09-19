@@ -3,9 +3,9 @@
   <component name="MyBatisCodeHelperDatasource">
     <option name="projectProfile">
       <ProjectProfile>
-        <option name="javaMapperPackage" value="com.jh.business.qingyuan.mapper" />
-        <option name="javaMapperPath" value="D:\PersonalProject\spdise\spd-business\spd-business-qingyuan\spd-business-qingyuan-dao\src\main\java" />
-        <option name="javaModelPackage" value="com.jh.common.model.qingyuan" />
+        <option name="javaMapperPackage" value="com.jh.common.rocketmq.mapper" />
+        <option name="javaMapperPath" value="D:\PersonalProject\spdise\spd-common\spd-common-rocketmq\src\main\java" />
+        <option name="javaModelPackage" value="com.jh.common.model.rocketmq" />
         <option name="javaModelPath" value="D:\PersonalProject\spdise\spd-common\spd-common-model\src\main\java" />
         <option name="lastDatabaseCrudChooseModuleName" value="spd-common-base" />
         <option name="moduleNameToPackageAndPathMap">
@@ -29,12 +29,12 @@
             <entry key="spd-common-base">
               <value>
                 <UserPackageAndPathInfoByModule>
-                  <option name="javaMapperPackage" value="com.jh.business.qingyuan.mapper" />
-                  <option name="javaMapperPath" value="D:\PersonalProject\spdise\spd-business\spd-business-qingyuan\spd-business-qingyuan-dao\src\main\java" />
-                  <option name="javaModelPacakge" value="com.jh.common.model.qingyuan" />
+                  <option name="javaMapperPackage" value="com.jh.common.rocketmq.mapper" />
+                  <option name="javaMapperPath" value="D:\PersonalProject\spdise\spd-common\spd-common-rocketmq\src\main\java" />
+                  <option name="javaModelPacakge" value="com.jh.common.model.rocketmq" />
                   <option name="javaModelPath" value="D:\PersonalProject\spdise\spd-common\spd-common-model\src\main\java" />
                   <option name="xmlPackage" value="mapper" />
-                  <option name="xmlPath" value="D:\PersonalProject\spdise\spd-business\spd-business-qingyuan\spd-business-qingyuan-dao\src\main\resources" />
+                  <option name="xmlPath" value="D:\PersonalProject\spdise\spd-common\spd-common-rocketmq\src\main\resources" />
                 </UserPackageAndPathInfoByModule>
               </value>
             </entry>
@@ -120,12 +120,32 @@
                 </TableGenerateConfig>
               </value>
             </entry>
+            <entry key="spdise:t_rocketmq_consume">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="TRocketmqConsume" />
+                  <option name="moduleName" value="spd-common-base" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="spdise:t_rocketmq_message">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="RocketmqMessage" />
+                  <option name="moduleName" value="spd-common-base" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
           </map>
         </option>
         <option name="useLomBokOnModel" value="true" />
         <option name="userMybatisPlus" value="true" />
         <option name="xmlMapperPackage" value="mapper" />
-        <option name="xmlMapperPath" value="D:\PersonalProject\spdise\spd-business\spd-business-qingyuan\spd-business-qingyuan-dao\src\main\resources" />
+        <option name="xmlMapperPath" value="D:\PersonalProject\spdise\spd-common\spd-common-rocketmq\src\main\resources" />
       </ProjectProfile>
     </option>
   </component>

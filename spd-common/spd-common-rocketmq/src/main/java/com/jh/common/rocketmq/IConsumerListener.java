@@ -1,4 +1,4 @@
-package com.jh.common.rocketmq.consumer.listener;
+package com.jh.common.rocketmq;
 
 import java.util.function.Function;
 
