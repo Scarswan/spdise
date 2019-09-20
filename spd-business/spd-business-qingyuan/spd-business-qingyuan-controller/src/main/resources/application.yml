@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: business-qingyuan
+  elasticsearch:
+    jest:
+      uris: http://127.0.0.1:9200
+      connection-timeout: 10000
+      read-timeout: 10000
   # zipkin 配置
   #  zipkin:
   #    base-url: http://localhost:8211

@@ -19,6 +19,7 @@
         <module>spd-common-rocketmq</module>
         <module>spd-common-vo</module>
         <module>spd-common-redis</module>
+        <module>spd-common-es</module>
     </modules>
 
     <artifactId>spd-common</artifactId>

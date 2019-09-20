@@ -1,0 +1,62 @@
+1、启动 es
+
+2、添加依赖：
+   <dependency>
+       <groupId>io.searchbox</groupId>
+       <artifactId>jest</artifactId>
+       <version>6.3.1</version>
+   </dependency>
+
+   <dependency>
+       <groupId>io.searchbox</groupId>
+       <artifactId>jest-common</artifactId>
+       <version>6.3.1</version>
+   </dependency>
+
+   <dependency>
+       <groupId>org.elasticsearch</groupId>
+       <artifactId>elasticsearch</artifactId>
+       <version>6.4.3</version>
+   </dependency>
+
+   <dependency>
+       <groupId>com.jh</groupId>
+       <artifactId>spd-common-es</artifactId>
+       <version>1.0.0</version>
+   </dependency>
+
+3、修改 application.yml：
+   添加：
+       elasticsearch:
+         jest:
+           uris: http://127.0.0.1:9200
+           connection-timeout: 10000
+           read-timeout: 10000
+
+4、使用 es：
+   4.1、在需要使用的类引入 Bean：
+        @Autowired
+        JestClient jestClient;
+
+        @Autowired
+        JestService jestService;
+   4.2、查询：
+        SearchResult searchResult = jestService.search(jestClient, indexName, get<T>Query(T t));
+        List<SearchResult.Hit<T, Void>> hits = searchResult.getHits(T.class);
+        List<T> objs = new ArrayList<>();
+            hits.forEach(o -> {
+            objs.add(o.source);
+        });
+   4.3、添加方法：
+        public static String get<T>Query(T t) {
+            SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
+            QueryBuilder queryBuilder = QueryBuilders.boolQuery();
+            if (StrUtil.isNotEmpty(t.getAttribute())) {
+                ((BoolQueryBuilder) queryBuilder).must(QueryBuilders.boolQuery().should(QueryBuilders.termQuery("attribute", t.getAttribute())));
+            }
+            searchSourceBuilder.query(queryBuilder);
+            searchSourceBuilder.from((t.getPageNum() -1 ) * t.getPageSize());
+            searchSourceBuilder.size(t.getPageSize());
+            return searchSourceBuilder.toString();
+        }
+   4.4、indexName 和 typeName 在 TableToIndex 枚举类里添加

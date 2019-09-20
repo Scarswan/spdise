@@ -1,4 +1,4 @@
-package com.jh.common.redis;
+package com.jh.common.constants.redis;
 
 public class RedisKey {
 

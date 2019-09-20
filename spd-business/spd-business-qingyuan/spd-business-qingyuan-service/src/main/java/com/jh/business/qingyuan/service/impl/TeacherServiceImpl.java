@@ -8,8 +8,6 @@ import com.jh.common.constants.PasswordConstants;
 import com.jh.common.enums.YesNoEnum;
 import com.jh.common.model.qingyuan.Teacher;
 import com.jh.common.query.qingyuan.TeacherQuery;
-import com.jh.common.redis.RedisUtil;
-import com.jh.common.rocketmq.IMqProducer;
 import com.jh.common.util.PasswordUtil;
 import com.jh.common.util.date.DateUtil;
 import com.jh.common.util.sequence.Sequence;

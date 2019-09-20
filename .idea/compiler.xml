@@ -9,6 +9,7 @@
         <module name="spd-common-util" />
         <module name="spd-common-model" />
         <module name="spd-api-demo" />
+        <module name="spd-common-es" />
         <module name="spd-business-qingyuan-dao" />
         <module name="spd-eureka" />
         <module name="spd-common-rocketmq" />
@@ -52,6 +53,7 @@
       <module name="spd-business-qingyuan-service" target="1.8" />
       <module name="spd-common" target="1.8" />
       <module name="spd-common-base" target="1.8" />
+      <module name="spd-common-es" target="1.8" />
       <module name="spd-common-generator" target="1.8" />
       <module name="spd-common-model" target="1.8" />
       <module name="spd-common-redis" target="1.8" />
@@ -93,6 +95,7 @@
       <module name="spd-business-qingyuan-service" options="-parameters" />
       <module name="spd-common" options="-parameters" />
       <module name="spd-common-base" options="-parameters" />
+      <module name="spd-common-es" options="-parameters" />
       <module name="spd-common-generator" options="-parameters" />
       <module name="spd-common-model" options="-parameters" />
       <module name="spd-common-redis" options="-parameters" />

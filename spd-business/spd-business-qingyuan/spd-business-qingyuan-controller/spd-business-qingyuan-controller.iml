@@ -39,10 +39,8 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.antlr:antlr-runtime:3.4" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.antlr:stringtemplate:3.2.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: antlr:antlr:2.7.7" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: com.google.code.gson:gson:2.8.5" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.commons:commons-math:2.2" level="project" />
     <orderEntry type="library" name="Maven: com.netflix.archaius:archaius-core:0.7.6" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: com.google.guava:guava:16.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: javax.ws.rs:jsr311-api:1.1.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.netflix.servo:servo-core:0.12.21" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.sun.jersey:jersey-core:1.19.1" level="project" />
@@ -72,7 +70,6 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: io.reactivex:rxnetty-contexts:0.4.9" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: io.reactivex:rxnetty-servo:0.4.9" level="project" />
     <orderEntry type="library" name="Maven: com.netflix.hystrix:hystrix-core:1.5.18" level="project" />
-    <orderEntry type="library" name="Maven: org.hdrhistogram:HdrHistogram:2.1.9" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: io.reactivex:rxnetty:0.4.9" level="project" />
     <orderEntry type="library" name="Maven: com.netflix.ribbon:ribbon-core:2.3.0" level="project" />
     <orderEntry type="library" name="Maven: com.netflix.ribbon:ribbon-httpclient:2.3.0" level="project" />
@@ -97,32 +94,12 @@
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-hystrix:10.2.3" level="project" />
     <orderEntry type="module" module-name="spd-business-qingyuan-service" />
     <orderEntry type="module" module-name="spd-business-qingyuan-dao" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-redis:2.1.6.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-redis:2.1.9.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-keyvalue:2.1.9.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: io.lettuce:lettuce-core:5.1.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty-common:4.1.36.Final" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty-handler:4.1.36.Final" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty-transport:4.1.36.Final" level="project" />
-    <orderEntry type="library" name="Maven: io.projectreactor:reactor-core:3.2.10.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.reactivestreams:reactive-streams:1.0.2" level="project" />
-    <orderEntry type="module" module-name="spd-common-rocketmq" />
-    <orderEntry type="module" module-name="spd-common-base" />
-    <orderEntry type="library" name="Maven: org.apache.rocketmq:rocketmq-client:4.4.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.rocketmq:rocketmq-common:4.4.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.rocketmq:rocketmq-remoting:4.4.0" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty-all:4.1.36.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.rocketmq:rocketmq-logging:4.4.0" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty-tcnative-boringssl-static:2.0.25.Final" level="project" />
-    <orderEntry type="library" name="Maven: cn.hutool:hutool-core:4.6.1" level="project" />
-    <orderEntry type="module" module-name="spd-common-redis" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.9" level="project" />
-    <orderEntry type="module" module-name="spd-common-model" />
-    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-elasticsearch:3.1.9.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.1.8.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.1.9.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: joda-time:joda-time:2.10.2" level="project" />
-    <orderEntry type="library" name="Maven: org.elasticsearch.client:transport:6.4.3" level="project" />
+    <orderEntry type="library" name="Maven: io.searchbox:jest:6.3.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore-nio:4.4.11" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpasyncclient:4.1.4" level="project" />
+    <orderEntry type="library" name="Maven: io.searchbox:jest-common:6.3.1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:21.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.5" level="project" />
     <orderEntry type="library" name="Maven: org.elasticsearch:elasticsearch:6.4.3" level="project" />
     <orderEntry type="library" name="Maven: org.elasticsearch:elasticsearch-core:6.4.3" level="project" />
     <orderEntry type="library" name="Maven: org.elasticsearch:elasticsearch-secure-sm:6.4.3" level="project" />
@@ -148,32 +125,13 @@
     <orderEntry type="library" name="Maven: org.elasticsearch:elasticsearch-cli:6.4.3" level="project" />
     <orderEntry type="library" name="Maven: net.sf.jopt-simple:jopt-simple:5.0.2" level="project" />
     <orderEntry type="library" name="Maven: com.carrotsearch:hppc:0.7.1" level="project" />
+    <orderEntry type="library" name="Maven: joda-time:joda-time:2.10.2" level="project" />
     <orderEntry type="library" name="Maven: com.tdunning:t-digest:3.2" level="project" />
+    <orderEntry type="library" name="Maven: org.hdrhistogram:HdrHistogram:2.1.9" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.11.2" level="project" />
     <orderEntry type="library" name="Maven: org.elasticsearch:jna:4.5.1" level="project" />
-    <orderEntry type="library" name="Maven: org.elasticsearch.plugin:reindex-client:6.4.3" level="project" />
-    <orderEntry type="library" name="Maven: org.elasticsearch.client:elasticsearch-rest-client:6.4.3" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpasyncclient:4.1.4" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore-nio:4.4.11" level="project" />
-    <orderEntry type="library" name="Maven: org.elasticsearch.plugin:lang-mustache-client:6.4.3" level="project" />
-    <orderEntry type="library" name="Maven: com.github.spullara.mustache.java:compiler:0.9.3" level="project" />
-    <orderEntry type="library" name="Maven: org.elasticsearch.plugin:percolator-client:6.4.3" level="project" />
-    <orderEntry type="library" name="Maven: org.elasticsearch.plugin:parent-join-client:6.4.3" level="project" />
-    <orderEntry type="library" name="Maven: org.elasticsearch.plugin:rank-eval-client:6.4.3" level="project" />
-    <orderEntry type="library" name="Maven: org.elasticsearch.plugin:transport-netty4-client:6.4.3" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty-buffer:4.1.36.Final" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty-codec:4.1.36.Final" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty-codec-http:4.1.36.Final" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty-resolver:4.1.36.Final" level="project" />
-    <orderEntry type="module" module-name="spd-common-util" />
-    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.8.1" level="project" />
-    <orderEntry type="module" module-name="spd-common-vo" />
-    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus:3.2.0" level="project" />
-    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-extension:3.2.0" level="project" />
-    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-core:3.2.0" level="project" />
-    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-annotation:3.2.0" level="project" />
-    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.38" level="project" />
-    <orderEntry type="library" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.0" level="project" />
+    <orderEntry type="module" module-name="spd-common-es" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-redis:2.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-logging:2.1.6.RELEASE" level="project" />
@@ -183,6 +141,52 @@
     <orderEntry type="library" name="Maven: org.slf4j:jul-to-slf4j:1.7.26" level="project" />
     <orderEntry type="library" name="Maven: javax.annotation:javax.annotation-api:1.3.2" level="project" />
     <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.23" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-redis:2.1.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-keyvalue:2.1.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.1.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.1.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: io.lettuce:lettuce-core:5.1.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-common:4.1.36.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-handler:4.1.36.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-buffer:4.1.36.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-codec:4.1.36.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-transport:4.1.36.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-resolver:4.1.36.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.projectreactor:reactor-core:3.2.10.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.reactivestreams:reactive-streams:1.0.2" level="project" />
+    <orderEntry type="module" module-name="spd-common-rocketmq" />
+    <orderEntry type="module" module-name="spd-common-base" />
+    <orderEntry type="library" name="Maven: org.apache.rocketmq:rocketmq-client:4.4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.rocketmq:rocketmq-common:4.4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.rocketmq:rocketmq-remoting:4.4.0" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-all:4.1.36.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.rocketmq:rocketmq-logging:4.4.0" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-tcnative-boringssl-static:2.0.25.Final" level="project" />
+    <orderEntry type="library" name="Maven: cn.hutool:hutool-core:4.6.1" level="project" />
+    <orderEntry type="module" module-name="spd-common-redis" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.9" level="project" />
+    <orderEntry type="module" module-name="spd-common-model" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-elasticsearch:3.1.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.1.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.elasticsearch.client:transport:6.4.3" level="project" />
+    <orderEntry type="library" name="Maven: org.elasticsearch.plugin:reindex-client:6.4.3" level="project" />
+    <orderEntry type="library" name="Maven: org.elasticsearch.client:elasticsearch-rest-client:6.4.3" level="project" />
+    <orderEntry type="library" name="Maven: org.elasticsearch.plugin:lang-mustache-client:6.4.3" level="project" />
+    <orderEntry type="library" name="Maven: com.github.spullara.mustache.java:compiler:0.9.3" level="project" />
+    <orderEntry type="library" name="Maven: org.elasticsearch.plugin:percolator-client:6.4.3" level="project" />
+    <orderEntry type="library" name="Maven: org.elasticsearch.plugin:parent-join-client:6.4.3" level="project" />
+    <orderEntry type="library" name="Maven: org.elasticsearch.plugin:rank-eval-client:6.4.3" level="project" />
+    <orderEntry type="library" name="Maven: org.elasticsearch.plugin:transport-netty4-client:6.4.3" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-codec-http:4.1.36.Final" level="project" />
+    <orderEntry type="module" module-name="spd-common-util" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.8.1" level="project" />
+    <orderEntry type="module" module-name="spd-common-vo" />
+    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus:3.2.0" level="project" />
+    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-extension:3.2.0" level="project" />
+    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-core:3.2.0" level="project" />
+    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-annotation:3.2.0" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.38" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:2.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.zaxxer:HikariCP:3.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:5.1.8.RELEASE" level="project" />
@@ -206,7 +210,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-context-support:5.1.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.1.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.1.8.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.1.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.1.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:5.1.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.1.8.RELEASE" level="project" />

@@ -1,0 +1,24 @@
+1、启动 Redis
+
+2、添加依赖：
+   <dependency>
+        <groupId>com.jh</groupId>
+        <artifactId>spd-common-redis</artifactId>
+        <version>1.0.0</version>
+   </dependency>
+
+3、修改 application.yml：
+   添加：
+       redis:
+         database: 0         #Redis数据库索引（默认为0）
+         host: 127.0.0.1
+         port: 6379
+         password:
+         timeout: 30000
+
+4、使用 Redis：
+   4.1、在需要使用 Redis 的类引入 Bean:
+        @Autowired
+        private RedisUtil redisUtil;
+   4.2、自行根据需求调用 RedisUtil 工具类里的方法
+   4.3、key 在 RedisKey 里添加

@@ -21,6 +21,7 @@
     <file url="file://$PROJECT_DIR$/spd-business/spd-business-qingyuan/spd-business-qingyuan-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-common/spd-common-base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spd-common/spd-common-es" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-common/spd-common-generator" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-common/spd-common-model" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spd-common/spd-common-redis" charset="UTF-8" />
