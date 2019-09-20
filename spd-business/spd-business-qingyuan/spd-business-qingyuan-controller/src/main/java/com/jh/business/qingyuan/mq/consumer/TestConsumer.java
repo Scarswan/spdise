@@ -1,7 +1,7 @@
-package com.jh.business.qingyuan.mq;
+package com.jh.business.qingyuan.mq.consumer;
 
-import com.jh.common.enums.rocketmq.MqChannel;
 import com.jh.common.enums.RetCode;
+import com.jh.common.enums.rocketmq.MqChannel;
 import com.jh.common.rocketmq.IMqConsumer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

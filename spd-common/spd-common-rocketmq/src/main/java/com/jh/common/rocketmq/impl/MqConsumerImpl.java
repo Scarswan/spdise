@@ -2,14 +2,14 @@ package com.jh.common.rocketmq.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.jh.common.constants.mq.MqConstants;
-import com.jh.common.enums.rocketmq.ConsumeStatusAppend;
+import com.jh.common.enums.rocketmq.ConsumerStatusAppend;
 import com.jh.common.enums.RetCode;
 import com.jh.common.enums.YesNoEnum;
-import com.jh.common.model.rocketmq.RocketMqConsume;
+import com.jh.common.model.rocketmq.RocketMqConsumer;
 import com.jh.common.model.rocketmq.RocketMqMessage;
 import com.jh.common.rocketmq.IMqConsumer;
 import com.jh.common.rocketmq.IConsumerListener;
-import com.jh.common.rocketmq.mapper.RocketMqConsumeMapper;
+import com.jh.common.rocketmq.mapper.RocketMqConsumerMapper;
 import com.jh.common.util.date.DateUtil;
 import com.jh.common.util.sequence.Sequence;
 import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
@@ -30,7 +30,7 @@ public class MqConsumerImpl implements IMqConsumer {
     private Logger logger = LoggerFactory.getLogger(MqConsumerImpl.class);
 
     @Autowired
-    private RocketMqConsumeMapper rocketMqConsumeMapper;
+    private RocketMqConsumerMapper rocketMqConsumeMapper;
 
     @Value("${spdise.rocketMq.consumeMaxRetryCount}")
     public int maxRetryCount;
@@ -56,7 +56,7 @@ public class MqConsumerImpl implements IMqConsumer {
                     //单发消息不会出现多条的情况
                     for (int i = 0; i < list.size(); i++) {
 
-                        RocketMqConsume rocketMqConsume = new RocketMqConsume();
+                        RocketMqConsumer rocketMqConsume = new RocketMqConsumer();
                         int consumeCount = 0;
                         try {
                             MessageExt messageExt = list.get(i);
@@ -70,27 +70,27 @@ public class MqConsumerImpl implements IMqConsumer {
                             rocketMqConsume.setMessageConsumerGroup(consumerGroup);
                             rocketMqConsume.setMessageTag(MqConstants.MQ_TAG);
                             rocketMqConsume.setMessageTopic(topic);
-                            rocketMqConsume.setRocketmqConsumeId(Sequence.createId());
+                            rocketMqConsume.setRocketmqConsumerId(Sequence.createId());
                             rocketMqConsume.setRocketmqMessageId(rocketMqMessage.getRocketmqMessageId());
-                            rocketMqConsume.setMaxConsumeCount(maxRetryCount);
+                            rocketMqConsume.setMaxConsumerCount(maxRetryCount);
 
-                            RocketMqConsume selectConsume = new RocketMqConsume();
+                            RocketMqConsumer selectConsume = new RocketMqConsumer();
                             selectConsume.setRocketmqMessageId(rocketMqMessage.getRocketmqMessageId());
                             selectConsume.setMessageConsumerGroup(consumerGroup);
-                            List<RocketMqConsume> rocketMqConsumes = rocketMqConsumeMapper.selectByAll(selectConsume);
+                            List<RocketMqConsumer> rocketMqConsumes = rocketMqConsumeMapper.selectByAll(selectConsume);
                             if (rocketMqConsumes != null) {
                                 for (int j = 0; j < rocketMqConsumes.size(); j++) {
-                                    if (ConsumeConcurrentlyStatus.CONSUME_SUCCESS.name().equals(rocketMqConsumes.get(j).getConsumeStatus())) {
-                                        rocketMqConsume.setConsumeStatus(ConsumeStatusAppend.CONSUME_CONSUMED.name());
-                                        rocketMqConsume.setConsumeCount(rocketMqConsumes.size() + 1);
+                                    if (ConsumeConcurrentlyStatus.CONSUME_SUCCESS.name().equals(rocketMqConsumes.get(j).getConsumerStatus())) {
+                                        rocketMqConsume.setConsumerStatus(ConsumerStatusAppend.CONSUMER_CONSUMED.name());
+                                        rocketMqConsume.setConsumerCount(rocketMqConsumes.size() + 1);
                                         rocketMqConsumeMapper.insert(rocketMqConsume);
                                         return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
                                     }
                                 }
                                 if (rocketMqConsumes.size() >= maxRetryCount) {
                                     //新增消费超过最大次数放弃
-                                    rocketMqConsume.setConsumeStatus(ConsumeStatusAppend.CONSUME_REACH_MAX.name());
-                                    rocketMqConsume.setConsumeCount(rocketMqConsumes.size());
+                                    rocketMqConsume.setConsumerStatus(ConsumerStatusAppend.CONSUMER_REACH_MAX.name());
+                                    rocketMqConsume.setConsumerCount(rocketMqConsumes.size());
                                     rocketMqConsumeMapper.insert(rocketMqConsume);
                                     return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
                                 }
@@ -103,23 +103,23 @@ public class MqConsumerImpl implements IMqConsumer {
                             consumeCount++;
                             if (RetCode.SUCCESS.getCode().equals(code)) {
                                 //新增消费成功记录
-                                rocketMqConsume.setConsumeStatus(ConsumeStatusAppend.CONSUME_SUCCESS.name());
-                                rocketMqConsume.setConsumeCount(consumeCount);
+                                rocketMqConsume.setConsumerStatus(ConsumerStatusAppend.CONSUMER_SUCCESS.name());
+                                rocketMqConsume.setConsumerCount(consumeCount);
                                 rocketMqConsumeMapper.insert(rocketMqConsume);
                                 return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
                             } else {
 
                                 //新增消费失败记录
-                                rocketMqConsume.setConsumeStatus(ConsumeStatusAppend.RECONSUME_LATER.name());
-                                rocketMqConsume.setConsumeCount(consumeCount);
+                                rocketMqConsume.setConsumerStatus(ConsumerStatusAppend.RECONSUMER_LATER.name());
+                                rocketMqConsume.setConsumerCount(consumeCount);
                                 rocketMqConsumeMapper.insert(rocketMqConsume);
 
                                 return ConsumeConcurrentlyStatus.RECONSUME_LATER;
                             }
                         } catch (Exception e) {
                             //新增消费失败记录
-                            rocketMqConsume.setConsumeStatus(ConsumeStatusAppend.RECONSUME_LATER.name());
-                            rocketMqConsume.setConsumeCount(consumeCount);
+                            rocketMqConsume.setConsumerStatus(ConsumerStatusAppend.RECONSUMER_LATER.name());
+                            rocketMqConsume.setConsumerCount(consumeCount);
                             rocketMqConsumeMapper.insert(rocketMqConsume);
 
                             return ConsumeConcurrentlyStatus.RECONSUME_LATER;

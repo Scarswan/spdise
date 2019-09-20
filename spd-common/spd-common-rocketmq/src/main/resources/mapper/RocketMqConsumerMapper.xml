@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.jh.common.rocketmq.mapper.RocketMqConsumeMapper">
-    <resultMap id="BaseResultMap" type="com.jh.common.model.rocketmq.RocketMqConsume">
-        <id column="rocketmq_consume_id" jdbcType="VARCHAR" property="rocketmqConsumeId"/>
+<mapper namespace="com.jh.common.rocketmq.mapper.RocketMqConsumerMapper">
+    <resultMap id="BaseResultMap" type="com.jh.common.model.rocketmq.RocketMqConsumer">
+        <id column="rocketmq_consumer_id" jdbcType="VARCHAR" property="rocketmqConsumerId"/>
         <result column="rocketmq_message_id" jdbcType="VARCHAR" property="rocketmqMessageId"/>
         <result column="transaction_id" jdbcType="VARCHAR" property="transactionId"/>
         <result column="message_topic" jdbcType="VARCHAR" property="messageTopic"/>
@@ -11,22 +11,22 @@
         <result column="create_time" jdbcType="VARCHAR" property="createTime"/>
         <result column="update_time" jdbcType="VARCHAR" property="updateTime"/>
         <result column="del_flag" jdbcType="INTEGER" property="delFlag"/>
-        <result column="consume_status" jdbcType="VARCHAR" property="consumeStatus"/>
-        <result column="consume_count" jdbcType="INTEGER" property="consumeCount"/>
-        <result column="max_consume_count" jdbcType="INTEGER" property="maxConsumeCount"/>
+        <result column="consumer_status" jdbcType="VARCHAR" property="consumerStatus"/>
+        <result column="consumer_count" jdbcType="INTEGER" property="consumerCount"/>
+        <result column="max_consumer_count" jdbcType="INTEGER" property="maxConsumerCount"/>
     </resultMap>
     <sql id="Base_Column_List">
-        rocketmq_consume_id, rocketmq_message_id, transaction_id, message_topic, message_consumer_group,
-        message_tag, create_time, update_time, del_flag, consume_status, consume_count, max_consume_count
+        rocketmq_consumer_id, rocketmq_message_id, transaction_id, message_topic, message_consumer_group,
+        message_tag, create_time, update_time, del_flag, consumer_status, consumer_count, max_consumer_count
     </sql>
 
     <select id="selectByAll" resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List"/>
-        from t_rocketmq_consume
+        from t_rocketmq_consumer
         where 1=1
-        <if test="rocketmqConsumeId != null and rocketmqConsumeId != ''">
-            and rocketmq_consume_id=#{rocketmqConsumeId,jdbcType=VARCHAR}
+        <if test="rocketmqConsumerId != null and rocketmqConsumerId != ''">
+            and rocketmq_consumer_id=#{rocketmqConsumerId,jdbcType=VARCHAR}
         </if>
         <if test="rocketmqMessageId != null and rocketmqMessageId != ''">
             and rocketmq_message_id=#{rocketmqMessageId,jdbcType=VARCHAR}
@@ -52,14 +52,14 @@
         <if test="delFlag != null">
             and del_flag=#{delFlag,jdbcType=INTEGER}
         </if>
-        <if test="consumeStatus != null and consumeStatus != ''">
-            and consume_status=#{consumeStatus,jdbcType=VARCHAR}
+        <if test="consumerStatus != null and consumerStatus != ''">
+            and consumer_status=#{consumerStatus,jdbcType=VARCHAR}
         </if>
-        <if test="consumeCount != null">
-            and consume_count=#{consumeCount,jdbcType=INTEGER}
+        <if test="consumerCount != null">
+            and consumer_count=#{consumerCount,jdbcType=INTEGER}
         </if>
-        <if test="maxConsumeCount != null">
-            and max_consume_count=#{maxConsumeCount,jdbcType=INTEGER}
+        <if test="maxConsumerCount != null">
+            and max_consumer_count=#{maxConsumerCount,jdbcType=INTEGER}
         </if>
     </select>
 </mapper>

@@ -7,13 +7,13 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 @Data
-@TableName(value = "t_rocketmq_consume")
-public class RocketMqConsume {
+@TableName(value = "t_rocketmq_consumer")
+public class RocketMqConsumer {
     /**
      * message消费记录主键
      */
-    @TableId(value = "rocketmq_consume_id", type = IdType.INPUT)
-    private String rocketmqConsumeId;
+    @TableId(value = "rocketmq_consumer_id", type = IdType.INPUT)
+    private String rocketmqConsumerId;
 
     /**
      * 消息id
@@ -67,21 +67,21 @@ public class RocketMqConsume {
      * 消息消费状态
      */
     @TableField(value = "consume_status")
-    private String consumeStatus;
+    private String consumerStatus;
 
     /**
      * 第几次接收数据
      */
     @TableField(value = "consume_count")
-    private Integer consumeCount;
+    private Integer consumerCount;
 
     /**
      * 最多消费次数 超过后会舍弃消息
      */
-    @TableField(value = "max_consume_count")
-    private Integer maxConsumeCount;
+    @TableField(value = "max_consumer_count")
+    private Integer maxConsumerCount;
 
-    public static final String COL_ROCKETMQ_CONSUME_ID = "rocketmq_consume_id";
+    public static final String COL_ROCKETMQ_CONSUMER_ID = "rocketmq_consumer_id";
 
     public static final String COL_ROCKETMQ_MESSAGE_ID = "rocketmq_message_id";
 
@@ -99,9 +99,9 @@ public class RocketMqConsume {
 
     public static final String COL_DEL_FLAG = "del_flag";
 
-    public static final String COL_CONSUME_STATUS = "consume_status";
+    public static final String COL_CONSUMER_STATUS = "consumer_status";
 
-    public static final String COL_CONSUME_COUNT = "consume_count";
+    public static final String COL_CONSUMER_COUNT = "consumer_count";
 
-    public static final String COL_MAX_CONSUME_COUNT = "max_consume_count";
+    public static final String COL_MAX_CONSUMER_COUNT = "max_consumer_count";
 }

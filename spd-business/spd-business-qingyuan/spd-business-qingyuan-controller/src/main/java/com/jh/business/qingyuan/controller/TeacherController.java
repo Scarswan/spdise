@@ -48,7 +48,7 @@ public class TeacherController {
      * @return
      */
     @PostMapping("/update/password")
-    public ResponseMsg updatePassword(@RequestBody Teacher teacher){
+    public ResponseMsg updatePassword(@RequestBody Teacher teacher) {
         int row = teacherService.updatePassword(teacher);
 
         return ResponseMsg.successRow(row);
@@ -60,7 +60,7 @@ public class TeacherController {
      * @param teacherId
      * @return
      */
-    @GetMapping("/query/byTeacherId")
+    @GetMapping("/query/byId")
     public ResponseMsg<Teacher> queryByTeacherId(String teacherId) {
         Teacher teacher = teacherService.queryByTeacherId(teacherId);
 

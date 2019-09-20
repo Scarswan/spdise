@@ -957,7 +957,7 @@
     <table id="245" parent="15" name="t_novel3"/>
     <table id="246" parent="15" name="t_novel_chapter"/>
     <table id="247" parent="15" name="t_novel_clicks"/>
-    <table id="248" parent="15" name="t_rocketmq_consume"/>
+    <table id="248" parent="15" name="t_rocketmq_consumer"/>
     <table id="249" parent="15" name="t_rocketmq_message"/>
     <table id="250" parent="15" name="t_user"/>
     <table id="251" parent="15" name="user"/>
@@ -1484,7 +1484,7 @@
       <ColNames>cl_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="333" parent="248" name="rocketmq_consume_id">
+    <column id="333" parent="248" name="rocketmq_consumer_id">
       <Position>1</Position>
       <Comment>message消费记录主键</Comment>
       <DataType>varchar(50)|0s</DataType>
@@ -1539,19 +1539,19 @@
       <DataType>int(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="342" parent="248" name="consume_status">
+    <column id="342" parent="248" name="consumer_status">
       <Position>10</Position>
       <Comment>消息消费状态</Comment>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="343" parent="248" name="consume_count">
+    <column id="343" parent="248" name="consumer_count">
       <Position>11</Position>
       <Comment>第几次接收数据</Comment>
       <DataType>int(5)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="344" parent="248" name="max_consume_count">
+    <column id="344" parent="248" name="max_consumer_count">
       <Position>12</Position>
       <Comment>最多消费次数 超过后会舍弃消息</Comment>
       <DataType>int(5)|0s</DataType>
@@ -1559,7 +1559,7 @@
     </column>
     <key id="345" parent="248" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>rocketmq_consume_id</ColNames>
+      <ColNames>rocketmq_consumer_id</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="346" parent="249" name="rocketmq_message_id">

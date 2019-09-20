@@ -42,7 +42,11 @@ public class TeacherServiceImpl implements TeacherService {
         int row = teacherMapper.insert(teacher);
         logger.info("saveTeacher: 保存教师信息成功, 出参: row = {}", row);
 
-        mqProducer.sendMsg(MqChannel.MQ_CHANNEL_TEST.getTopic(), JSON.toJSONString(teacher));
+        try {
+            mqProducer.sendMsg(MqChannel.MQ_CHANNEL_TEST.getTopic(), JSON.toJSONString(teacher));
+        } catch (Exception e) {
+            logger.error("新增教师发送信息失败：", e);
+        }
 
         return row;
     }
