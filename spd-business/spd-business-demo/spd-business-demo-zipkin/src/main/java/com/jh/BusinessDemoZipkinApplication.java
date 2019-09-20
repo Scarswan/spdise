@@ -1,4 +1,4 @@
-package com.jh.business.demo.zipkin;
+package com.jh;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
