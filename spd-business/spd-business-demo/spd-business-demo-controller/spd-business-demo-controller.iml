@@ -167,7 +167,9 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.6.2" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.38" level="project" />
     <orderEntry type="library" name="Maven: junit:junit:4.12" level="project" />
-    <orderEntry type="library" name="Maven: com.jh:spd-business-demo-service:1.0.0" level="project" />
+    <orderEntry type="module" module-name="spd-business-demo-service" />
+    <orderEntry type="module" module-name="spd-business-demo-dao" />
+    <orderEntry type="module" module-name="spd-common-base" />
     <orderEntry type="module" module-name="spd-api-base" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-starter-feign:1.4.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-starter-openfeign:2.1.2.RELEASE" level="project" />
@@ -229,7 +231,6 @@
     <orderEntry type="library" name="Maven: io.netty:netty-resolver:4.1.36.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-transport:4.1.36.Final" level="project" />
     <orderEntry type="module" module-name="spd-common-model" />
-    <orderEntry type="module" module-name="spd-common-base" />
     <orderEntry type="library" name="Maven: cn.hutool:hutool-core:4.6.1" level="project" />
     <orderEntry type="module" module-name="spd-common-util" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.8.1" level="project" />

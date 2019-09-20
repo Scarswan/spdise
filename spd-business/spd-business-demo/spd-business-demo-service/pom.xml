@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
 
     <artifactId>spd-business-demo-service</artifactId>
-    <version>1.9.9</version>
+    <version>1.0.0</version>
     <name>spd-business-demo-service</name>
     <description>demo-业务层</description>
 
