@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: business-base
+    name: business-qingyuan
   # zipkin 配置
   #  zipkin:
   #    base-url: http://localhost:8211
@@ -40,3 +40,10 @@ logging:
         business:
           base:
             mapper: debug
+
+# rocketMq 配置
+spdise:
+  rocketMq:
+    nameServerAddr: 127.0.0.1:9876
+    producerMaxRetryCount: 10
+    consumeMaxRetryCount: 10

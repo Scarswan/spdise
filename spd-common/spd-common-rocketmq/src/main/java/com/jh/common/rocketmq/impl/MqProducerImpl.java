@@ -27,10 +27,10 @@ import java.util.Objects;
 public class MqProducerImpl implements IMqProducer {
     private Logger logger = LoggerFactory.getLogger(MqProducerImpl.class);
 
-    @Value("${spdise.rocketmq.namesrvAddr}")
-    public String namesrvAddr;
+    @Value("${spdise.rocketMq.nameServerAddr}")
+    public String nameServerAddr;
 
-    @Value("${spdise.rocketmq.producerMaxRetryCount}")
+    @Value("${spdise.rocketMq.producerMaxRetryCount}")
     public int maxRetryCount;
 
     @Autowired
@@ -44,7 +44,7 @@ public class MqProducerImpl implements IMqProducer {
     public void start(String producerGroup) throws MQClientException {
         this.producerGroup = producerGroup;
         defaultMQProducer = new DefaultMQProducer(producerGroup);
-        defaultMQProducer.setNamesrvAddr(namesrvAddr);
+        defaultMQProducer.setNamesrvAddr(nameServerAddr);
         defaultMQProducer.start();
     }
 
@@ -56,7 +56,7 @@ public class MqProducerImpl implements IMqProducer {
     @Override
     public SendResult sendDelayedMsg(String topic, String msg, MqDelayTimeLevelEnum mqDelayTimeLevelEnum) {
         try {
-            logger.info(String.format("rocketmq消息队列开始往主题%s发送消息%s", topic, msg));
+            logger.info(String.format("RocketMq 消息队列开始往主题 %s 发送消息 %s", topic, msg));
             RocketMqMessage rocketMqMessage = new RocketMqMessage();
             rocketMqMessage.setRocketmqMessageId(Sequence.createId());
             rocketMqMessage.setCreateTime(DateUtil.getCurrentTimeString());
@@ -89,7 +89,7 @@ public class MqProducerImpl implements IMqProducer {
 
             return sendResult;
         } catch (Exception e) {
-            logger.error("rocketmq消息队列往主题" + topic + "发送消息" + msg + "异常", e);
+            logger.error("RocketMq 消息队列往主题" + topic + "发送消息" + msg + "异常", e);
             throw new RuntimeException(e);
         }
     }

@@ -20,7 +20,7 @@ public class TestConsumer implements CommandLineRunner {
     public void run(String... args) throws Exception {
         mqConsumerImpl.start(MqChannel.MQ_CHANNEL_TEST.getTopic(), MqChannel.MQ_CHANNEL_TEST.getConsumerGroup(), msg -> {
             try {
-                logger.info("mq回调消息=========================>" + msg);
+                logger.info("RocketMq 回调消息=========================>" + msg);
             } catch (Exception e) {
                 logger.error("新增回调，新增教师信息异常", e);
                 throw e;

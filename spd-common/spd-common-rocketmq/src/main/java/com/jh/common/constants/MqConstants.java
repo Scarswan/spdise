@@ -5,6 +5,4 @@ public class MqConstants {
     public static final String MQ_TAG = "spd";
 
     public static final String USER_PROPERTY_KEY = "spd_mq_property_key";
-
-    public static final String ACCOUNT_JOB = "";
 }

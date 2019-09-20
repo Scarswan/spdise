@@ -32,19 +32,19 @@ public class MqConsumerImpl implements IMqConsumer {
     @Autowired
     private RocketMqConsumeMapper rocketMqConsumeMapper;
 
-    @Value("${spdise.rocketmq.consumeMaxRetryCount}")
+    @Value("${spdise.rocketMq.consumeMaxRetryCount}")
     public int maxRetryCount;
 
-    @Value("${spdise.rocketmq.namesrvAddr}")
-    public String namesrvAddr;
+    @Value("${spdise.rocketMq.nameServerAddr}")
+    public String nameServerAddr;
 
     private DefaultMQPushConsumer consumer;
 
     @Override
     public void start(String topic, String consumerGroup, IConsumerListener iConsumerListener) throws Exception {
-        logger.info(String.format("%s消费者开始接收主题%s下消息", consumerGroup, topic));
+        logger.info(String.format("%s 消费者开始接收主题 %s 下消息", consumerGroup, topic));
         consumer = new DefaultMQPushConsumer(consumerGroup);
-        consumer.setNamesrvAddr(namesrvAddr);
+        consumer.setNamesrvAddr(nameServerAddr);
         consumer.setConsumeThreadMax(5);
         consumer.setConsumeThreadMin(1);
         consumer.subscribe(topic, MqConstants.MQ_TAG);
@@ -52,7 +52,7 @@ public class MqConsumerImpl implements IMqConsumer {
             @Override
             public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> list, ConsumeConcurrentlyContext consumeConcurrentlyContext) {
                 try {
-                    logger.info(String.format("%s消费者接收主题%s下消息,条数：%d，", consumerGroup, topic, list.size()));
+                    logger.info(String.format("%s 消费者接收主题 %s 下消息,条数：%d，", consumerGroup, topic, list.size()));
                     //单发消息不会出现多条的情况
                     for (int i = 0; i < list.size(); i ++) {
 
@@ -62,7 +62,7 @@ public class MqConsumerImpl implements IMqConsumer {
                             MessageExt messageExt = list.get(i);
                             //消息查重。。。。。。  //重复消费 则记录下重复消费情况  返回消费成功
                             RocketMqMessage rocketMqMessage = JSON.parseObject(messageExt.getProperty(MqConstants.USER_PROPERTY_KEY), RocketMqMessage.class);
-                            logger.info(String.format("%s消费者处理主题%s下消息：%d  %s，", consumerGroup, topic, i, messageExt.getProperty(MqConstants.USER_PROPERTY_KEY)));
+                            logger.info(String.format("%s 消费者处理主题 %s 下消息：%d  %s，", consumerGroup, topic, i, messageExt.getProperty(MqConstants.USER_PROPERTY_KEY)));
 
                             rocketMqConsume.setCreateTime(DateUtil.getCurrentTimeString());
                             rocketMqConsume.setUpdateTime(DateUtil.getCurrentTimeString());
