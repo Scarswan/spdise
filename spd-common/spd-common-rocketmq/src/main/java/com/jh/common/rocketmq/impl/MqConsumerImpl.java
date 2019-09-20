@@ -54,7 +54,7 @@ public class MqConsumerImpl implements IMqConsumer {
                 try {
                     logger.info(String.format("%s 消费者接收主题 %s 下消息,条数：%d，", consumerGroup, topic, list.size()));
                     //单发消息不会出现多条的情况
-                    for (int i = 0; i < list.size(); i ++) {
+                    for (int i = 0; i < list.size(); i++) {
 
                         RocketMqConsume rocketMqConsume = new RocketMqConsume();
                         int consumeCount = 0;
