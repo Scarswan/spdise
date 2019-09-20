@@ -6,7 +6,7 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-@TableName(value = "spd_novel")
+@TableName(value = "t_novel")
 public class NovelQuery {
     /**
      * 页码

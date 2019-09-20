@@ -9,7 +9,7 @@ import lombok.Data;
 import java.util.Date;
 
 @Data
-@TableName(value = "spd_novel_clicks")
+@TableName(value = "t_novel_clicks")
 public class NovelClicks {
     /**
      * 小说点击量主键id

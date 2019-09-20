@@ -7,7 +7,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 @Data
-@TableName(value = "spd_user", autoResultMap = true)
+@TableName(value = "t_user", autoResultMap = true)
 public class User {
     /**
      * 用户id

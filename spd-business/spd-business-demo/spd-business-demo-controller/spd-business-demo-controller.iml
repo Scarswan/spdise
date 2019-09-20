@@ -180,7 +180,7 @@
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-core:10.2.3" level="project" />
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-slf4j:10.2.3" level="project" />
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-hystrix:10.2.3" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-elasticsearch:2.1.6.RELEASE" level="project" />
+    <orderEntry type="module" module-name="spd-common-model" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-elasticsearch:3.1.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.1.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.1.9.RELEASE" level="project" />
@@ -230,7 +230,6 @@
     <orderEntry type="library" name="Maven: io.netty:netty-handler:4.1.36.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-resolver:4.1.36.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-transport:4.1.36.Final" level="project" />
-    <orderEntry type="module" module-name="spd-common-model" />
     <orderEntry type="library" name="Maven: cn.hutool:hutool-core:4.6.1" level="project" />
     <orderEntry type="module" module-name="spd-common-util" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.8.1" level="project" />

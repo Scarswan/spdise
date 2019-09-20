@@ -6,7 +6,7 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-@TableName(value = "spd_novel")
+@TableName(value = "t_novel")
 public class NovelDTO {
     /**
      * 小说主键id

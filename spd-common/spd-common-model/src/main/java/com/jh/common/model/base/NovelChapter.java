@@ -7,7 +7,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 @Data
-@TableName(value = "spd_novel_chapter")
+@TableName(value = "t_novel_chapter")
 public class NovelChapter {
     /**
      * 章节主键id
