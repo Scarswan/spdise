@@ -22,7 +22,7 @@
     </sql>
 
     <insert id="insertList">
-        INSERT INTO spd_user(
+        INSERT INTO t_user(
         user_id,
         user_name,
         user_password,
@@ -56,7 +56,7 @@
     </insert>
 
     <update id="updateByUserId">
-        update spd_user
+        update t_user
         <set>
             <if test="updated.userId != null">
                 user_id = #{updated.userId,jdbcType=VARCHAR},
@@ -104,7 +104,7 @@
     <select id="selectByAll" resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List"/>
-        from spd_user
+        from t_user
         where 1=1
         <if test="userId != null">
             and user_id=#{userId,jdbcType=VARCHAR}

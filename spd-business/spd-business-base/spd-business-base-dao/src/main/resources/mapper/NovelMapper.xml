@@ -24,7 +24,7 @@
   </sql>
 
     <update id="updateByNovelId">
-        update spd_novel
+        update t_novel
         <set>
             <if test="updated.novelName != null">
                 novel_name = #{updated.novelName,jdbcType=VARCHAR},
@@ -72,7 +72,7 @@
     <select id="selectByAll" resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List"/>
-        from spd_novel
+        from t_novel
         where 1=1
         <if test="novel.novelId != null">
             and n_id=#{novel.novelId,jdbcType=VARCHAR}

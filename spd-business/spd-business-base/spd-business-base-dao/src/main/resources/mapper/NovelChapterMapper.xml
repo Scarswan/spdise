@@ -20,14 +20,14 @@
     <select id="selectByNovelId" resultMap="BaseResultMap">
         select
         chapter_id, chapter_index, chapter_name
-        from spd_novel_chapter
+        from t_novel_chapter
         where novel_id = #{novelId,jdbcType=VARCHAR}
         and is_delete = 2
         order by chapter_index asc
     </select>
 
     <update id="updateByChapterId">
-        update spd_novel_chapter
+        update t_novel_chapter
         <set>
             <if test="updated.novelId != null">
                 novel_id = #{updated.novelId,jdbcType=VARCHAR},

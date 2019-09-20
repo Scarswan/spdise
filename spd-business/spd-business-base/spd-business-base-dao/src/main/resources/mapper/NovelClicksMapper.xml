@@ -20,7 +20,7 @@
   </sql>
 
     <update id="update">
-        update spd_novel_clicks
+        update t_novel_clicks
         <set>
             <if test="updated.clId != null">
                 cl_id = #{updated.clId,jdbcType=VARCHAR},
