@@ -24,6 +24,7 @@
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-base/spd-common-base.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-base/spd-common-base.iml" group="spd-common and modules" />
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-generator/spd-common-generator.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-generator/spd-common-generator.iml" group="spd-common and modules" />
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-model/spd-common-model.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-model/spd-common-model.iml" group="spd-common and modules" />
+      <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-redis/spd-common-redis.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-redis/spd-common-redis.iml" group="spd-common and modules" />
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-rocketmq/spd-common-rocketmq.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-rocketmq/spd-common-rocketmq.iml" group="spd-common and modules" />
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-util/spd-common-util.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-util/spd-common-util.iml" group="spd-common and modules" />
       <module fileurl="file://$PROJECT_DIR$/spd-common/spd-common-vo/spd-common-vo.iml" filepath="$PROJECT_DIR$/spd-common/spd-common-vo/spd-common-vo.iml" group="spd-common and modules" />

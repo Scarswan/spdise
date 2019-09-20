@@ -1,4 +1,4 @@
-package com.jh.business.qingyuan;
+package com.jh;
 
 import com.jh.common.rocketmq.annotation.EnableRocketMqConsumer;
 import com.jh.common.rocketmq.annotation.EnableRocketMqProducer;
@@ -11,9 +11,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableEurekaClient
 @SpringBootApplication
 @EnableTransactionManagement
-@MapperScan("com.jh.*.*.mapper")
 @EnableRocketMqConsumer
 @EnableRocketMqProducer
+@MapperScan("com.jh.**.mapper")
 public class BusinessQingYuanApplication {
 
     public static void main(String[] args) {

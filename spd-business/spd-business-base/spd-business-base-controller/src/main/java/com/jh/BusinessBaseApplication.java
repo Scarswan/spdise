@@ -1,4 +1,4 @@
-package com.jh.business.base;
+package com.jh;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;

@@ -1,4 +1,4 @@
-package com.jh.business.demo;
+package com.jh;
 
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import org.mybatis.spring.annotation.MapperScan;

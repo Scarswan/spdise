@@ -1,15 +1,14 @@
 package com.jh.business.qingyuan.service.impl;
 
-import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.jh.business.qingyuan.mapper.TeacherMapper;
 import com.jh.business.qingyuan.service.TeacherService;
 import com.jh.common.constants.PasswordConstants;
-import com.jh.common.enums.rocketmq.MqChannel;
 import com.jh.common.enums.YesNoEnum;
 import com.jh.common.model.qingyuan.Teacher;
 import com.jh.common.query.qingyuan.TeacherQuery;
+import com.jh.common.redis.RedisUtil;
 import com.jh.common.rocketmq.IMqProducer;
 import com.jh.common.util.PasswordUtil;
 import com.jh.common.util.date.DateUtil;
@@ -29,9 +28,6 @@ public class TeacherServiceImpl implements TeacherService {
     @Autowired
     private TeacherMapper teacherMapper;
 
-    @Autowired
-    private IMqProducer mqProducer;
-
     @Override
     public int saveTeacher(Teacher teacher) {
         teacher.setTeacherId(Sequence.generateQingYuanId());
@@ -41,12 +37,6 @@ public class TeacherServiceImpl implements TeacherService {
         logger.info("saveTeacher: 保存教师信息, 入参: teacher = {}", teacher);
         int row = teacherMapper.insert(teacher);
         logger.info("saveTeacher: 保存教师信息成功, 出参: row = {}", row);
-
-        try {
-            mqProducer.sendMsg(MqChannel.MQ_CHANNEL_TEST.getTopic(), JSON.toJSONString(teacher));
-        } catch (Exception e) {
-            logger.error("新增教师发送信息失败：", e);
-        }
 
         return row;
     }
