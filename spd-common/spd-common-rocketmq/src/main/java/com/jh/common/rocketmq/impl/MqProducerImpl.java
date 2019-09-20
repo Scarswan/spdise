@@ -1,7 +1,7 @@
 package com.jh.common.rocketmq.impl;
 
 import com.alibaba.fastjson.JSON;
-import com.jh.common.constants.MqConstants;
+import com.jh.common.constants.mq.MqConstants;
 import com.jh.common.enums.rocketmq.MqDelayTimeLevelEnum;
 import com.jh.common.enums.YesNoEnum;
 import com.jh.common.model.rocketmq.RocketMqMessage;

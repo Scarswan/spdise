@@ -1,4 +1,4 @@
-package com.jh.common.constants;
+package com.jh.common.constants.mq;
 
 public class MqConstants {
 

@@ -1,7 +1,7 @@
 package com.jh.common.rocketmq.impl;
 
 import com.alibaba.fastjson.JSON;
-import com.jh.common.constants.MqConstants;
+import com.jh.common.constants.mq.MqConstants;
 import com.jh.common.enums.rocketmq.ConsumeStatusAppend;
 import com.jh.common.enums.RetCode;
 import com.jh.common.enums.YesNoEnum;
