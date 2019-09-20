@@ -6,9 +6,6 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
-/**
- * @blame 杨赋
- */
 @Data
 @TableName(value = "spd_user", autoResultMap = true)
 public class User {
@@ -61,6 +58,12 @@ public class User {
     private String userPhone;
 
     /**
+     * 身份证
+     */
+    @TableField(value = "id_card")
+    private String idCard;
+
+    /**
      * 邮箱
      */
     @TableField(value = "user_email")
@@ -99,6 +102,8 @@ public class User {
     public static final String COL_USER_AGE = "user_age";
 
     public static final String COL_USER_PHONE = "user_phone";
+
+    public static final String COL_ID_CARD = "id_card";
 
     public static final String COL_USER_EMAIL = "user_email";
 

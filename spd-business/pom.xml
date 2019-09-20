@@ -5,7 +5,7 @@
     <parent>
         <artifactId>spd-root</artifactId>
         <groupId>com.jh</groupId>
-        <version>1.9.9</version>
+        <version>1.0.0</version>
         <relativePath>../spd-root/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -13,12 +13,57 @@
     <modules>
         <module>spd-business-base</module>
         <module>spd-business-demo</module>
+        <module>spd-business-qingyuan</module>
     </modules>
 
     <artifactId>spd-business</artifactId>
-    <version>1.9.9</version>
+    <version>1.0.0</version>
     <name>spd-business</name>
     <description>business</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.jh</groupId>
+            <artifactId>spd-common-model</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jh</groupId>
+            <artifactId>spd-common-util</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jh</groupId>
+            <artifactId>spd-common-vo</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.38</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <finalName>spd-business</finalName>

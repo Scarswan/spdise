@@ -2,7 +2,7 @@ package com.jh.api.demo.fallbackfactory;
 
 import com.jh.api.demo.PlusUserClient;
 import com.jh.common.enums.RetCode;
-import com.jh.common.model.base.ResponseMsg;
+import com.jh.common.model.response.ResponseMsg;
 import com.jh.common.model.demo.User;
 import feign.hystrix.FallbackFactory;
 import org.slf4j.Logger;
@@ -18,29 +18,24 @@ public class PlusUserClientFallBackFactory implements FallbackFactory<PlusUserCl
 
     @Override
     public PlusUserClient create(Throwable throwable) {
+        logger.error("Demo服务调用失败", throwable);
         return new PlusUserClient() {
             @Override
             public ResponseMsg<User> selectById(Integer id) {
-                logger.error("FeignAPI-demo调用 business-demo:selectById 出错, id = {}, 异常信息：{}", id, throwable.getMessage());
-                throwable.printStackTrace();
-
-                return ResponseMsg.error(RetCode.FAIL);
+                logger.error("/plus/user/selectById 出错, id = {}", id);
+                return ResponseMsg.error(RetCode.CODE_999902, throwable.getMessage());
             }
 
             @Override
             public ResponseMsg<List<User>> selectList() {
-                logger.error("FeignAPI-demo调用 business-demo:selectById 出错, 异常信息：{}", throwable.getMessage());
-                throwable.printStackTrace();
-
-                return ResponseMsg.error(RetCode.FAIL);
+                logger.error("/plus/user/selectList 出错");
+                return ResponseMsg.error(RetCode.CODE_999902, throwable.getMessage());
             }
 
             @Override
             public ResponseMsg insert(User user) {
-                logger.error("FeignAPI-demo调用 business-demo:insert 出错, user = {}, 异常信息：{}", user, throwable.getMessage());
-                throwable.printStackTrace();
-
-                return ResponseMsg.error(RetCode.FAIL);
+                logger.error("/plus/user/insert 出错, user = {}", user);
+                return ResponseMsg.error(RetCode.CODE_999902, throwable.getMessage());
             }
         };
     }

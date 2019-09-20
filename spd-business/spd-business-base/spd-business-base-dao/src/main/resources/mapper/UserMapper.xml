@@ -2,22 +2,23 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.jh.business.base.mapper.UserMapper">
     <resultMap id="BaseResultMap" type="com.jh.common.model.base.User">
-        <id column="user_id" jdbcType="VARCHAR" property="userId" />
-        <result column="user_name" jdbcType="VARCHAR" property="userName" />
-        <result column="user_password" jdbcType="CHAR" property="userPassword" />
-        <result column="user_head_portrait" jdbcType="VARCHAR" property="userHeadPortrait" />
-        <result column="user_real_name" jdbcType="VARCHAR" property="userRealName" />
-        <result column="user_gender" jdbcType="INTEGER" property="userGender" />
-        <result column="user_age" jdbcType="INTEGER" property="userAge" />
-        <result column="user_phone" jdbcType="VARCHAR" property="userPhone" />
-        <result column="user_email" jdbcType="VARCHAR" property="userEmail" />
-        <result column="is_delete" jdbcType="INTEGER" property="isDelete" />
-        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
-        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+        <id column="user_id" jdbcType="VARCHAR" property="userId"/>
+        <result column="user_name" jdbcType="VARCHAR" property="userName"/>
+        <result column="user_password" jdbcType="CHAR" property="userPassword"/>
+        <result column="user_head_portrait" jdbcType="VARCHAR" property="userHeadPortrait"/>
+        <result column="user_real_name" jdbcType="VARCHAR" property="userRealName"/>
+        <result column="user_gender" jdbcType="INTEGER" property="userGender"/>
+        <result column="user_age" jdbcType="INTEGER" property="userAge"/>
+        <result column="user_phone" jdbcType="VARCHAR" property="userPhone"/>
+        <result column="id_card" jdbcType="CHAR" property="idCard"/>
+        <result column="user_email" jdbcType="VARCHAR" property="userEmail"/>
+        <result column="is_delete" jdbcType="INTEGER" property="isDelete"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
     </resultMap>
     <sql id="Base_Column_List">
         user_id, user_name, user_password, user_head_portrait, user_real_name, user_gender,
-        user_age, user_phone, user_email, is_delete, create_time, update_time
+        user_age, user_phone, id_card, user_email, is_delete, create_time, update_time
     </sql>
 
     <insert id="insertList">
@@ -30,6 +31,7 @@
         user_gender,
         user_age,
         user_phone,
+        id_card,
         user_email,
         is_delete,
         create_time,
@@ -80,6 +82,9 @@
             <if test="updated.userPhone != null">
                 user_phone = #{updated.userPhone,jdbcType=VARCHAR},
             </if>
+            <if test="updated.idCard != null ">
+                id_card = #{updated.idCard,jdbcType=VARCHAR},
+            </if>
             <if test="updated.userEmail != null">
                 user_email = #{updated.userEmail,jdbcType=VARCHAR},
             </if>
@@ -93,6 +98,52 @@
                 update_time = #{updated.updateTime,jdbcType=TIMESTAMP},
             </if>
         </set>
-        where user_id=#{userId,jdbcType=VARCHAR}
+        where user_id=#{updated.userId,jdbcType=VARCHAR}
     </update>
+
+    <select id="selectByAll" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from spd_user
+        where 1=1
+        <if test="userId != null">
+            and user_id=#{userId,jdbcType=VARCHAR}
+        </if>
+        <if test="userName != null">
+            and user_name=#{userName,jdbcType=VARCHAR}
+        </if>
+        <if test="userPassword != null">
+            and user_password=#{userPassword,jdbcType=CHAR}
+        </if>
+        <if test="userHeadPortrait != null">
+            and user_head_portrait=#{userHeadPortrait,jdbcType=VARCHAR}
+        </if>
+        <if test="userRealName != null">
+            and user_real_name=#{userRealName,jdbcType=VARCHAR}
+        </if>
+        <if test="userGender != null">
+            and user_gender=#{userGender,jdbcType=INTEGER}
+        </if>
+        <if test="userAge != null">
+            and user_age=#{userAge,jdbcType=INTEGER}
+        </if>
+        <if test="userPhone != null">
+            and user_phone=#{userPhone,jdbcType=VARCHAR}
+        </if>
+        <if test="idCard != null">
+            and id_card=#{idCard,jdbcType=CHAR}
+        </if>
+        <if test="userEmail != null">
+            and user_email=#{userEmail,jdbcType=VARCHAR}
+        </if>
+        <if test="isDelete != null">
+            and is_delete=#{isDelete,jdbcType=INTEGER}
+        </if>
+        <if test="createTime != null">
+            and create_time=#{createTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="updateTime != null">
+            and update_time=#{updateTime,jdbcType=TIMESTAMP}
+        </if>
+    </select>
 </mapper>

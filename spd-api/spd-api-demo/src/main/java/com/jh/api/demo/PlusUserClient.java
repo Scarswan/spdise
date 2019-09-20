@@ -1,7 +1,7 @@
 package com.jh.api.demo;
 
 import com.jh.api.demo.fallbackfactory.PlusUserClientFallBackFactory;
-import com.jh.common.model.base.ResponseMsg;
+import com.jh.common.model.response.ResponseMsg;
 import com.jh.common.model.demo.User;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;

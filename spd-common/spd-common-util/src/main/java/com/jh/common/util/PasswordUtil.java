@@ -4,9 +4,6 @@ import org.springframework.util.DigestUtils;
 
 /**
  * 密码工具类
- *
- * @author YangFu
- * @date 2019/08/23 19:31
  */
 public class PasswordUtil {
 

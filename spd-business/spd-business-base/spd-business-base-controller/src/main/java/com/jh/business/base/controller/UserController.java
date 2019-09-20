@@ -1,16 +1,18 @@
 package com.jh.business.base.controller;
 
+import com.github.pagehelper.PageInfo;
 import com.jh.business.base.service.UserService;
-import com.jh.common.model.base.ResponseMsg;
-import com.jh.common.model.base.User;
+import com.jh.common.dto.base.UserDTO;
+import com.jh.common.enums.RetCode;
+import com.jh.common.model.response.ResponseMsg;
+import com.jh.common.query.base.UserQuery;
+import com.jh.common.vo.base.UserVO;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * @blame 杨赋
- */
 @RestController
 @RequestMapping("/user")
 public class UserController {
@@ -21,66 +23,56 @@ public class UserController {
     /**
      * 登录或注册(根据手机号)
      *
-     * @param user
+     * @param userDTO
      * @return 行数
      */
-    @PostMapping("/loginOrRegister")
-    public ResponseMsg loginOrRegister(@RequestBody User user) {
-        int row = userService.save(user);
+    @PostMapping("/login/register")
+    public ResponseMsg loginOrRegister(@RequestBody UserDTO userDTO) {
+        int row = userService.save(userDTO);
 
-        return ResponseMsg.success(row);
+        return ResponseMsg.successRow(row);
     }
 
     /**
      * 批量增添用户
      *
-     * @param userList
+     * @param userDTOListList
      * @return
      */
-    @PostMapping("/batchSave")
-    public ResponseMsg batchSave(@RequestBody List<User> userList) {
-        int rows = userService.batchSave(userList);
+    @PostMapping("/batch/save")
+    public ResponseMsg batchSave(@RequestBody List<UserDTO> userDTOListList) {
+        int rows = userService.batchSave(userDTOListList);
 
-        return ResponseMsg.success("rows: " + rows);
-    }
-
-
-    /**
-     * 获取一条用户信息
-     *
-     * @param user
-     * @return
-     */
-    @PostMapping("/getUserInfo")
-    public ResponseMsg<User> getUserInfo(@RequestBody User user) {
-        User result = userService.getUserInfo(user);
-
-        return ResponseMsg.success(result);
+        return ResponseMsg.successRow(rows);
     }
 
     /**
-     * 获取全部用户信息
+     * 获取用户信息
      *
+     * @param userQuery
      * @return
      */
-    @GetMapping("/listUser")
-    public ResponseMsg<List<User>> listUser() {
-        List<User> userList = userService.listUser();
+    @PostMapping("/queryUser")
+    public ResponseMsg<PageInfo<UserVO>> queryUser(@RequestBody UserQuery userQuery) {
+        PageInfo<UserVO> userVOPageInfo = userService.queryUser(userQuery);
 
-        return ResponseMsg.success(userList);
+        return ResponseMsg.success(userVOPageInfo);
     }
 
     /**
      * 更新一条用户信息
      *
-     * @param user
+     * @param userDTO
      * @return
      */
-    @PostMapping("/updateUser")
-    public ResponseMsg updateUser(@RequestBody User user) {
-        int row = userService.updateUser(user);
+    @PostMapping("/update/userInfo")
+    public ResponseMsg updateUser(@RequestBody UserDTO userDTO) {
+        if (StringUtils.isNotBlank(userDTO.getUserId())) {
+            return ResponseMsg.error(RetCode.PARAM_ERROR);
+        }
+        int row = userService.updateUser(userDTO);
 
-        return ResponseMsg.success("row: " + row);
+        return ResponseMsg.successRow(row);
     }
 
 }

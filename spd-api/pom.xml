@@ -5,7 +5,7 @@
     <parent>
         <artifactId>spd-root</artifactId>
         <groupId>com.jh</groupId>
-        <version>1.9.9</version>
+        <version>1.0.0</version>
         <relativePath>../spd-root/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -13,10 +13,11 @@
     <modules>
         <module>spd-api-demo</module>
         <module>spd-api-base</module>
+        <module>spd-api-qingyuan</module>
     </modules>
 
     <artifactId>spd-api</artifactId>
-    <version>1.9.9</version>
+    <version>1.0.0</version>
     <name>spd-api</name>
     <description>feign接口</description>
 
@@ -26,15 +27,17 @@
             <artifactId>spring-cloud-starter-feign</artifactId>
             <version>1.4.7.RELEASE</version>
         </dependency>
+
         <dependency>
             <groupId>com.jh</groupId>
             <artifactId>spd-common-model</artifactId>
-            <version>1.9.9</version>
+            <version>1.0.0</version>
         </dependency>
+
         <dependency>
             <groupId>com.jh</groupId>
             <artifactId>spd-common-util</artifactId>
-            <version>1.9.9</version>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 

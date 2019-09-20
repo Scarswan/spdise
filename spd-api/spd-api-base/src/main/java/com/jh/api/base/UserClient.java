@@ -1,12 +1,12 @@
 package com.jh.api.base;
 
+import com.github.pagehelper.PageInfo;
 import com.jh.api.base.fallbackfactory.UserClientFallbackFactory;
-import com.jh.common.model.base.ResponseMsg;
-import com.jh.common.model.base.User;
+import com.jh.common.dto.base.UserDTO;
+import com.jh.common.model.response.ResponseMsg;
+import com.jh.common.vo.base.UserVO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @FeignClient(value = "business-base", path = "/user", fallbackFactory = UserClientFallbackFactory.class)
 public interface UserClient {
@@ -14,27 +14,18 @@ public interface UserClient {
     /**
      * 登录或注册(根据手机号)
      *
-     * @param user
-     * @return 行数
-     */
-    @PostMapping("/loginOrRegister")
-    ResponseMsg loginOrRegister(@RequestBody User user);
-
-    /**
-     * 获取一条用户信息
-     *
-     * @param user
+     * @param userDTO
      * @return
      */
-    @PostMapping("/getUserInfo")
-    ResponseMsg<User> getUserInfo(@RequestBody User user);
+    @PostMapping("/login/register")
+    ResponseMsg loginOrRegister(@RequestBody UserDTO userDTO);
 
     /**
-     * 获取全部用户信息
+     * 获取用户信息
      *
      * @return
      */
-    @GetMapping("/listUser")
-    ResponseMsg<List<User>> listUser();
+    @PostMapping("/queryUser")
+    ResponseMsg<PageInfo<UserVO>> queryUser(@RequestBody UserDTO userDTO);
 
 }

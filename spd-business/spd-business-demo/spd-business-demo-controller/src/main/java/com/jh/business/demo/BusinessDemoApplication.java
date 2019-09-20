@@ -14,15 +14,16 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @EnableEurekaClient
 @SpringBootApplication
-@EnableFeignClients(basePackages = {"com.jh.api"})
+@EnableFeignClients(basePackages = {"com.jh.api.base"})
 @EnableTransactionManagement
-//@ComponentScan(value = "com.jh.*")
-@ComponentScans(value = {@ComponentScan(value = "com.jh.business.demo"),@ComponentScan(value = "com.jh.api.base")})
+@ComponentScans({@ComponentScan("com.jh.api.base")})
 @MapperScan("com.jh.business.demo.mapper")
 @Configuration
 public class BusinessDemoApplication {
+
     public static void main(String[] args) {
         SpringApplication.run(BusinessDemoApplication.class, args);
+        System.out.println("Business-Demo 启动成功！");
     }
 
     @Bean

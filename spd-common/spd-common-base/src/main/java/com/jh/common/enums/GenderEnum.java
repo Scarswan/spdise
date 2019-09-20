@@ -1,14 +1,12 @@
 package com.jh.common.enums;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 import java.util.Objects;
 
-/**
- * @author YangFu
- * @data 2019/08/23 17:54
- */
 @Getter
+@AllArgsConstructor
 public enum GenderEnum {
 
     BOY("1", "男孩"),
@@ -19,11 +17,6 @@ public enum GenderEnum {
     private String code;
 
     private String desc;
-
-    GenderEnum(String code, String desc) {
-        this.code = code;
-        this.desc = desc;
-    }
 
     public static String findByCode(String roleNo) {
         for (GenderEnum roleEnum : values()) {

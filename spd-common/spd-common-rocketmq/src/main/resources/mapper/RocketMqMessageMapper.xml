@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jh.common.rocketmq.mapper.RocketMqMessageMapper">
+    <resultMap id="BaseResultMap" type="com.jh.common.model.rocketmq.RocketMqMessage">
+        <id column="rocketmq_message_id" jdbcType="VARCHAR" property="rocketmqMessageId"/>
+        <result column="del_flag" jdbcType="INTEGER" property="delFlag"/>
+        <result column="send_result" jdbcType="VARCHAR" property="sendResult"/>
+        <result column="message_topic" jdbcType="VARCHAR" property="messageTopic"/>
+        <result column="message_producer_group" jdbcType="VARCHAR" property="messageProducerGroup"/>
+        <result column="is_transactional" jdbcType="INTEGER" property="isTransactional"/>
+        <result column="transaction_id" jdbcType="VARCHAR" property="transactionId"/>
+        <result column="message_tag" jdbcType="VARCHAR" property="messageTag"/>
+        <result column="messge_status" jdbcType="VARCHAR" property="messgeStatus"/>
+        <result column="message_body" jdbcType="VARCHAR" property="messageBody"/>
+        <result column="send_count" jdbcType="INTEGER" property="sendCount"/>
+        <result column="max_retry_count" jdbcType="INTEGER" property="maxRetryCount"/>
+        <result column="create_time" jdbcType="VARCHAR" property="createTime"/>
+        <result column="update_time" jdbcType="VARCHAR" property="updateTime"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    rocketmq_message_id, del_flag, send_result, message_topic, message_producer_group, 
+    is_transactional, transaction_id, message_tag, messge_status, message_body, send_count, 
+    max_retry_count, create_time, update_time
+  </sql>
+
+    <update id="updateByRocketmqMessageId">
+        update t_rocketmq_message
+        <set>
+            <if test="updated.rocketmqMessageId != null and updated.rocketmqMessageId != ''">
+                rocketmq_message_id = #{updated.rocketmqMessageId,jdbcType=VARCHAR},
+            </if>
+            <if test="updated.delFlag != null">
+                del_flag = #{updated.delFlag,jdbcType=INTEGER},
+            </if>
+            <if test="updated.sendResult != null and updated.sendResult != ''">
+                send_result = #{updated.sendResult,jdbcType=VARCHAR},
+            </if>
+            <if test="updated.messageTopic != null and updated.messageTopic != ''">
+                message_topic = #{updated.messageTopic,jdbcType=VARCHAR},
+            </if>
+            <if test="updated.messageProducerGroup != null and updated.messageProducerGroup != ''">
+                message_producer_group = #{updated.messageProducerGroup,jdbcType=VARCHAR},
+            </if>
+            <if test="updated.isTransactional != null">
+                is_transactional = #{updated.isTransactional,jdbcType=INTEGER},
+            </if>
+            <if test="updated.transactionId != null and updated.transactionId != ''">
+                transaction_id = #{updated.transactionId,jdbcType=VARCHAR},
+            </if>
+            <if test="updated.messageTag != null and updated.messageTag != ''">
+                message_tag = #{updated.messageTag,jdbcType=VARCHAR},
+            </if>
+            <if test="updated.messgeStatus != null and updated.messgeStatus != ''">
+                messge_status = #{updated.messgeStatus,jdbcType=VARCHAR},
+            </if>
+            <if test="updated.messageBody != null and updated.messageBody != ''">
+                message_body = #{updated.messageBody,jdbcType=VARCHAR},
+            </if>
+            <if test="updated.sendCount != null">
+                send_count = #{updated.sendCount,jdbcType=INTEGER},
+            </if>
+            <if test="updated.maxRetryCount != null">
+                max_retry_count = #{updated.maxRetryCount,jdbcType=INTEGER},
+            </if>
+            <if test="updated.createTime != null and updated.createTime != ''">
+                create_time = #{updated.createTime,jdbcType=VARCHAR},
+            </if>
+            <if test="updated.updateTime != null and updated.updateTime != ''">
+                update_time = #{updated.updateTime,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where rocketmq_message_id=#{updated.rocketmqMessageId,jdbcType=VARCHAR}
+    </update>
+</mapper>

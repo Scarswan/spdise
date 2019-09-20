@@ -5,7 +5,7 @@
     <parent>
         <artifactId>spd-business</artifactId>
         <groupId>com.jh</groupId>
-        <version>1.9.9</version>
+        <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
@@ -16,36 +16,11 @@
     </modules>
 
     <artifactId>spd-business-base</artifactId>
-    <version>1.9.9</version>
+    <version>1.0.0</version>
     <name>spd-business-base</name>
     <description>business 基础</description>
 
     <dependencies>
-        <dependency>
-            <groupId>com.jh</groupId>
-            <artifactId>spd-common-model</artifactId>
-            <version>1.9.9</version>
-        </dependency>
-        <dependency>
-            <groupId>com.jh</groupId>
-            <artifactId>spd-common-util</artifactId>
-            <version>1.9.9</version>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.38</version>
-        </dependency>
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.2.0</version>
-        </dependency>
     </dependencies>
 
     <build>

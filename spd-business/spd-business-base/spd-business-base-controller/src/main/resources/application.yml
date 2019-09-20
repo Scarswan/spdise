@@ -4,14 +4,17 @@ server:
 spring:
   application:
     name: business-base
-  zipkin:
-    base-url: http://localhost:9411
-  sleuth:
-    sampler:
-      #收集追踪信息的比率，如果是0.1则表示只记录10%的追踪数据，如果要全部追踪，设置为1（实际场景不推荐，因为会造成不小的性能消耗）
-      probability: 1
+  # zipkin 配置
+  #  zipkin:
+  #    base-url: http://localhost:8211
+  #  sleuth:
+  #    sampler:
+  #      #收集追踪信息的比率，如果是0.1则表示只记录10%的追踪数据，如果要全部追踪，设置为1（实际场景不推荐，因为会造成不小的性能消耗）
+  #      probability: 1
   datasource:
     url: jdbc:mysql://localhost:3306/spdise?useUnicode=true&amp&characterEncoding=utf-8&useSSL=false
+    # 连接mycat
+    #url: jdbc:mysql://localhost:8066/spdise?useUnicode=true&amp&characterEncoding=utf-8&useSSL=false
     driverclassname: com.mysql.jdbc.Driver
     username: root
     password: 123456
@@ -30,3 +33,12 @@ eureka:
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
+
+# 显示 sql 语句
+logging:
+  level:
+    com:
+      jh:
+        business:
+          base:
+            mapper: debug

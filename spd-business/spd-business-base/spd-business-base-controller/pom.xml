@@ -5,32 +5,39 @@
     <parent>
         <artifactId>spd-business-base</artifactId>
         <groupId>com.jh</groupId>
-        <version>1.9.9</version>
+        <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <packaging>jar</packaging>
 
     <artifactId>spd-business-base-controller</artifactId>
-    <version>1.9.9</version>
+    <version>1.0.0</version>
     <name>spd-business-base-controller</name>
     <description>base-控制器层</description>
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-sleuth-zipkin</artifactId>
-            <version>2.1.2.RELEASE</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <groupId>com.jh</groupId>
+            <artifactId>spd-api-demo</artifactId>
+            <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>com.jh</groupId>
             <artifactId>spd-business-base-service</artifactId>
-            <version>1.9.9</version>
+            <version>1.0.0</version>
+        </dependency>
+
+        <!-- 需要与 business-demo-zipkin 测试 zipkin 时使用此依赖 -->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.cloud</groupId>-->
+        <!--            <artifactId>spring-cloud-sleuth-zipkin</artifactId>-->
+        <!--            <version>2.1.2.RELEASE</version>-->
+        <!--        </dependency>-->
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
         <dependency>

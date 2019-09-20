@@ -6,23 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spd-common-util" />
         <module name="spd-common-model" />
-        <module name="spd-business-demo-service (1)" />
+        <module name="spd-api-demo" />
         <module name="spd-eureka" />
         <module name="spd-common-rocketmq" />
-        <module name="spd-business-base-service" />
+        <module name="spd-common-generator" />
+        <module name="spd-business-qingyuan-dao" />
         <module name="spd-business-base-dao" />
-        <module name="spd-business-demo-controller (1)" />
+        <module name="spd-common-vo" />
         <module name="spd-business-demo-controller" />
         <module name="spd-api-base" />
         <module name="spd-zuul" />
+        <module name="spd-business-base-service" />
+        <module name="spd-business-qingyuan-service" />
         <module name="spd-business-demo-service" />
         <module name="spd-business-base-controller" />
         <module name="spd-common-base" />
-        <module name="spd-api-demo" />
-        <module name="spd-common-generator" />
-        <module name="spd-business-demo-dao (1)" />
+        <module name="spd-common-util" />
+        <module name="spd-api-qingyuan" />
+        <module name="spd-business-qingyuan-controller" />
         <module name="spd-web-platform " />
         <module name="spd-business-demo-zipkin" />
         <module name="spd-business-demo-dao" />
@@ -32,6 +34,7 @@
       <module name="spd-api" target="1.8" />
       <module name="spd-api-base" target="1.8" />
       <module name="spd-api-demo" target="1.8" />
+      <module name="spd-api-qingyuan" target="1.8" />
       <module name="spd-business" target="1.8" />
       <module name="spd-business-base" target="1.8" />
       <module name="spd-business-base-controller" target="1.8" />
@@ -39,18 +42,22 @@
       <module name="spd-business-base-service" target="1.8" />
       <module name="spd-business-demo" target="1.8" />
       <module name="spd-business-demo-controller" target="1.8" />
-      <module name="spd-business-demo-controller (1)" target="1.8" />
       <module name="spd-business-demo-dao" target="1.8" />
-      <module name="spd-business-demo-dao (1)" target="1.8" />
       <module name="spd-business-demo-service" target="1.8" />
-      <module name="spd-business-demo-service (1)" target="1.8" />
       <module name="spd-business-demo-zipkin" target="1.8" />
+      <module name="spd-business-qingyuan" target="1.8" />
+      <module name="spd-business-qingyuan-controller" target="1.8" />
+      <module name="spd-business-qingyuan-dao" target="1.8" />
+      <module name="spd-business-qingyuan-service" target="1.8" />
       <module name="spd-common" target="1.8" />
       <module name="spd-common-base" target="1.8" />
       <module name="spd-common-generator" target="1.8" />
       <module name="spd-common-model" target="1.8" />
       <module name="spd-common-rocketmq" target="1.8" />
+      <module name="spd-common-timetask" target="1.8" />
       <module name="spd-common-util" target="1.8" />
+      <module name="spd-common-vo" target="1.8" />
+      <module name="spd-common-websocket" target="1.8" />
       <module name="spd-eureka" target="1.8" />
       <module name="spd-web" target="1.8" />
       <module name="spd-web-platform" target="1.8" />
@@ -64,6 +71,7 @@
       <module name="spd-api" options="-parameters" />
       <module name="spd-api-base" options="-parameters" />
       <module name="spd-api-demo" options="-parameters" />
+      <module name="spd-api-qingyuan" options="-parameters" />
       <module name="spd-business" options="-parameters" />
       <module name="spd-business-base" options="-parameters" />
       <module name="spd-business-base-controller" options="-parameters" />
@@ -77,12 +85,19 @@
       <module name="spd-business-demo-service" options="-parameters" />
       <module name="spd-business-demo-service (1)" options="-parameters" />
       <module name="spd-business-demo-zipkin" options="-parameters" />
+      <module name="spd-business-qingyuan" options="-parameters" />
+      <module name="spd-business-qingyuan-controller" options="-parameters" />
+      <module name="spd-business-qingyuan-dao" options="-parameters" />
+      <module name="spd-business-qingyuan-service" options="-parameters" />
       <module name="spd-common" options="-parameters" />
       <module name="spd-common-base" options="-parameters" />
       <module name="spd-common-generator" options="-parameters" />
       <module name="spd-common-model" options="-parameters" />
       <module name="spd-common-rocketmq" options="-parameters" />
+      <module name="spd-common-timetask" options="-parameters" />
       <module name="spd-common-util" options="-parameters" />
+      <module name="spd-common-vo" options="-parameters" />
+      <module name="spd-common-websocket" options="-parameters" />
       <module name="spd-eureka" options="-parameters" />
       <module name="spd-web" options="-parameters" />
       <module name="spd-web-platform" options="-parameters" />

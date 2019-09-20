@@ -2,7 +2,7 @@ package com.jh.common.util.sequence;
 
 public class SnowFlakeForTransfer {
 
-	/**
+    /**
      * 起始的时间戳（最后的时间 = 当前时间戳 - 起始的时间戳)
      */
     private final static long START_STMP = 1480166465631L;
@@ -38,7 +38,7 @@ public class SnowFlakeForTransfer {
         if (datacenterId > MAX_DATACENTER_NUM || datacenterId < 0) {
             throw new IllegalArgumentException("datacenterId can't be greater than MAX_DATACENTER_NUM or less than 0");
         }
-       // 校验machineId长度超过范围就抛异常
+        // 校验machineId长度超过范围就抛异常
         if (machineId > MAX_MACHINE_NUM || machineId < 0) {
             throw new IllegalArgumentException("machineId can't be greater than MAX_MACHINE_NUM or less than 0");
         }
@@ -76,7 +76,7 @@ public class SnowFlakeForTransfer {
                 | machineId << MACHINE_LEFT             //机器标识部分
                 | sequence;                             //序列号部分
     }
-    
+
     //如果当前毫秒值下的序列号用完，就循环获取下个毫秒值，如果没有获取到下个毫秒值就
     //一直循环下去
     private long getNextMill() {
