@@ -5,7 +5,7 @@
     <parent>
         <artifactId>spd-business</artifactId>
         <groupId>com.jh</groupId>
-        <version>1.9.9</version>
+        <version>1.0.0</version>
         <relativePath>../spd-business-demo/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -19,7 +19,7 @@
     </modules>
 
     <artifactId>spd-business-demo</artifactId>
-    <version>1.9.9</version>
+    <version>1.0.0</version>
     <name>spd-business-demo</name>
     <description>demo</description>
 
@@ -27,7 +27,7 @@
         <dependency>
             <groupId>com.jh</groupId>
             <artifactId>spd-api-base</artifactId>
-            <version>1.9.9</version>
+            <version>1.0.0</version>
         </dependency>
 
         <dependency>

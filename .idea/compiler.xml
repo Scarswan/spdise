@@ -7,27 +7,27 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spd-common-model" />
-        <module name="spd-business-demo-dao" />
-        <module name="spd-business-qingyuan-dao" />
+        <module name="spd-api-demo" />
         <module name="spd-eureka" />
         <module name="spd-common-rocketmq" />
-        <module name="spd-common-util" />
+        <module name="spd-common-generator" />
+        <module name="spd-business-qingyuan-dao" />
         <module name="spd-business-base-dao" />
-        <module name="spd-business-demo-controller" />
         <module name="spd-common-vo" />
+        <module name="spd-business-demo-controller" />
         <module name="spd-api-base" />
         <module name="spd-zuul" />
+        <module name="spd-business-base-service" />
         <module name="spd-business-qingyuan-service" />
         <module name="spd-business-demo-service" />
         <module name="spd-business-base-controller" />
         <module name="spd-common-base" />
-        <module name="spd-api-demo" />
-        <module name="spd-common-generator" />
+        <module name="spd-common-util" />
         <module name="spd-api-qingyuan" />
         <module name="spd-business-qingyuan-controller" />
         <module name="spd-web-platform " />
         <module name="spd-business-demo-zipkin" />
-        <module name="spd-business-base-service" />
+        <module name="spd-business-demo-dao" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
